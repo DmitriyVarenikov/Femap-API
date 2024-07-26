@@ -1,3 +1,4 @@
+from typing import Any
 class constants:
     CTRLDEF_BLANK: int
     CTRLDEF_MILDLY: int
@@ -4042,7 +4043,7 @@ class Set:
         """
         ...
 
-    def GetArray(self, numID, arrayID) -> Any:
+    def GetArray(self) -> tuple[int, int, tuple[int, ...]]:
         """
         **Description:**
             This function populates an array of IDs from a selection set.
@@ -4052,6 +4053,7 @@ class Set:
             **numID:** The number of entries in the set\n
             **arrayID:** The array of all IDs in the set.\n
         **Return Code:** True\n
+        :returns: numID, arrayID
         :type numID: int
 
         :type arrayID: tuple[int]
@@ -13522,7 +13524,7 @@ class Node:
         """
         ...
 
-    def GetCoordArray(self, SetID, numNode, entID, xyz) -> Any:
+    def GetCoordArray(self, SetID) -> tuple[int, int, tuple[int], tuple[float]]:
         """
         **Description:**
             This method retrieves arrays of coordinates for a set of Nodes
@@ -13535,14 +13537,13 @@ class Node:
             **entID:** Each entry is the ID of the associated node\n
             **xyz:** The coordinates of the node. There are 3 entries, x, y, z for each node.\n
         **Return Code:** True\n
+        :param SetID: ID of the set that contains the node IDs to retrieve. If 0, retrieve all nodes in the model
+        :return: Return Code, numNode, entID, xyz\n
+
         :type SetID: int
-
         :type numNode: int
-
         :type entID: tuple[int]
-
         :type xyz: tuple[float]
-
         """
         ...
 
@@ -72148,11 +72149,11 @@ class model:
     feAnalysisSet: Any
     feAnalysisStep: Any
     feAnalysisStudy: Any
-    feBCDefinition: Any
-    feBCEqn: Any
+    feBCDefinition: BCDefinition
+    feBCEqn: BCEqn
     feBCGeom: Any
-    feBCNode: Any
-    feBCSet: Any
+    feBCNode: BCNode
+    feBCSet: BCSet
     feBeamCalculator: Any
     feBodyMesher: Any
     feCSys: Any
@@ -72169,7 +72170,7 @@ class model:
     feDesignEquation: Any
     feDiscreteValueSet: Any
     feDrawErase: Any
-    feElem: Any
+    feElem: Elem
     feElementQuality: Any
     feFibersim: Any
     feFlexibleSlider: Any
