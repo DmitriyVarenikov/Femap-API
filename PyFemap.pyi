@@ -3323,8 +3323,7 @@ class Set:
         """
         ...
 
-    def AddConstrained(self, bInAnySet, nSetID, bExpandBC, enOnType, enMatch, bDOF1, bDOF2, bDOF3, bDOF4, bDOF5,
-                       bDOF6) -> Any:
+    def AddConstrained(self, bInAnySet, nSetID, bExpandBC, enOnType, enMatch, bDOF1, bDOF2, bDOF3, bDOF4, bDOF5, bDOF6) -> Any:
         """
         **Description:**
             This function adds constrained nodes, points, curves or surfaces to the current set
@@ -3705,8 +3704,7 @@ class Set:
         """
         ...
 
-    def AddSolidElementsAlongVector(self, p1, p2, elemSET, bRequireIntersect, bInfiniteVector,
-                                    bDirectionalVector) -> Any:
+    def AddSolidElementsAlongVector(self, p1, p2, elemSET, bRequireIntersect, bInfiniteVector, bDirectionalVector) -> Any:
         """
         **Description:**
             This function adds solid elements along the specified vector.
@@ -3992,7 +3990,7 @@ class Set:
         """
         ...
 
-    def EmptyBlock(self, nStartID, nCount, nFirstEmptyID) -> Any:
+    def EmptyBlock(self, nStartID, nCount) -> Any:
         """
         **Description:**
             This function returns the first empty ID of an empty block of IDs of a specified size, after the specified starting ID
@@ -4078,7 +4076,7 @@ class Set:
         """
         ...
 
-    def GetSavedSetType(self, nSavedID, pnDataType) -> Any:
+    def GetSavedSetType(self, nSavedID) -> Any:
         """
         **Description:**
             This method returns the type of entities currently stored in a Saved Set.
@@ -4346,7 +4344,7 @@ class Set:
         """
         ...
 
-    def PutSavedSet(self, nPutID, entityTYPE, nSavedID) -> Any:
+    def PutSavedSet(self, nPutID, entityTYPE) -> Any:
         """
         **Description:**
             This method saves the contents of the Set object to a selected SavedSet
@@ -4613,7 +4611,7 @@ class Set:
         """
         ...
 
-    def SelectID(self, entityTYPE, title, selID) -> Any:
+    def SelectID(self, entityTYPE, title) -> Any:
         """
         **Description:**
             This function displays a selection dialog box to allow a user to choose a single entity of a specific type. The ID of the entity is returned and is stored in the current selection set.
@@ -4634,7 +4632,7 @@ class Set:
         """
         ...
 
-    def SelectIDInSetV2(self, entityTYPE, title, nInSetID, selID) -> Any:
+    def SelectIDInSetV2(self, entityTYPE, title, nInSetID) -> Any:
         """
         **Description:**
             This method replaces SelectIDInSet. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above". This function displays a selection dialog box to allow a user to choose a single entity of a specific type. The ID of the entity is returned and is stored in the current selection set.
@@ -4658,7 +4656,7 @@ class Set:
         """
         ...
 
-    def SelectIDWithNew(self, entityTYPE, title, selID) -> Any:
+    def SelectIDWithNew(self, entityTYPE, title) -> Any:
         """
         **Description:**
             This function displays a selection dialog box (including the ability for the user to create a new entity from within the dialog, when applicable) to allow a user to choose a single entity of a specific type. The ID of the entity is returned and stored in the current selection set
@@ -4716,8 +4714,7 @@ class Set:
         """
         ...
 
-    def SelectOutputVectorIDV2(self, title, outputSetID, limitOutputType, limitComplex, limitToEntity, allowCorner,
-                               selID) -> Any:
+    def SelectOutputVectorIDV2(self, title, outputSetID, limitOutputType, limitComplex, limitToEntity, allowCorner) -> Any:
         """
         **Description:**
             This method replaces SelectOutputVectorID. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above". This function displays a selection dialog box to allow a user to choose an output vector. The ID of the entity is returned and is stored in the current selection set.
@@ -5023,7 +5020,7 @@ class SortSet:
         """
         ...
 
-    def GetData(self, nID, dReal1, dReal2, dReal3, dInt1, dInt2, dInt3, eDataType) -> Any:
+    def GetData(self, nID) -> Any:
         """
         **Description:**
             This function retrieves the properties associated with an already added ID.
@@ -5059,7 +5056,7 @@ class SortSet:
         """
         ...
 
-    def GetDataType(self, nID, eDataType) -> Any:
+    def GetDataType(self, nID) -> Any:
         """
         **Description:**
             This function retrieves the entity type associated with an already added ID.
@@ -5077,7 +5074,7 @@ class SortSet:
         """
         ...
 
-    def GetInt(self, nID, dInt1, dInt2, dInt3) -> Any:
+    def GetInt(self, nID) -> Any:
         """
         **Description:**
             This function retrieves the integer properties associated with an already added ID.
@@ -5101,7 +5098,7 @@ class SortSet:
         """
         ...
 
-    def GetReal(self, nID, dReal1, dReal2, dReal3) -> Any:
+    def GetReal(self, nID) -> Any:
         """
         **Description:**
             This function retrieves the real properties associated with an already added ID.
@@ -5249,7 +5246,7 @@ class SortSet:
         """
         ...
 
-    def SelectID(self, entityTYPE, title, selID) -> Any:
+    def SelectID(self, entityTYPE, title) -> Any:
         """
         **Description:**
             This function displays a selection dialog box to allow a user to choose a single entity of a specific type. The ID of the entity is returned and is stored in the current sort object.
@@ -5493,7 +5490,7 @@ class MapData:
         """
         ...
 
-    def GetBool(self, nIndex, nID, pbVal) -> Any:
+    def GetBool(self, nIndex, nID) -> Any:
         """
         **Description:**
             Gets Boolean value from field filled by SetBool method for DataMap object for given Index-ID data pair.
@@ -5524,7 +5521,7 @@ class MapData:
         """
         ...
 
-    def GetInt(self, nIndex, nID, pnVal) -> Any:
+    def GetInt(self, nIndex, nID) -> Any:
         """
         **Description:**
             Gets Integer value from field filled by SetInt method for DataMap object for given Index-ID data pair.
@@ -5545,7 +5542,7 @@ class MapData:
         """
         ...
 
-    def GetReal(self, nIndex, nID, pdVal) -> Any:
+    def GetReal(self, nIndex, nID) -> Any:
         """
         **Description:**
             Gets Real value from field filled by SetReal method for DataMap object for given Index-ID data pair.
@@ -5566,7 +5563,7 @@ class MapData:
         """
         ...
 
-    def GetString(self, nIndex, nID, psVal) -> Any:
+    def GetString(self, nIndex, nID) -> Any:
         """
         **Description:**
             Gets String value from field filled by SetString method for DataMap object for given Index-ID data pair.
@@ -5587,7 +5584,7 @@ class MapData:
         """
         ...
 
-    def GetVariant(self, nIndex, nID, vVal) -> Any:
+    def GetVariant(self, nIndex, nID) -> Any:
         """
         **Description:**
             Gets Variant from field filled by SetVarient method for DataMap object for given Index-ID data pair.
@@ -5966,7 +5963,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def LaminateGlobalPlyWithCorners(self, enRVResult, enRVType, nRVGlobalPly, VectorIDs) -> Any:
+    def LaminateGlobalPlyWithCorners(self, enRVResult, enRVType, nRVGlobalPly) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for laminate planar elements (Force, Moment, Stress, Strain, etc) for a specified laminate global ply ID. See Section 4.18.1.5, "Constants for Planar Element Methods".
@@ -6026,7 +6023,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def LaminateSolidGlobalPlyWithCorners(self, enRVResult, enRVType, nRVGlobalPly, enRVPlyLoc, VectorIDs) -> Any:
+    def LaminateSolidGlobalPlyWithCorners(self, enRVResult, enRVType, enRVPlyLoc) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for solid laminate elements (Stress, Strain, Failure, or Strength Ratio) for the top, middle, or bottom of the specified solid laminate global ply ID. See Section 4.18.1.9, "Constants for Sold Laminate Element Methods".
@@ -6050,7 +6047,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def LaminateSolidWithCorners(self, enRVResult, enRVType, nRVPly, enRVPlyLoc, VectorIDs) -> Any:
+    def LaminateSolidWithCorners(self, enRVResult, enRVType, nRVPly, enRVPlyLoc) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for solid laminate elements (Stress, Strain, Failure, or Strength Ratio) for the top, middle, or bottom of the specified solid laminate ply ID. See Section 4.18.1.9, "Constants for Sold Laminate Element Methods".
@@ -6077,7 +6074,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def LaminateWithCorners(self, enRVResult, enRVType, nRVPly, VectorIDs) -> Any:
+    def LaminateWithCorners(self, enRVResult, enRVType, nRVPly) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for laminate planar elements (Force, Moment, Stress, Strain, etc) for a specified laminate ply ID. See Section 4.18.1.5, "Constants for Planar Element Methods".
@@ -6124,7 +6121,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def LineAllLocations(self, enRVElemType, enRVResult, VectorIDs) -> Any:
+    def LineAllLocations(self, enRVElemType, enRVResult) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for Bar, Beam, or Weld elements, at all locations, by entering the type of element and the type of results (Axial Force, Torque, Moment, Shear, Stresses, and Strains). See Section 4.18.1.3, "Constants for Line and LineAllLocations Methods".
@@ -6190,7 +6187,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def NodalWithComponents(self, enRVResult, VectorIDs) -> Any:
+    def NodalWithComponents(self, enRVResult) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain vector-based output data on nodes by entering a type of vector output (Translations, Rotations, Applied Forces, Grid Point Forces, Contact Forces, etc). See Section 4.18.1.1, "Constants for Nodal and NodalWithComponents Methods".
@@ -6245,7 +6242,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def PlateWithCorners(self, enRVResult, enRVType, enRVPly, VectorIDs) -> Any:
+    def PlateWithCorners(self, enRVResult, enRVType, enRVPly) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for non-laminate planar elements (Force, Moment, Stress, Strain, etc) for a specified position (Top/Middle/Bottom). See Section 4.18.1.5, "Constants for Planar Element Methods".
@@ -6303,7 +6300,7 @@ class ResultsIDQuery:
         """
         ...
 
-    def SolidWithCorners(self, enRVResult, enRVType, VectorIDs) -> Any:
+    def SolidWithCorners(self, enRVResult, enRVType) -> Any:
         """
         **Description:**
             Determines the IDs of the output vectors which contain output data for non-laminate solid elements (Stress, Nonlinear Stress, Strain, and Nonlinear Strain) at all locations. See Section 4.18.1.7, "Constants for Solid Element Methods".
@@ -6347,7 +6344,7 @@ class Results:
     NextVectorStartID: Any
     ValueForNonExisting: Any
 
-    def AddColumnV2(self, nSetID, nVectorID, bAddComponentsCorners, nNumColumnsAdded, nColumnIndices) -> Any:
+    def AddColumnV2(self, nSetID, nVectorID, bAddComponentsCorners) -> Any:
         """
         **Description:**
             This method adds a column to the object that will be filled by a specified Output Vector. This method replaces AddColumn. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above".\n
@@ -6400,8 +6397,7 @@ class Results:
         """
         ...
 
-    def AddElemWithCornerColumnsV2(self, nSetID, nVectorID, Vec1, Vec2, Vec3, Vec4, Vec5, Vec6, Vec7, Vec8, title,
-                                   category, nonlinear, pnColumnIndices) -> Any:
+    def AddElemWithCornerColumnsV2(self, nSetID, nVectorID, Vec1, Vec2, Vec3, Vec4, Vec5, Vec6, Vec7, Vec8, title, category, nonlinear) -> Any:
         """
          **Description:**
             This method initializes a column to prepare it for creating an output vector containing scalar values at elements.
@@ -6434,7 +6430,7 @@ class Results:
         """
         ...
 
-    def AddEmptyColumns(self, nNumberOfColumns, nColumnIndices) -> Any:
+    def AddEmptyColumns(self, nNumberOfColumns) -> Any:
         """
         **Description:**
             This method adds one or more columns that are not associated with any Output Vectors.
@@ -6454,7 +6450,7 @@ class Results:
         """
         ...
 
-    def AddEnvelopeColumn(self, nEnvelopeType, nDataColumnIndex, nColumnColumnIndex) -> Any:
+    def AddEnvelopeColumn(self, nEnvelopeType) -> Any:
         """
         **Description:**
             This method adds columns that will be Populated() with an envelope of the results from the Output Vec­tors in each row.
@@ -6478,8 +6474,7 @@ class Results:
         """
         ...
 
-    def AddScalarAtBeamColumnsV2(self, nSetID, VecA, VecB, title, vecstyle, category, nonlinear, add_endAB_titles,
-                                 pnColumnIndices) -> Any:
+    def AddScalarAtBeamColumnsV2(self, nSetID, VecA, VecB, title, vecstyle, category, nonlinear, add_endAB_titles) -> Any:
         """
         **Description:**
             This method initialized the column to prepare it for creating Beam output vectors for EndA and EndB.
@@ -6514,7 +6509,7 @@ class Results:
         """
         ...
 
-    def AddScalarAtElemColumnV2(self, nSetID, nVectorID, title, category, nonlinear, nColumnIndex) -> Any:
+    def AddScalarAtElemColumnV2(self, nSetID, nVectorID, title, category, nonlinear) -> Any:
         """
         **Description:**
             This method initializes a column to prepare it for creating an output vector containing scalar values at elements.
@@ -6547,7 +6542,7 @@ class Results:
         """
         ...
 
-    def AddScalarAtNodeColumnV2(self, nSetID, nVectorID, title, category, nonlinear, nColumnIndex) -> Any:
+    def AddScalarAtNodeColumnV2(self, nSetID, nVectorID, title, category, nonlinear) -> Any:
         """
         **Description:**
             This method initializes a column to prepare it for creating an output vector containing scalar values at nodes.
@@ -6578,8 +6573,7 @@ class Results:
         """
         ...
 
-    def AddVectorAtNodeColumnsV2(self, nSetID, nVectorID, VecX, VecY, VecZ, title, category, nonlinear,
-                                 pnColumnIndices) -> Any:
+    def AddVectorAtNodeColumnsV2(self, nSetID, nVectorID, VecX, VecY, VecZ, title, category, nonlinear) -> Any:
         """
         **Description:**
             This method initializes columns to prepare it for creating output vectors containing vector values at nodes.
@@ -6653,7 +6647,7 @@ class Results:
         """
         ...
 
-    def EntityValueV2(self, nSetID, nVectorID, nEntityID, pdVal) -> Any:
+    def EntityValueV2(self, nSetID, nVectorID, nEntityID) -> Any:
         """
         **WARNING:**
             This method must be used with great caution - especially with attached results files. Using it may result in reading large amounts of data for every call, and performance will be especially poor. The only appropriate time to use this is if you must dynamically query the results on small numbers of nodes/elements. In almost any other case, it will be more efficient to code an algorithm using the “spreadsheet” capability of this object.
@@ -6683,7 +6677,7 @@ class Results:
         """
         ...
 
-    def FindColumnV2(self, nSetID, nVectorID, nColumnIndex) -> Any:
+    def FindColumnV2(self, nSetID, nVectorID) -> Any:
         """
         **Description:**
             This method locates a column based on the Output Set and Output Vector IDs. This method replaces FindColumn. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -6708,7 +6702,7 @@ class Results:
         """
         ...
 
-    def GetColumn(self, nColIndex, pnIDs, pdVals) -> Any:
+    def GetColumn(self, nColIndex) -> Any:
         """
         **Description:**
             This method returns the entity IDs and values from all rows in the selected column
@@ -6736,7 +6730,7 @@ class Results:
         """
         ...
 
-    def GetColumnAbsMax(self, nColumnIndex, nLimitToSet, pnAbsMaxID, pdAbsMaxVal) -> Any:
+    def GetColumnAbsMax(self, nColumnIndex, nLimitToSet) -> Any:
         """
         **Description:**
             This method returns the maximum absolute value in a column
@@ -6766,7 +6760,7 @@ class Results:
         """
         ...
 
-    def GetColumnComponents(self, nColumnIndex, pnNumComponents, pnComponentColumns) -> Any:
+    def GetColumnComponents(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the number of components of an Output Vector and the column index in which the component results are stored.
@@ -6801,7 +6795,7 @@ class Results:
         """
         ...
 
-    def GetColumnInteger(self, nColumnIndex, bIsInteger) -> Any:
+    def GetColumnInteger(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method finds if an Output Vector in a specified column is integer values.
@@ -6820,7 +6814,7 @@ class Results:
         """
         ...
 
-    def GetColumnMinMax(self, nColumnIndex, nLimitToSet, pnMinID, pnMaxID, pdMinVal, pdMaxVal) -> Any:
+    def GetColumnMinMax(self, nColumnIndex, nLimitToSet) -> Any:
         """
         **Description:**
             This method returns the minimum and maximum values in a column
@@ -6855,7 +6849,7 @@ class Results:
         """
         ...
 
-    def GetColumnSum(self, nColumnIndex, nLimitToSet, pnNumVal, pdSum, pdSumSq) -> Any:
+    def GetColumnSum(self, nColumnIndex, nLimitToSet) -> Any:
         """
         **Description:**
             This method returns values for the sum and the sum of squares in a column
@@ -6889,7 +6883,7 @@ class Results:
         """
         ...
 
-    def GetColumnTitle(self, nColumnIndex, sTitle) -> Any:
+    def GetColumnTitle(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the title of the Output Vector loaded in the specified column
@@ -6913,7 +6907,7 @@ class Results:
         """
         ...
 
-    def GetColumnVectorV2(self, nColumnIndex, pnSetID, pnVectorID) -> Any:
+    def GetColumnVectorV2(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the Output Set ID and Output Vector ID of a selected column. This method replaces GetColumnVector. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -6937,7 +6931,7 @@ class Results:
         """
         ...
 
-    def GetColumns(self, nNumberOfColumns, nColIndices, pnIDs, pdVals) -> Any:
+    def GetColumns(self, nNumberOfColumns, nColIndices) -> Any:
         """
         **Description:**
             This method returns the entity IDs and multiple values from the selected columns and all rows
@@ -6970,8 +6964,7 @@ class Results:
         """
         ...
 
-    def GetElemWithCornerColumnsV2(self, nColumnIndices, listcount, maxcorner, nID, centroid, c1, c2, c3, c4, c5, c6,
-                                   c7, c8) -> Any:
+    def GetElemWithCornerColumnsV2(self, nColumnIndices) -> Any:
         """
         **Description:**
             This method gets centroid and corner results of elements from given columns.
@@ -7009,8 +7002,7 @@ class Results:
         """
         ...
 
-    def GetElemWithCornerSetV2(self, nColumnIndices, nElemSetID, maxcorner, centroid, c1, c2, c3, c4, c5, c6, c7,
-                               c8) -> Any:
+    def GetElemWithCornerSetV2(self, nColumnIndices, nElemSetID) -> Any:
         """
          **FIY:**
             **centroid** This signature of this method does not match the description in the documentation **centroid**
@@ -7047,7 +7039,7 @@ class Results:
         """
         ...
 
-    def GetInRow(self, nRowIndex, nColumnIndex, pnID, pdVal) -> Any:
+    def GetInRow(self, nRowIndex, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the entity ID and value from the selected row and column
@@ -7095,7 +7087,7 @@ class Results:
         """
         ...
 
-    def GetMultipleInRow(self, nRowIndex, nNumberOfColumns, nColumnIndices, pnID, pdVals) -> Any:
+    def GetMultipleInRow(self, nRowIndex, nNumberOfColumns, nColumnIndices) -> Any:
         """
         **Description:**
             This method returns the entity ID and multiple values from the selected row and columns
@@ -7131,7 +7123,7 @@ class Results:
         """
         ...
 
-    def GetRow(self, nRowIndex, pnID, pdVals) -> Any:
+    def GetRow(self, nRowIndex) -> Any:
         """
         **Description:**
             This method returns the entity ID and multiple values from the selected row and all columns
@@ -7161,7 +7153,7 @@ class Results:
         """
         ...
 
-    def GetRowByID(self, nID, pdVals) -> Any:
+    def GetRowByID(self, nID) -> Any:
         """
         **Description:**
             This method returns multiple values from the selected Node/Element and all columns
@@ -7188,7 +7180,7 @@ class Results:
         """
         ...
 
-    def GetRows(self, nNumberOfRows, nRowIndices, pnIDs, pdVals) -> Any:
+    def GetRows(self, nNumberOfRows, nRowIndices) -> Any:
         """
         **Description:**
             This method returns the entity IDs and multiple values from the selected rows and all columns
@@ -7220,8 +7212,7 @@ class Results:
         """
         ...
 
-    def GetRowsAndColumns(self, nNumberOfRows, nRowIndices, nNumberOfColumns, nColIndices, pnIDs, pdVals,
-                          pbAllExist) -> Any:
+    def GetRowsAndColumns(self, nNumberOfRows, nRowIndices, nNumberOfColumns, nColIndices) -> Any:
         """
         **Description:**
             This method returns the entity IDs and multiple values from selected rows and columns
@@ -7263,7 +7254,7 @@ class Results:
         """
         ...
 
-    def GetRowsAndColumnsByID(self, nEntitySetID, nNumberOfColumns, nColIndices, pdVals, pbAllExist) -> Any:
+    def GetRowsAndColumnsByID(self, nEntitySetID, nNumberOfColumns, nColIndices) -> Any:
         """
         **Description:**
             This method returns the values from selected columns for the selected entities.
@@ -7305,7 +7296,7 @@ class Results:
         """
         ...
 
-    def GetRowsByID(self, nEntitySetID, pdVals) -> Any:
+    def GetRowsByID(self, nEntitySetID) -> Any:
         """
         **Description:**
             This method returns the values from all columns for the selected entities.
@@ -7337,7 +7328,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtBeamColumnsV2(self, nColumnIndices, listcount, nID, ValA, ValB) -> Any:
+    def GetScalarAtBeamColumnsV2(self, nColumnIndices) -> Any:
         """
         **Description:**
             This method gets Beam output vectors for EndA and EndB containing a single scalar value.
@@ -7366,7 +7357,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtBeamSetV2(self, nColumnIndices, nElemSetID, ValA, ValB) -> Any:
+    def GetScalarAtBeamSetV2(self, nColumnIndices, nElemSetID) -> Any:
         """
         **Description:**
             This method gets scalar data of a given set of beam elements.
@@ -7396,7 +7387,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtElemColumnV2(self, nColumnIndex, listcount, nID, value) -> Any:
+    def GetScalarAtElemColumnV2(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the entity IDs and values from all rows in the selected column.
@@ -7426,7 +7417,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtElemSetV2(self, nColumnIndex, nElemSetID, value) -> Any:
+    def GetScalarAtElemSetV2(self, nColumnIndex, nElemSetID) -> Any:
         """
         **Description:**
             This method gets scalar data of a given set of elements.
@@ -7449,7 +7440,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtNodeColumnV2(self, nColumnIndex, listcount, nID, value) -> Any:
+    def GetScalarAtNodeColumnV2(self, nColumnIndex) -> Any:
         """
          **Description:**
             This method returns the entity IDs and values from all rows in the selected column.
@@ -7478,7 +7469,7 @@ class Results:
         """
         ...
 
-    def GetScalarAtNodeSetV2(self, nColumnIndex, nNodeSetID, value) -> Any:
+    def GetScalarAtNodeSetV2(self, nColumnIndex, nNodeSetID) -> Any:
         """
         **Description:**
             This method gets scalar data of a given set of nodes.
@@ -7500,7 +7491,7 @@ class Results:
         """
         ...
 
-    def GetValue(self, nID, nColumnIndex, pdVal) -> Any:
+    def GetValue(self, nID, nColumnIndex) -> Any:
         """
          **Description:**
             This method returns the value from the selected column for the specified Node/Element
@@ -7529,7 +7520,7 @@ class Results:
         """
         ...
 
-    def GetVectorAtNodeColumnsV2(self, nColumnIndices, listcount, nID, total, x, y, z) -> Any:
+    def GetVectorAtNodeColumnsV2(self, nColumnIndices) -> Any:
         """
         **Description:**
             This method returns the entity IDs and the components of the results stored from all rows in the selected column.
@@ -7558,7 +7549,7 @@ class Results:
         """
         ...
 
-    def GetVectorAtNodeSetV2(self, nColumnIndices, nNodeSetID, total, x, y, z) -> Any:
+    def GetVectorAtNodeSetV2(self, nColumnIndices, nNodeSetID) -> Any:
         """
         **Description:**
             This method gets vector data of a given set of nodes.
@@ -7616,7 +7607,7 @@ class Results:
         """
         ...
 
-    def Next(self, nColumnIndex, pnID, pdVal) -> Any:
+    def Next(self, nColumnIndex) -> Any:
         """
         **Description:**
             This method returns the entityID and value from the next row in a selected column
@@ -8146,8 +8137,7 @@ class Results:
         """
         ...
 
-    def SetElemWithCornerColumnsV2(self, nColumnIndices, listcount, maxcorner, nID, centroid, c1, c2, c3, c4, c5, c6,
-                                   c7, c8) -> Any:
+    def SetElemWithCornerColumnsV2(self, nColumnIndices, listcount, maxcorner, nID, centroid, c1, c2, c3, c4, c5, c6, c7, c8) -> Any:
         """
         **Description:**
             This method sets centroid and corner results of elements of given columns.
@@ -8271,7 +8261,7 @@ class Results:
         """
         ...
 
-    def SetInfo(self, nSetID, pnAnalysisProgram, pnAnalysisType, pdSetValue) -> Any:
+    def SetInfo(self, nSetID) -> Any:
         """
         **Description:**
             This method returns information about a selected Output Set
@@ -8322,7 +8312,7 @@ class Results:
         """
         ...
 
-    def SetLocation(self, nSetID, pnSetLocation) -> Any:
+    def SetLocation(self, nSetID) -> Any:
         """
         **Description:**
             This method identifies whether data for the Output Set is in the database or in an attached external file.
@@ -8420,7 +8410,7 @@ class Results:
         """
         ...
 
-    def SetNotes(self, nSetID, sNotes) -> Any:
+    def SetNotes(self, nSetID) -> Any:
         """
         **Description:**
             This method returns the notes of a selected Output Set
@@ -8737,7 +8727,7 @@ class Results:
         """
         ...
 
-    def SetTitle(self, nSetID, sTitle) -> Any:
+    def SetTitle(['self', 'nSetID', 'sTitle']) -> Any:
         """
         **Description:**
             This method returns the title of a selected Output Set
@@ -8940,7 +8930,7 @@ class Results:
         """
         ...
 
-    def StudyInfo(self, nStudyID, pnAnalysisProgram, pnAnalysisType) -> Any:
+    def StudyInfo(self, nStudyID) -> Any:
         """
         **Description:**
             This method retrieves the information of a selected Analysis Study.
@@ -8972,7 +8962,7 @@ class Results:
         """
         ...
 
-    def StudyNotes(self, nStudyID, sNotes) -> Any:
+    def StudyNotes(self, nStudyID) -> Any:
         """
         **Description:**
             This method retrieves the notes of a selected Analysis Study.
@@ -8994,7 +8984,7 @@ class Results:
         """
         ...
 
-    def StudyTitle(self, nStudyID, sTitle) -> Any:
+    def StudyTitle(self, nStudyID) -> Any:
         """
         **Description:**
             This method retrieves the title of a selected Analysis Study.
@@ -9014,7 +9004,7 @@ class Results:
         """
         ...
 
-    def VectorComponentsV2(self, nSetID, nVectorID, pnNumComponents, pnComponents) -> Any:
+    def VectorComponentsV2(self, nSetID, nVectorID) -> Any:
         """
         **Description:**
             This method indicates whether a selected Output Vector has Component Output Vectors and, if so, returns the
@@ -9111,7 +9101,7 @@ class Results:
         """
         ...
 
-    def VectorInfoV2(self, nSetID, nVectorID, pnDataType, pnOutputType, pbCentroidTotal, pbNonlinear, pnCompDir) -> Any:
+    def VectorInfoV2(self, nSetID, nVectorID) -> Any:
         """
         **Description:**
             This method returns selected information about a selected Output Vector. This method replaces Vec­torInfo.
@@ -9618,7 +9608,7 @@ class ElementQuality:
         """
         ...
 
-    def GetAlternateTaper(self, nElemID, pdValue) -> Any:
+    def GetAlternateTaper(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9636,7 +9626,7 @@ class ElementQuality:
         """
         ...
 
-    def GetAspectRatio(self, nElemID, pdValue) -> Any:
+    def GetAspectRatio(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9654,7 +9644,7 @@ class ElementQuality:
         """
         ...
 
-    def GetCombined(self, nElemID, pdValue) -> Any:
+    def GetCombined(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9672,7 +9662,7 @@ class ElementQuality:
         """
         ...
 
-    def GetExplicitTimeStep(self, nElemID, pdValue) -> Any:
+    def GetExplicitTimeStep(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9690,7 +9680,7 @@ class ElementQuality:
         """
         ...
 
-    def GetInternalAngle(self, nElemID, pdValue) -> Any:
+    def GetInternalAngle(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9708,7 +9698,7 @@ class ElementQuality:
         """
         ...
 
-    def GetJacobian(self, nElemID, pdValue) -> Any:
+    def GetJacobian(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9736,7 +9726,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranHexAR(self, nElemID, pdValue) -> Any:
+    def GetNastranHexAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9754,7 +9744,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranHexDetJ(self, nElemID, pdValue) -> Any:
+    def GetNastranHexDetJ(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9772,7 +9762,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranHexEPIA(self, nElemID, pdValue) -> Any:
+    def GetNastranHexEPIA(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9790,7 +9780,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranHexEPLR(self, nElemID, pdValue) -> Any:
+    def GetNastranHexEPLR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9808,7 +9798,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranHexWarp(self, nElemID, pdValue) -> Any:
+    def GetNastranHexWarp(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9826,7 +9816,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPenAR(self, nElemID, pdValue) -> Any:
+    def GetNastranPenAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9844,7 +9834,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPenDetJ(self, nElemID, pdValue) -> Any:
+    def GetNastranPenDetJ(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9862,7 +9852,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPenEPIA(self, nElemID, pdValue) -> Any:
+    def GetNastranPenEPIA(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9880,7 +9870,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPenEPLR(self, nElemID, pdValue) -> Any:
+    def GetNastranPenEPLR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9898,7 +9888,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPenWarp(self, nElemID, pdValue) -> Any:
+    def GetNastranPenWarp(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9916,7 +9906,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPyrAR(self, nElemID, pdValue) -> Any:
+    def GetNastranPyrAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9934,7 +9924,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPyrDetJ(self, nElemID, pdValue) -> Any:
+    def GetNastranPyrDetJ(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9952,7 +9942,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPyrEPIA(self, nElemID, pdValue) -> Any:
+    def GetNastranPyrEPIA(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9970,7 +9960,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPyrEPLR(self, nElemID, pdValue) -> Any:
+    def GetNastranPyrEPLR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -9988,7 +9978,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranPyrWarp(self, nElemID, pdValue) -> Any:
+    def GetNastranPyrWarp(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10006,7 +9996,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadAR(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10024,7 +10014,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadIAMax(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadIAMax(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10042,7 +10032,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadIAMin(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadIAMin(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10060,7 +10050,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadSkew(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadSkew(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10078,7 +10068,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadTaper(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadTaper(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10096,7 +10086,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranQuadWarp(self, nElemID, pdValue) -> Any:
+    def GetNastranQuadWarp(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10114,7 +10104,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTetraAR(self, nElemID, pdValue) -> Any:
+    def GetNastranTetraAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10132,7 +10122,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTetraDetJ(self, nElemID, pdValue) -> Any:
+    def GetNastranTetraDetJ(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10150,7 +10140,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTetraEPIA(self, nElemID, pdValue) -> Any:
+    def GetNastranTetraEPIA(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10168,7 +10158,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTetraEPLR(self, nElemID, pdValue) -> Any:
+    def GetNastranTetraEPLR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10186,7 +10176,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTriaAR(self, nElemID, pdValue) -> Any:
+    def GetNastranTriaAR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10204,7 +10194,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTriaEPLR(self, nElemID, pdValue) -> Any:
+    def GetNastranTriaEPLR(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10222,7 +10212,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTriaIAMax(self, nElemID, pdValue) -> Any:
+    def GetNastranTriaIAMax(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10240,7 +10230,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranTriaSkew(self, nElemID, pdValue) -> Any:
+    def GetNastranTriaSkew(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10258,7 +10248,7 @@ class ElementQuality:
         """
         ...
 
-    def GetNastranWarping(self, nElemID, pdValue) -> Any:
+    def GetNastranWarping(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10276,7 +10266,7 @@ class ElementQuality:
         """
         ...
 
-    def GetSkew(self, nElemID, pdValue) -> Any:
+    def GetSkew(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10294,7 +10284,7 @@ class ElementQuality:
         """
         ...
 
-    def GetTaper(self, nElemID, pdValue) -> Any:
+    def GetTaper(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10312,7 +10302,7 @@ class ElementQuality:
         """
         ...
 
-    def GetTetCollapse(self, nElemID, pdValue) -> Any:
+    def GetTetCollapse(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -10330,7 +10320,7 @@ class ElementQuality:
         """
         ...
 
-    def GetWarping(self, nElemID, pdValue) -> Any:
+    def GetWarping(self, nElemID) -> Any:
         """
         **Description:**
             This method calculates and returns the quality value for the desired element.
@@ -11151,7 +11141,7 @@ class DBase:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -11181,7 +11171,7 @@ class DBase:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -12376,7 +12366,7 @@ class AnalysisCase:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -12405,7 +12395,7 @@ class AnalysisCase:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -13384,7 +13374,7 @@ class Node:
         """
         ...
 
-    def GetAll(self, entID, x, y, z, nlayer, nColor, ntype, defCSys, outCSys, permBC) -> Any:
+    def GetAll(self, entID) -> Any:
         """
         **Description:**
             This method retrieves an entity with the specified ID.
@@ -13423,7 +13413,7 @@ class Node:
         """
         ...
 
-    def GetAllArray(self, SetID, numNode, entID, xyz, layer, color, ndType, defCSys, outCSys, permBC) -> Any:
+    def GetAllArray(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of nodes.
@@ -13465,7 +13455,7 @@ class Node:
         """
         ...
 
-    def GetAllArray2(self, SetID, numNode, entID, Exist, xyz, layer, color, ndType, defCSys, outCSys, permBC) -> Any:
+    def GetAllArray2(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of nodes, including if a node exists in the database
@@ -13547,7 +13537,7 @@ class Node:
         """
         ...
 
-    def GetCoordArray2(self, SetID, numNode, entID, Exist, xyz) -> Any:
+    def GetCoordArray2(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of coordinates for a set of Nodes and an additional array designating if a node exists in the database
@@ -13601,7 +13591,7 @@ class Node:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -13630,7 +13620,7 @@ class Node:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -15799,8 +15789,7 @@ class AnalysisMgr:
         """
         ...
 
-    def GetCorrelate2(self, Count, excitedCase, appliedCase, realScale, imagScale, realFunc, imagFunc, realInterp,
-                      imagInterp) -> Any:
+    def GetCorrelate2(self, Count, excitedCase, appliedCase, realScale, imagScale, realFunc, imagFunc, realInterp, imagInterp) -> Any:
         """
         **Description:**
             This method retrieves data from the Random Analysis Correlation Table.
@@ -15948,7 +15937,7 @@ class AnalysisMgr:
         """
         ...
 
-    def GetText(self, textID, text) -> Any:
+    def GetText(self, textID) -> Any:
         """
         **Description:**
             This method returns a string containing the text associated with a specified textID.
@@ -15966,7 +15955,7 @@ class AnalysisMgr:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -15995,7 +15984,7 @@ class AnalysisMgr:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -16702,8 +16691,7 @@ class AnalysisMgr:
         """
         ...
 
-    def PutCorrelate2(self, Count, excitedCase, appliedCase, realScale, imagScale, realFunc, imagFunc, realInterp,
-                      imagInterp) -> Any:
+    def PutCorrelate2(self, Count, excitedCase, appliedCase, realScale, imagScale, realFunc, imagFunc, realInterp, imagInterp) -> Any:
         """
         **Description:**
             This method replaces data in the Random Analysis Correlation Table.
@@ -17377,7 +17365,7 @@ class BCEqn:
         """
         ...
 
-    def GetAll(self, nID, nSetID, pnDefID, pnCount, pvNode, pvDof, pvCoeff, peColor, pnLayer) -> Any:
+    def GetAll(self, nID, nSetID) -> Any:
         """
         **Description:**
             Retrieves all constraint equation properties in a single call
@@ -17418,7 +17406,7 @@ class BCEqn:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -17447,7 +17435,7 @@ class BCEqn:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -17915,7 +17903,7 @@ class BCGeom:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -17944,7 +17932,7 @@ class BCGeom:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -18409,8 +18397,7 @@ class BCNode:
         """
         ...
 
-    def AddNonZero(self, SetID, bDOF1, dVal1, bDOF2, dVal2, bDOF3, dVal3, bDOF4, dVal4, bDOF5, dVal5, bDOF6,
-                   dVal6) -> Any:
+    def AddNonZero(self, SetID, bDOF1, dVal1, bDOF2, dVal2, bDOF3, dVal3, bDOF4, dVal4, bDOF5, dVal5, bDOF6, dVal6) -> Any:
         """
         **Description:**
             This method creates non-zero nodal constraints on all selected nodes
@@ -18564,8 +18551,7 @@ class BCNode:
         """
         ...
 
-    def GetAllArray(self, Count, ExpandedGeomBC, NodeID, layer, color, BCDefinitionID, bNonZeroBC, dof,
-                    NonZeroValues) -> Any:
+    def GetAllArray(self, Count, ExpandedGeomBC, NodeID, layer, color, BCDefinitionID, bNonZeroBC, dof, NonZeroValues) -> Any:
         """
         **Description:**
             This method finds information on nodal constraints.
@@ -18611,7 +18597,7 @@ class BCNode:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -18640,7 +18626,7 @@ class BCNode:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -18824,8 +18810,7 @@ class BCNode:
         """
         ...
 
-    def PutAllArray(self, Count, ExpandedGeomBC, NodeID, layer, color, BCDefinitionID, bNonZeroBC, dof,
-                    NonZeroValues) -> Any:
+    def PutAllArray(self, Count, ExpandedGeomBC, NodeID, layer, color, BCDefinitionID, bNonZeroBC, dof, NonZeroValues) -> Any:
         """
         **Description:**
             This method creates multiple nodal constraints.
@@ -19119,7 +19104,7 @@ class BCSet:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -19148,7 +19133,7 @@ class BCSet:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -19583,7 +19568,7 @@ class Contact:
         """
         ...
 
-    def BoundingBoxInCSys(self, nCSysID, box) -> Any:
+    def BoundingBoxInCSys(self, nCSysID) -> Any:
         """
         **Description:**
             This method returns the coordinates of a rectangular box that encloses a connection region, in coordinates of the selected coordinate system
@@ -19851,7 +19836,7 @@ class Contact:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -19880,7 +19865,7 @@ class Contact:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -20375,7 +20360,7 @@ class ConnectionRegion:
         """
         ...
 
-    def BoundingBoxInCSys(self, nCSysID, box) -> Any:
+    def BoundingBoxInCSys(self, nCSysID) -> Any:
         """
         **Description:**
             This method returns the coordinates of a rectangular box that encloses a connection region, in coordinates of the selected coordinate system
@@ -20643,7 +20628,7 @@ class ConnectionRegion:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -20672,7 +20657,7 @@ class ConnectionRegion:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -21238,7 +21223,7 @@ class CSys:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -21267,7 +21252,7 @@ class CSys:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -21711,7 +21696,7 @@ class Curve:
         """
         ...
 
-    def BoundingBoxInCSys(self, nCSysID, box) -> Any:
+    def BoundingBoxInCSys(self, nCSysID) -> Any:
         """
         **Description:**
             This method returns the coordinates of a rectangular box the encloses this geometry, in coordinates of the selected coordinate system.
@@ -21745,7 +21730,7 @@ class Curve:
         """
         ...
 
-    def ClosestPointToCurve(self, nCurveID, pdX, pdY, pdZ, pdDistance, pdAngleOfTangents) -> Any:
+    def ClosestPointToCurve(self, nCurveID) -> Any:
         """
         **Description:**
             Finds the closest point on the curve to a selected curve
@@ -21775,7 +21760,7 @@ class Curve:
         """
         ...
 
-    def ClosestPointToSurface(self, nSurfaceID, pdX, pdY, pdZ, pdDistance, pdAngleOfTangentToSurfNormal) -> Any:
+    def ClosestPointToSurface(self, nSurfaceID) -> Any:
         """
         **Description:**
             Finds the closest point on the curve to a selected surface
@@ -21836,7 +21821,7 @@ class Curve:
         """
         ...
 
-    def CommonPoint(self, nOtherCurveID, nCommonPoint, bMultipleCommon) -> Any:
+    def CommonPoint(self, nOtherCurveID) -> Any:
         """
         **Description:**
             The method returns the ID of a common point found between the curve currently loaded in the object and another specified curve. In addition, it can also be used to determine if multiple points are common between the curves.
@@ -22141,7 +22126,7 @@ class Curve:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -22170,7 +22155,7 @@ class Curve:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -22314,7 +22299,7 @@ class Curve:
         """
         ...
 
-    def IsSmoothEdge(self, dAngle, nConvexityType) -> Any:
+    def IsSmoothEdge(self, dAngle) -> Any:
         """
         **Description:**
             Determines whether the adjacent surfaces of a solid meet smoothly at this curve
@@ -22544,7 +22529,7 @@ class Curve:
         """
         ...
 
-    def Nodes(self, getBoundary, getInterior, numNodes, NodeID) -> Any:
+    def Nodes(self, getBoundary, getInterior) -> Any:
         """
         **Description:**
             This method returns the nodes that are attached to this curve
@@ -22608,7 +22593,7 @@ class Curve:
         """
         ...
 
-    def ParamOnCombinedCurve(self, s, curveID) -> Any:
+    def ParamOnCombinedCurve(self, s) -> Any:
         """
         **Description:**
             This method returns the ID of the underlying curve of a composite curve at a specified parametric location.
@@ -22626,7 +22611,7 @@ class Curve:
         """
         ...
 
-    def ParamToXYZ(self, s, xyz) -> Any:
+    def ParamToXYZ(self, s) -> Any:
         """
         **Description:**
             This method retrieves the coordinates along the curve of a specified parametric location.
@@ -22776,7 +22761,7 @@ class Curve:
         """
         ...
 
-    def Project(self, fromxyz, toxyz) -> Any:
+    def Project(self, fromxyz) -> Any:
         """
         **Description:**
             This method projects a location onto a curve (This method is OBSOLETE, use ProjectToClosest method for access to all functionality of the Modify, Project... commands)
@@ -23053,7 +23038,7 @@ class Curve:
         """
         ...
 
-    def Surfaces(self, nCombinedMode, numSurfaces, surfaceID) -> Any:
+    def Surfaces(self, nCombinedMode) -> Any:
         """
         **Description:**
             Returns an array of surfaces that reference this curve
@@ -23094,7 +23079,7 @@ class Curve:
         """
         ...
 
-    def Tangent(self, outward, fromxyz, Tangent) -> Any:
+    def Tangent(self, outward, fromxyz) -> Any:
         """
         **Description:**
             This method finds the tangent to a curve at a specified location.
@@ -23115,7 +23100,7 @@ class Curve:
         """
         ...
 
-    def TangentAtEnds(self, outward, pvEnd1Tan, pvEnd2Tan) -> Any:
+    def TangentAtEnds(self, outward) -> Any:
         """
         **Description:**
             Determines whether the surfaces bounded by this curve are tangent within a specified angle along the curve
@@ -23136,7 +23121,7 @@ class Curve:
         """
         ...
 
-    def XYZToParam(self, xyz, s) -> Any:
+    def XYZToParam(self, xyz) -> Any:
         """
         **Description:**
             This method retrieves the parametric location along a curve closest to the specified coordinates.
@@ -23188,7 +23173,7 @@ class Curve:
         """
         ...
 
-    def normal(self, xyz, vNormal) -> Any:
+    def normal(self, xyz) -> Any:
         """
         **Description:**
             Returns the average of the surface normals at a specified location along the curve
@@ -24408,7 +24393,7 @@ class Matl:
         """
         ...
 
-    def CopyArray(self, bUpdateReferences, bCopyToStartID, nCopyToStartID, numID, nOrigID, pnNewID) -> Any:
+    def CopyArray(self, bUpdateReferences, bCopyToStartID, nCopyToStartID, numID, nOrigID) -> Any:
         """
         **Description:**
             This method copies any number of materials and allows you to select a starting ID for the copies or provide all IDs for all copies. It also allows you to choose if the new material should replace the original material anywhere the original material was referenced (i.e., property n would now reference copied material instead of original material)
@@ -24570,7 +24555,7 @@ class Matl:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -24599,7 +24584,7 @@ class Matl:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -24625,7 +24610,7 @@ class Matl:
         """
         ...
 
-    def GetValueArray(self, numValue, nMatlID, nMatlIndex, dValue) -> Any:
+    def GetValueArray(self, numValue, nMatlID, nMatlIndex) -> Any:
         """
         **Description:**
             This method returns an array of material property values using any combination of material IDs and material array index values.
@@ -25027,8 +25012,7 @@ class Prop:
         """
         ...
 
-    def ComputeGeneralShape(self, surfaceID, vecDIR, sOrient, EvalMethod, shear_center_offset, Warping,
-                            stress_recovery) -> Any:
+    def ComputeGeneralShape(self, surfaceID, vecDIR, sOrient, EvalMethod, shear_center_offset, Warping, stress_recovery) -> Any:
         """
         **Description:**
             This method computes the properties for a general shape.
@@ -25048,8 +25032,7 @@ class Prop:
         """
         ...
 
-    def ComputeGeneralShape2(self, bAtEndAOrOverall, surfaceID, vecDIR, sOrient, EvalMethod, shear_center_offset,
-                             Warping, stress_recovery) -> Any:
+    def ComputeGeneralShape2(self, bAtEndAOrOverall, surfaceID, vecDIR, sOrient, EvalMethod, shear_center_offset, Warping, stress_recovery) -> Any:
         """
         **Description:**
             This method computes the properties for a general shape at either End A or End B of a beam.
@@ -25104,8 +25087,7 @@ class Prop:
         """
         ...
 
-    def ComputeStdShape(self, shapeID, dimensions, sOrient, EvalMethod, shear_center_offset, Warping,
-                        stress_recovery) -> Any:
+    def ComputeStdShape(self, shapeID, dimensions, sOrient, EvalMethod, shear_center_offset, Warping, stress_recovery) -> Any:
         """
         **Description:**
             This method computes the properties for a standard shape.
@@ -25134,8 +25116,7 @@ class Prop:
         """
         ...
 
-    def ComputeStdShape2(self, bAtEndAOrOverall, shapeID, dimensions, sOrient, EvalMethod, shear_center_offset, Warping,
-                         stress_recovery) -> Any:
+    def ComputeStdShape2(self, bAtEndAOrOverall, shapeID, dimensions, sOrient, EvalMethod, shear_center_offset, Warping, stress_recovery) -> Any:
         """
         **Description:**
             This method computes the properties for a standard shape at either End A or End B of a beam.
@@ -25170,7 +25151,7 @@ class Prop:
         """
         ...
 
-    def CopyArray(self, bUpdateReferences, bCopyToStartID, nCopyToStartID, numID, nOrigID, pnNewID) -> Any:
+    def CopyArray(self, bUpdateReferences, bCopyToStartID, nCopyToStartID, numID, nOrigID) -> Any:
         """
         **Description:**
             This function copies any number of properties and allows you to select a starting ID for the copies or provide all IDs for all copies. It also allows you to choose if the new property should replace the original property anywhere the original property was referenced (i.e., element n would now reference copied property instead of original property)
@@ -25338,7 +25319,7 @@ class Prop:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -25367,7 +25348,7 @@ class Prop:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -25393,7 +25374,7 @@ class Prop:
         """
         ...
 
-    def GetValueArray(self, numValue, nPropID, nPropIndex, dValue) -> Any:
+    def GetValueArray(self, numValue) -> Any:
         """
         **Description:**
             This function returns an array of property values using any combination of property IDs and property array index values.
@@ -25982,8 +25963,7 @@ class Elem:
         """
         ...
 
-    def GetAllArray(self, SetID, numElem, entID, propID, elemTYPE, topology, layer, color, formulation, orient, offset,
-                    release, orientSET, orientID, Nodes, connectTYPE, connectSEG) -> Any:
+    def GetAllArray(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of elements.
@@ -26046,8 +26026,7 @@ class Elem:
         """
         ...
 
-    def GetAllArray2(self, SetID, numElem, entID, Exist, propID, elemTYPE, topology, layer, color, formulation, orient,
-                     offset, release, orientSET, orientID, Nodes, connectTYPE, connectSEG) -> Any:
+    def GetAllArray2(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of elements, including if an element exists in database
@@ -26107,9 +26086,7 @@ class Elem:
         """
         ...
 
-    def GetAllArray3(self, SetID, numElem, entID, Exist, propID, elemTYPE, topology, layer, color, formulation, orient,
-                     offset, release, orientSET, orientID, Nodes, connectTYPE, connectSEG, MaterialOrientType,
-                     MaterialCSys, warpingID, SpringLocation) -> Any:
+    def GetAllArray3(self, SetID, numElem, entID, Exist, propID, elemTYPE, topology, layer, color, formulation, orient, offset, release, orientSET, orientID, Nodes, connectTYPE, connectSEG, MaterialOrientType, MaterialCSys, warpingID, SpringLocation) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of elements, including if an element exists in database
@@ -26119,7 +26096,7 @@ class Elem:
         """
         ...
 
-    def GetAnsysFormulationArray(self, SetID, numElem, entID, Exist, formulation) -> Any:
+    def GetAnsysFormulationArray(self, SetID) -> Any:
         """
         **Description:**
             Gets the ANSYS formulations of a given set of elements.
@@ -26183,7 +26160,7 @@ class Elem:
         """
         ...
 
-    def GetCentroidArray(self, SetID, numElem, entID, vCG) -> Any:
+    def GetCentroidArray(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of centroid values for a set of elements.
@@ -26207,7 +26184,7 @@ class Elem:
         """
         ...
 
-    def GetEdgeNodes(self, nEdge, n1, n2, nmid) -> Any:
+    def GetEdgeNodes(self, nEdge) -> Any:
         """
         **Description:**
             This method returns the nodes on the selected edge of the element.
@@ -26231,7 +26208,7 @@ class Elem:
         """
         ...
 
-    def GetFaceArea(self, nFace, dArea) -> Any:
+    def GetFaceArea(self, nFace) -> Any:
         """
         **Description:**
             This method returns the area of a selected element face.
@@ -26249,7 +26226,7 @@ class Elem:
         """
         ...
 
-    def GetFaceCentroid(self, nFace, cgXYZ) -> Any:
+    def GetFaceCentroid(self, nFace) -> Any:
         """
         **Description:**
             This method returns the centroid of a selected element face.
@@ -26267,7 +26244,7 @@ class Elem:
         """
         ...
 
-    def GetFaceNodes(self, nFace, Nodes) -> Any:
+    def GetFaceNodes(self, nFace) -> Any:
         """
         **Description:**
             This method returns the nodes which define the selected element face.
@@ -26285,7 +26262,7 @@ class Elem:
         """
         ...
 
-    def GetFaceNodes2(self, bCornerPressureOrder, nFace, Nodes) -> Any:
+    def GetFaceNodes2(self, bCornerPressureOrder, nFace) -> Any:
         """
         **Description:**
             Similar to GetFaceNodes, this method returns the nodes which define the selected element face, which can optionally be returned in the order used to apply pressure loads on element corners.
@@ -26306,7 +26283,7 @@ class Elem:
         """
         ...
 
-    def GetFaceNormal(self, nFace, normalXYZ) -> Any:
+    def GetFaceNormal(self, nFace) -> Any:
         """
         **Description:**
             This method returns the normal vector of a selected element face.
@@ -26324,8 +26301,7 @@ class Elem:
         """
         ...
 
-    def GetGeomPropArray(self, SetID, numElem, entID, propID, matlID, elemTYPE, topology, vCG, Length, Area,
-                         volume) -> Any:
+    def GetGeomPropArray(self, SetID) -> Any:
         """
         **Description:**
             This method returns various geometric properties for a selected set of elements.
@@ -26457,7 +26433,7 @@ class Elem:
         """
         ...
 
-    def GetSingleFaceInfoArray(self, SetID, nFace, numElem, entID, cgXYZ, normalXYZ, dArea) -> Any:
+    def GetSingleFaceInfoArray(self, SetID, nFace) -> Any:
         """
         **Description:**
             This method returns arrays of centroid, normal, and area values of an identical element face
@@ -26527,7 +26503,7 @@ class Elem:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -26556,7 +26532,7 @@ class Elem:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -26839,8 +26815,7 @@ class Elem:
         """
         ...
 
-    def PutAllArray(self, numElem, entID, propID, elemTYPE, topology, layer, color, formulation, orient, offset,
-                    release, orientSET, orientID, Nodes, connectTYPE, connectSEG) -> Any:
+    def PutAllArray(self, numElem, entID, propID, elemTYPE, topology, layer, color, formulation, orient, offset, release, orientSET, orientID, Nodes, connectTYPE, connectSEG) -> Any:
         """
         **Description:**
             This method stores/creates multiple elements based on the values passed in various arrays.
@@ -27358,7 +27333,7 @@ class Function:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -27387,7 +27362,7 @@ class Function:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -27413,7 +27388,7 @@ class Function:
         """
         ...
 
-    def GetValue(self, nMethod, x, y) -> Any:
+    def GetValue(self, x) -> Any:
         """
         **Description:**
             This method evaluates the function to find a y value given an x value.
@@ -27882,7 +27857,7 @@ class group:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -27911,7 +27886,7 @@ class group:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -28228,7 +28203,7 @@ class group:
         """
         ...
 
-    def RangeGetAll(self, rangeType, rangeCount, startID, stopID, increment, inClude) -> Any:
+    def RangeGetAll(self, rangeType) -> Any:
         """
         **Description:**
             This method returns all of the ranges of a specific type in the form of arrays.
@@ -28258,7 +28233,7 @@ class group:
         """
         ...
 
-    def RangeNext(self, rangeType, startID, stopID, increment, inClude) -> Any:
+    def RangeNext(self, rangeType) -> Any:
         """
         **Description:**
             This method returns the values from the next range of a specific type.
@@ -28708,7 +28683,7 @@ class layer:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -28737,7 +28712,7 @@ class layer:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -28910,7 +28885,7 @@ class layer:
         """
         ...
 
-    def NextLayerInfo(self, nDesiredLayerID, nEntitySetID, nDataType, nInSetID, nOnType) -> Any:
+    def NextLayerInfo(self, nDesiredLayerID, nEntitySetID) -> Any:
         """
         **Description:**
             This method fills a Set Object with the next type of entity in the data structure of the desired layer.
@@ -29235,8 +29210,7 @@ class LoadETemp:
         """
         ...
 
-    def GetAllArray(self, Count, ExpandedGeomLoad, elemID, layer, color, LoadDefinitionID, Temperature, TempGradient,
-                    FunctionID) -> Any:
+    def GetAllArray(self, Count, ExpandedGeomLoad, elemID, layer, color, LoadDefinitionID, Temperature, TempGradient, FunctionID) -> Any:
         """
         **Description:**
             This method finds all nodal temperatures
@@ -29279,7 +29253,7 @@ class LoadETemp:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -29308,7 +29282,7 @@ class LoadETemp:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -29492,8 +29466,7 @@ class LoadETemp:
         """
         ...
 
-    def PutAllArray(self, Count, ExpandedGeomLoad, elemID, layer, color, LoadDefinitionID, Temperature, TempGradient,
-                    FunctionID) -> Any:
+    def PutAllArray(self, Count, ExpandedGeomLoad, elemID, layer, color, LoadDefinitionID, Temperature, TempGradient, FunctionID) -> Any:
         """
         **Description:**
             This method creates multiple elemental temperatures
@@ -29823,7 +29796,7 @@ class LoadGeom:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -29852,7 +29825,7 @@ class LoadGeom:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -30483,8 +30456,7 @@ class LoadMesh:
         """
         ...
 
-    def GetAllArray(self, Count, ExpandedGeomLoad, loadType, loadSubType, NodeElemID, layer, color, LoadDefinitionID,
-                    nCSysID, DOFFace, Values, FunctionID, NodeElemAddlID, flag, direction) -> Any:
+    def GetAllArray(self, Count, ExpandedGeomLoad, loadType, loadSubType, NodeElemID, layer, color, LoadDefinitionID, nCSysID, DOFFace, Values, FunctionID, NodeElemAddlID, flag, direction) -> Any:
         """
         **Description:**
             This method fills information about all of the LoadMesh objects in a Load Set.
@@ -30562,7 +30534,7 @@ class LoadMesh:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -30591,7 +30563,7 @@ class LoadMesh:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -30795,9 +30767,7 @@ class LoadMesh:
         """
         ...
 
-    def PutAllArray(self, bDeleteAllExistingLoads, Count, ExpandedGeomLoad, loadType, loadSubType, NodeElemID, layer,
-                    color, LoadDefinitionID, nCSysID, DOFFace, Values, FunctionID, NodeElemAddlID, flag,
-                    direction) -> Any:
+    def PutAllArray(self, bDeleteAllExistingLoads, Count, ExpandedGeomLoad, loadType, loadSubType, NodeElemID, layer, color, LoadDefinitionID, nCSysID, DOFFace, Values, FunctionID, NodeElemAddlID, flag, direction) -> Any:
         """
         **Description:**
             This method creates multiple nodal or elemental loads
@@ -31151,8 +31121,7 @@ class LoadNTemp:
         """
         ...
 
-    def GetAllArray(self, Count, ExpandedGeomLoad, NodeID, layer, color, LoadDefinitionID, Temperature,
-                    FunctionID) -> Any:
+    def GetAllArray(self, Count, ExpandedGeomLoad, NodeID, layer, color, LoadDefinitionID, Temperature, FunctionID) -> Any:
         """
         **Description:**
             This method finds all nodal temperatures
@@ -31195,7 +31164,7 @@ class LoadNTemp:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -31224,7 +31193,7 @@ class LoadNTemp:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -31408,8 +31377,7 @@ class LoadNTemp:
         """
         ...
 
-    def PutAllArray(self, Count, ExpandedGeomLoad, NodeID, layer, color, LoadDefinitionID, Temperature,
-                    FunctionID) -> Any:
+    def PutAllArray(self, Count, ExpandedGeomLoad, NodeID, layer, color, LoadDefinitionID, Temperature, FunctionID) -> Any:
         """
         **Description:**
             This method creates multiple nodal temperatures
@@ -31858,7 +31826,7 @@ class LoadSet:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -31887,7 +31855,7 @@ class LoadSet:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -32458,7 +32426,7 @@ class Optim:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -32487,7 +32455,7 @@ class Optim:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -32875,7 +32843,7 @@ class OutputSet:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -32904,7 +32872,7 @@ class OutputSet:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -33243,7 +33211,7 @@ class Point:
         """
         ...
 
-    def Curves(self, nCombinedMode, numCurves, curveID) -> Any:
+    def Curves(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns the curves that are attached to this point
@@ -33378,7 +33346,7 @@ class Point:
         """
         ...
 
-    def GetAllArray(self, SetID, numPoint, entID, Exist, xyz, layer, color, ptType, defCSys) -> Any:
+    def GetAllArray(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of values for a set of points, including if a point exists in the database
@@ -33431,7 +33399,7 @@ class Point:
         """
         ...
 
-    def GetCoordArray(self, SetID, numPoint, entID, Exist, xyz) -> Any:
+    def GetCoordArray(self, SetID) -> Any:
         """
         **Description:**
             This method retrieves arrays of coordinates for a set of Points
@@ -33472,7 +33440,7 @@ class Point:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -33501,7 +33469,7 @@ class Point:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -33983,7 +33951,7 @@ class Report:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -34012,7 +33980,7 @@ class Report:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -34295,7 +34263,7 @@ class Solid:
         """
         ...
 
-    def Curves(self, nCombinedMode, numCurves, curveID) -> Any:
+    def Curves(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the curves used to define this solid/volume.
@@ -34540,7 +34508,7 @@ class Solid:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -34569,7 +34537,7 @@ class Solid:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -34786,7 +34754,7 @@ class Solid:
         """
         ...
 
-    def Nodes(self, getBoundary, getInterior, numNodes, NodeID) -> Any:
+    def Nodes(self, getBoundary, getInterior) -> Any:
         """
         **Description:**
             This method returns the nodes that are attached to this solid
@@ -35029,7 +34997,7 @@ class Solid:
         """
         ...
 
-    def Surfaces(self, nCombinedMode, numSurfs, surfaceID) -> Any:
+    def Surfaces(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the surfaces used to define this solid/volume.
@@ -35184,7 +35152,7 @@ class Surface:
         """
         ...
 
-    def AdjacentSurfaces(self, nCombinedMode, numSurfaces, surfaceID) -> Any:
+    def AdjacentSurfaces(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the surfaces that are adjacent to the current surface.
@@ -35225,7 +35193,7 @@ class Surface:
         """
         ...
 
-    def AngleAtPoint(self, nPtID, dAngle, vBisector, vNormal) -> Any:
+    def AngleAtPoint(self, nPtID) -> Any:
         """
         **Description:**
             This method retrieves the internal angle, the surface normal vector, and a surface tangent vector that bisects the angle at a point on a surface boundary
@@ -35337,7 +35305,7 @@ class Surface:
         """
         ...
 
-    def BoundingBoxInCSys(self, nCSysID, box) -> Any:
+    def BoundingBoxInCSys(self, nCSysID) -> Any:
         """
         **Description:**
             This method returns the coordinates of a rectangular box the encloses this geometry, in coordinates of the selected coordinate system.
@@ -35458,7 +35426,7 @@ class Surface:
         """
         ...
 
-    def CurveLoops(self, nCombinedMode, numLoops, numCurves, curveID) -> Any:
+    def CurveLoops(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the curves used to define this surface. Unlike Curves() this method returns the curves in their order around each surface loop.
@@ -35482,7 +35450,7 @@ class Surface:
         """
         ...
 
-    def Curves(self, nCombinedMode, numCurves, curveID) -> Any:
+    def Curves(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the curves used to define this surface.
@@ -35523,7 +35491,7 @@ class Surface:
         """
         ...
 
-    def CurvesAtPoint(self, nPtID, PrevCurveID, NextCurveID) -> Any:
+    def CurvesAtPoint(self, nPtID) -> Any:
         """
         **Description:**
             This method retrieves the curve before and after a specified point on a surface boundary
@@ -35612,7 +35580,7 @@ class Surface:
         """
         ...
 
-    def ElementFaces(self, getPlaneElem, getSolidElem, requireElemAttach, numFaces, elemID, faceID) -> Any:
+    def ElementFaces(self, getPlaneElem, getSolidElem, requireElemAttach) -> Any:
         """
         **Description:**
             This method returns the element faces that are attached to this surface
@@ -35758,7 +35726,7 @@ class Surface:
         """
         ...
 
-    def FindMappedMeshingCorners(self, nNumDesired, pnNumFound, pnCornerList) -> Any:
+    def FindMappedMeshingCorners(self, nNumDesired) -> Any:
         """
         **Description:**
             This method returns a list of corner points for used to specify a mapped meshing approach.
@@ -35828,7 +35796,7 @@ class Surface:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -35857,7 +35825,7 @@ class Surface:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -35993,8 +35961,7 @@ class Surface:
         """
         ...
 
-    def IsMappable(self, bForceBlends, dMaxBlendRadius, dMergeAngle, pnNumEdges, pnCornerPoints, pdEdgeLength,
-                   pnNumEdgeCurves, pnEdgeCurves) -> Any:
+    def IsMappable(self, dMaxBlendRadius, dMergeAngle) -> Any:
         """
         **Description:**
             This function attempts to determine if a surface is appropriate for mapped meshing. If so, it provides corners and edges which will be used to apply a mapped mesh.
@@ -36088,7 +36055,7 @@ class Surface:
         """
         ...
 
-    def MaxNormalDeviation(self, dLimit, dAngle) -> Any:
+    def MaxNormalDeviation(self, dLimit) -> Any:
         """
         **Description:**
             This method the maximum angle between the normal vectors on this surface
@@ -36222,7 +36189,7 @@ class Surface:
         """
         ...
 
-    def Nodes(self, getBoundary, getInterior, numNodes, NodeID) -> Any:
+    def Nodes(self, getBoundary, getInterior) -> Any:
         """
         **Description:**
             This method returns the nodes that are attached to this surface
@@ -36269,7 +36236,7 @@ class Surface:
         """
         ...
 
-    def NormalAtXYZ(self, nLocations, xyz, normal) -> Any:
+    def NormalAtXYZ(self, nLocations, xyz) -> Any:
         """
         **Description:**
             This method finds a unit vector in the direction of the surface normal at one or more locations.
@@ -36304,7 +36271,7 @@ class Surface:
         """
         ...
 
-    def ParamToXYZ(self, u, v, xyz) -> Any:
+    def ParamToXYZ(self, u, v) -> Any:
         """
         **Description:**
             This method converts a parametric location (u,v) to a coordinate location (xyz).
@@ -36355,7 +36322,7 @@ class Surface:
         """
         ...
 
-    def PointLoops(self, nCombinedMode, numLoops, numPoints, pointID) -> Any:
+    def PointLoops(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns the number of loops on a surface along with the IDs of the points used for each loop.
@@ -36379,7 +36346,7 @@ class Surface:
         """
         ...
 
-    def Points(self, nCombinedMode, numPoints, pointID) -> Any:
+    def Points(self, nCombinedMode) -> Any:
         """
         **Description:**
             This method returns a list of all of the points referenced by the surface.
@@ -36484,7 +36451,7 @@ class Surface:
         """
         ...
 
-    def ProjectOnto(self, initial, tolerance, projection) -> Any:
+    def ProjectOnto(self, initial, tolerance) -> Any:
         """
         **Description:**
             This method projects a location to the closest location that lies on a surface.
@@ -36543,7 +36510,7 @@ class Surface:
         """
         ...
 
-    def RationalParamToXYZ(self, u, v, xyz) -> Any:
+    def RationalParamToXYZ(self, u, v) -> Any:
         """
         **Description:**
             This method converts a parametric location (u,v) to a coordinate location (xyz) using rational uv space.
@@ -36727,7 +36694,7 @@ class Surface:
         """
         ...
 
-    def Tangents(self, u, v, stan, ttan) -> Any:
+    def Tangents(self, u, v, v) -> Any:
         """
         **Description:**
             This method finds unit vectors in the directions of the tangents to the surface at a selected location.
@@ -36770,7 +36737,7 @@ class Surface:
         """
         ...
 
-    def XYZToParam(self, xyz, u, v) -> Any:
+    def XYZToParam(self, xyz) -> Any:
         """
         **Description:**
             This method converts a coordinate location (xyz) to a parametric location (u,v).
@@ -36811,7 +36778,7 @@ class Surface:
         """
         ...
 
-    def normal(self, u, v, normal) -> Any:
+    def normal(self, u, v) -> Any:
         """
         **Description:**
             This method finds a unit vector in the direction of the surface normal at a selected location.
@@ -36946,7 +36913,7 @@ class TmgBC:
         """
         ...
 
-    def GetAll(self, entID, i, r, c) -> Any:
+    def GetAll(self, entID) -> Any:
         """
         **Description:**
             This method is obsolete, therefore, GetAll2 should be used instead. This method retrieves an entity with the specified ID.
@@ -36967,7 +36934,7 @@ class TmgBC:
         """
         ...
 
-    def GetAll2(self, entID, i, r, b, c) -> Any:
+    def GetAll2(self, entID) -> Any:
         """
         **Description:**
             This method retrieves an entity with the specified ID.
@@ -37005,7 +36972,7 @@ class TmgBC:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -37034,7 +37001,7 @@ class TmgBC:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -37475,7 +37442,7 @@ class TmgCtl:
         """
         ...
 
-    def GetAll(self, entID, i, r, b, c) -> Any:
+    def GetAll(self, entID) -> Any:
         """
         **Description:**
             This method is obsolete, therefore, GetAll2 should be used instead. This method retrieves an entity with the specified ID.
@@ -37499,7 +37466,7 @@ class TmgCtl:
         """
         ...
 
-    def GetAll2(self, entID, i, r, b, c) -> Any:
+    def GetAll2(self, entID) -> Any:
         """
         **Description:**
             This method retrieves an entity with the specified ID.
@@ -37537,7 +37504,7 @@ class TmgCtl:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -37566,7 +37533,7 @@ class TmgCtl:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38034,7 +38001,7 @@ class TmgInt:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38063,7 +38030,7 @@ class TmgInt:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38440,7 +38407,7 @@ class TmgOpt:
         """
         ...
 
-    def GetAll(self, entID, i, r, c) -> Any:
+    def GetAll(self, entID) -> Any:
         """
         **Description:**
             This method retrieves an entity with the specified ID.
@@ -38475,7 +38442,7 @@ class TmgOpt:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38504,7 +38471,7 @@ class TmgOpt:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38910,7 +38877,7 @@ class TmgReal:
         """
         ...
 
-    def GetAll(self, entID, i, r) -> Any:
+    def GetAll(self, entID) -> Any:
         """
         **Description:**
             This method retrieves an entity with the specified ID.
@@ -38942,7 +38909,7 @@ class TmgReal:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -38971,7 +38938,7 @@ class TmgReal:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -39422,7 +39389,7 @@ class Var:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -39451,7 +39418,7 @@ class Var:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -40444,7 +40411,7 @@ class View:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -40473,7 +40440,7 @@ class View:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -41601,7 +41568,7 @@ class ViewOrient:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -41630,7 +41597,7 @@ class ViewOrient:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -42022,7 +41989,7 @@ class ViewOrient:
         """
         ...
 
-    def Spin(self, nFrames, dX, dY, dZ, dVX, dVY, dVZ, pdFPS) -> Any:
+    def Spin(self, nFrames, dX, dY, dZ, dVX, dVY, dVZ) -> Any:
         """
         **Description:**
             This function measures the speed of dynamic rotation as well as spins the active model.
@@ -42279,7 +42246,7 @@ class text:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -42308,7 +42275,7 @@ class text:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -42737,7 +42704,7 @@ class ConnectionProp:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -42766,7 +42733,7 @@ class ConnectionProp:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -43095,7 +43062,7 @@ class Connection:
         """
         ...
 
-    def BoundingBoxInCSys(self, nCSysID, box) -> Any:
+    def BoundingBoxInCSys(self, nCSysID) -> Any:
         """
         **Description:**
             This method returns the coordinates of a rectangular box that encloses a connector, in coordinates of the selected coordinate system
@@ -43311,7 +43278,7 @@ class Connection:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -43340,7 +43307,7 @@ class Connection:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -43855,7 +43822,7 @@ class Selector:
         """
         ...
 
-    def Count(self, entityTYPE, nSelected) -> Any:
+    def Count(self, entityTYPE) -> Any:
         """
         **Description:**
             This method returns the number of entities of a given type that are currently selected
@@ -44192,7 +44159,7 @@ class LoadDefinition:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -44221,7 +44188,7 @@ class LoadDefinition:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -44657,7 +44624,7 @@ class BCDefinition:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -44686,7 +44653,7 @@ class BCDefinition:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -45109,7 +45076,7 @@ class GFXPoint:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -45138,7 +45105,7 @@ class GFXPoint:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -45600,7 +45567,7 @@ class GFXLine:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -45629,7 +45596,7 @@ class GFXLine:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -46112,7 +46079,7 @@ class GFXArrow:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -46141,7 +46108,7 @@ class GFXArrow:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -46638,7 +46605,7 @@ class GFXTria3:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -46667,7 +46634,7 @@ class GFXTria3:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -47193,7 +47160,7 @@ class GFXQuad4:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -47222,7 +47189,7 @@ class GFXQuad4:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -47733,7 +47700,7 @@ class globalply:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -47762,7 +47729,7 @@ class globalply:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -48131,8 +48098,7 @@ class LoadBolt:
         """
         ...
 
-    def GetAllArray(self, Count, BoltRegionID, layer, color, LoadDefinitionID, BoltType, BoltPreload,
-                    BoltLength) -> Any:
+    def GetAllArray(self, Count, BoltRegionID, layer, color, LoadDefinitionID, BoltType, BoltPreload, BoltLength) -> Any:
         """
         **Description:**
             This method returns information on multiple Bolt Preloads
@@ -48175,7 +48141,7 @@ class LoadBolt:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -48204,7 +48170,7 @@ class LoadBolt:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -48388,8 +48354,7 @@ class LoadBolt:
         """
         ...
 
-    def PutAllArray(self, Count, BoltRegionID, layer, color, LoadDefinitionID, BoltType, BoltPreload,
-                    BoltLength) -> Any:
+    def PutAllArray(self, Count, BoltRegionID, layer, color, LoadDefinitionID, BoltType, BoltPreload, BoltLength) -> Any:
         """
         **Description:**
             This method creates multiple Bolt Preloads
@@ -48580,7 +48545,7 @@ class MapOutput:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -48609,7 +48574,7 @@ class MapOutput:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -48645,8 +48610,7 @@ class MapOutput:
         """
         ...
 
-    def MapFromModelToLocationV2(self, outModelID, nGroup, nOutSet, nOutVect, vLocationX, vLocationY, vLocationZ,
-                                 vLocationP, vLoadX, vLoadY, vLoadZ) -> Any:
+    def MapFromModelToLocationV2(self, outModelID, nGroup, nOutSet, nOutVect, vLocationX, vLocationY, vLocationZ) -> Any:
         """
         **Description:**
             This method replaces MapFromModelToLocation. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above". This method maps output data from a source model to any locations in space.
@@ -48724,7 +48688,7 @@ class MapOutput:
         """
         ...
 
-    def MapOutputDataToLocation(self, Count, vXYx, vValXYZ, qValid) -> Any:
+    def MapOutputDataToLocation(self, Count, vXYx) -> Any:
         """
         **Description:**
             This method maps values to locations specified in vXYZ using local Data Surface retrieved with GetOutputDataSurface
@@ -48958,7 +48922,7 @@ class DataSurf:
         """
         ...
 
-    def GetCellValue(self, nPage, nRow, nCol, nComponent, dValue) -> Any:
+    def GetCellValue(self, nPage, nRow, nCol, nComponent) -> Any:
         """
         **Description:**
             This method retrieves the value of a cell.
@@ -49002,7 +48966,7 @@ class DataSurf:
         """
         ...
 
-    def GetColumnValue(self, nPage, nCol, dValue) -> Any:
+    def GetColumnValue(self, nPage, nCol) -> Any:
         """
         **Description:**
             This method retrieves the value of a column.
@@ -49023,7 +48987,7 @@ class DataSurf:
         """
         ...
 
-    def GetData(self, geomID, feaID, Coord, sVal, cgXYZ) -> Any:
+    def GetData(self, geomID, feaID, Coord, Coord) -> Any:
         """
         **Description:**
             This method gets the computed Data Surface value at the independent variable.
@@ -49056,7 +49020,7 @@ class DataSurf:
         """
         ...
 
-    def GetDataArray(self, nCount, vgeomID, vfeaID, Coord, sVal, cgXYZ) -> Any:
+    def GetDataArray(self, nCount, Coord) -> Any:
         """
         **Description:**
             This method is similar to GetData(), but allows for retrieval of data at multiple geometry/fea entities/coordinates.
@@ -49138,7 +49102,7 @@ class DataSurf:
         """
         ...
 
-    def GetPageInfo(self, nPage, nRow, nCol) -> Any:
+    def GetPageInfo(self, nPage) -> Any:
         """
         **Description:**
             This method retrieves page information.
@@ -49159,7 +49123,7 @@ class DataSurf:
         """
         ...
 
-    def GetPageTitle(self, nPage, sTitle) -> Any:
+    def GetPageTitle(self, nPage) -> Any:
         """
         **Description:**
             This method retrieves the title of a page.
@@ -49177,7 +49141,7 @@ class DataSurf:
         """
         ...
 
-    def GetPageValue(self, nPage, dValue) -> Any:
+    def GetPageValue(self, nPage) -> Any:
         """
         **Description:**
             This method retrieves the value of a page.
@@ -49195,7 +49159,7 @@ class DataSurf:
         """
         ...
 
-    def GetRowTitle(self, nPage, nCol, sTitle) -> Any:
+    def GetRowTitle(self, nPage, nCol) -> Any:
         """
         **Description:**
             This method retrieves the title of a row.
@@ -49216,7 +49180,7 @@ class DataSurf:
         """
         ...
 
-    def GetRowValue(self, nPage, nCol, dValue) -> Any:
+    def GetRowValue(self, nPage, nCol) -> Any:
         """
         **Description:**
             This method retrieves the title of a row.
@@ -49237,7 +49201,7 @@ class DataSurf:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -49266,7 +49230,7 @@ class DataSurf:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -49990,8 +49954,7 @@ class DataTable:
     VisibleRowsOnly: Any
     type: Any
 
-    def AddColumn(self, bClear, bHidden, entityTYPE, entitySetID, colTitle, ColType, nRows, ID, value,
-                  nNewColumnID) -> Any:
+    def AddColumn(self, bClear, bHidden, entityTYPE, entitySetID, colTitle, ColType, nRows, ID, value) -> Any:
         """
         **Description:**
             This method creates a new column in the Data Table and adds data to it.
@@ -50033,7 +49996,7 @@ class DataTable:
         """
         ...
 
-    def AddDataColumn(self, bHidden, colTitle, ColType, nRows, Rows, value, nNewColumnID) -> Any:
+    def AddDataColumn(self, bHidden, colTitle, ColType, nRows, Rows) -> Any:
         """
         **Description:**
             This method creates a new column and updates values in it by row index
@@ -50146,7 +50109,7 @@ class DataTable:
         """
         ...
 
-    def AddOutputV2(self, nOutputSet, nOutputVector, nNewColumnID) -> Any:
+    def AddOutputV2(self, nOutputSet, nOutputVector) -> Any:
         """
         **Description:**
             This method adds data from an Output Vector to a column in the Data Table. This method replaces AddOutput. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -50336,7 +50299,7 @@ class DataTable:
         """
         ...
 
-    def GetColumnText(self, nColumn, numRowsOrAll, Rows, numData, ColumnText) -> Any:
+    def GetColumnText(self, nColumn, numRowsOrAll, Rows) -> Any:
         """
         **Description:**
             This method returns data from selected rows in a column
@@ -50363,7 +50326,7 @@ class DataTable:
         """
         ...
 
-    def GetColumnTitle(self, nColumn, colTitle) -> Any:
+    def GetColumnTitle(self, nColumn) -> Any:
         """
         **Description:**
             Returns the title of a column in the table.
@@ -50381,7 +50344,7 @@ class DataTable:
         """
         ...
 
-    def GetColumnValue(self, nColumn, numRowsOrAll, Rows, numData, ColumnData) -> Any:
+    def GetColumnValue(self, nColumn, numRowsOrAll, Rows) -> Any:
         """
         **Description:**
             This method returns data from selected rows in a column
@@ -50408,7 +50371,7 @@ class DataTable:
         """
         ...
 
-    def GetColumnVisible(self, nColumn, bVisible) -> Any:
+    def GetColumnVisible(self, nColumn) -> Any:
         """
         **Description:**
             Returns the visibility of a column in the table.
@@ -50426,7 +50389,7 @@ class DataTable:
         """
         ...
 
-    def GetColumnWidth(self, nColumn, nWidth) -> Any:
+    def GetColumnWidth(self, nColumn) -> Any:
         """
         **Description:**
             Returns the width of a column in the table.
@@ -50484,7 +50447,7 @@ class DataTable:
         """
         ...
 
-    def GetRowValues(self, numRowsOrAll, Rows, numData, RowData) -> Any:
+    def GetRowValues(self, Rows, Rows) -> Any:
         """
         **Description:**
             This method returns data from all columns for selected rows
@@ -50508,7 +50471,7 @@ class DataTable:
         """
         ...
 
-    def GetRowVisible(self, nRow, bVisible) -> Any:
+    def GetRowVisible(self, nRow) -> Any:
         """
         **Description:**
             Returns the visibility of a row in the table.
@@ -51001,7 +50964,7 @@ class Reference:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -51030,7 +50993,7 @@ class Reference:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -51467,7 +51430,7 @@ class AeroPanel:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -51496,7 +51459,7 @@ class AeroPanel:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -52012,7 +51975,7 @@ class AeroProp:
         """
         ...
 
-    def GetRadiList(self, nListID, nCount, nVal) -> Any:
+    def GetRadiList(self, nListID) -> Any:
         """
         **Description:**
             This method retrieves Radi arrays for the Aero Property
@@ -52043,7 +52006,7 @@ class AeroProp:
         """
         ...
 
-    def GetThetaList(self, nListID, nCount, nVal) -> Any:
+    def GetThetaList(self, nListID) -> Any:
         """
         **Description:**
             This method retrieves theta arrays for the Aero Property
@@ -52064,7 +52027,7 @@ class AeroProp:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -52093,7 +52056,7 @@ class AeroProp:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -52548,7 +52511,7 @@ class AeroSpline:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -52577,7 +52540,7 @@ class AeroSpline:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -52993,7 +52956,7 @@ class AeroSurf:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -53022,7 +52985,7 @@ class AeroSurf:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -53330,7 +53293,7 @@ class Freebody:
     y: Any
     z: Any
 
-    def CalculateNodalCenter(self, bUpdate, xyz) -> Any:
+    def CalculateNodalCenter(self, bUpdate) -> Any:
         """
         **Description:**
             Calculates the center of the nodes stored in the freebody object and optionally updates the summation location.
@@ -53362,7 +53325,7 @@ class Freebody:
         """
         ...
 
-    def CalculateSummation2(self, nSetID, bUseFBCSys, nNumSets, outsetIDs, calculations) -> Any:
+    def CalculateSummation2(self, nSetID, bUseFBCSys) -> Any:
         """
         **Description:**
             Calculates the total summation vector based on the settings in the freebody for one or more output sets in either the freebody coordinate system, or the global coordinate system
@@ -53538,7 +53501,7 @@ class Freebody:
         """
         ...
 
-    def GetNodalSums(self, nSetID, nNumNodes, nNodeIDs, dVals) -> Any:
+    def GetNodalSums(self, nSetID) -> Any:
         """
         **Description:**
             This method Returns values for summations calculated at nodes for all freebody nodes for one or more output sets.
@@ -53569,7 +53532,7 @@ class Freebody:
         """
         ...
 
-    def GetSectionCutSums(self, nOutSetSetID, nCuts, pnNumCuts, pCutLocs, pSumLocs, pSums) -> Any:
+    def GetSectionCutSums(self, nOutSetSetID, nCuts) -> Any:
         """
         **Description:**
             Calculates the total summation for a freebody in section cut mode across one or more output sets
@@ -53607,7 +53570,7 @@ class Freebody:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -53636,7 +53599,7 @@ class Freebody:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -53925,7 +53888,7 @@ class Freebody:
         """
         ...
 
-    def SetLocationFromCoord(self, x, y, z, pLoc) -> Any:
+    def SetLocationFromCoord(self, x, y, z) -> Any:
         """
         **Description:**
             Set the section cut location by specifying x, y, z coordinates
@@ -54229,7 +54192,7 @@ class SEReference:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -54258,7 +54221,7 @@ class SEReference:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -54888,7 +54851,7 @@ class Chart:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -54917,7 +54880,7 @@ class Chart:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -55598,7 +55561,7 @@ class ChartSeries:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -55627,7 +55590,7 @@ class ChartSeries:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -56053,7 +56016,7 @@ class TableData:
         """
         ...
 
-    def GetCellDouble(self, nRow, nCol, dValue) -> Any:
+    def GetCellDouble(self, nRow, nCol) -> Any:
         """
         **Description:**
             Retrieve a Real, Double-precision value from a specified cell
@@ -56071,7 +56034,7 @@ class TableData:
         """
         ...
 
-    def GetCellEntity(self, nRow, nCol, ntype, nID) -> Any:
+    def GetCellEntity(self, nRow, nCol) -> Any:
         """
         **Description:**
             Retrieve an Entity from a specified cell
@@ -56095,7 +56058,7 @@ class TableData:
         """
         ...
 
-    def GetCellInteger(self, nRow, nCol, nValue) -> Any:
+    def GetCellInteger(self, nRow, nCol) -> Any:
         """
         **Description:**
             Retrieve an integer value from a specified cell
@@ -56115,7 +56078,7 @@ class TableData:
         """
         ...
 
-    def GetCellText(self, nRow, nCol, sText) -> Any:
+    def GetCellText(self, nRow, nCol) -> Any:
         """
         **Description:**
             Retrieve a Text String value from a specified cell
@@ -56183,7 +56146,7 @@ class TableData:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -56212,7 +56175,7 @@ class TableData:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -56947,8 +56910,7 @@ class Interpolate:
         """
         ...
 
-    def SetOutputMode(self, nConvertMode, bAverageCorners, bBreakProp, bBreakMatl, bBreakLayer, bBreakColor, bBreakGeom,
-                      dBreakAngle) -> Any:
+    def SetOutputMode(self, nConvertMode, bAverageCorners, bBreakProp, bBreakMatl, bBreakLayer, bBreakColor, bBreakGeom,  dBreakAngle) -> Any:
         """
         :type nConvertMode: Any
         :type bAverageCorners: Any
@@ -56961,8 +56923,7 @@ class Interpolate:
         """
         ...
 
-    def SetOutputMode2(self, nConvertMode, bAverageCorners, bBreakLinearParabolic, bBreakProp, bBreakMatl, bBreakLayer,
-                       bBreakColor, bBreakGeom, dBreakAngle) -> Any:
+    def SetOutputMode2(self, nConvertMode, bAverageCorners, bBreakLinearParabolic, bBreakProp, bBreakMatl, bBreakLayer, bBreakColor, bBreakGeom, dBreakAngle) -> Any:
         """
         :type nConvertMode: Any
         :type bAverageCorners: Any
@@ -57051,8 +57012,7 @@ class BeamCalculator:
     MeshFactor: Any
     Position: Any
 
-    def CalculateStress(self, nOutputSetID, enStressComponent, pnNumNodes, pdCoordinates, pdStresses, pdMaxStress,
-                        pnMaxStressIndex, pdMinStress, pnMinIndexStress) -> Any:
+    def CalculateStress(self, nOutputSetID, enStressComponent) -> Any:
         """
         **Description:**
             Calculates stresses based on forces in one or more specified output sets. Use Include* properties to specify which force components are considered in the calculations.\n
@@ -57095,8 +57055,7 @@ class BeamCalculator:
         """
         ...
 
-    def CalculateStressFromForces(self, dEndAForces, dEndBForces, enStressComponent, pnNumNodes, pdCoordinates,
-                                  pdStresses, pdMaxStress, pnMaxStressInfo, pdMinStress, pnMinStressInfo) -> Any:
+    def CalculateStressFromForces(self, dEndAForces, dEndBForces, enStressComponent) -> Any:
         """
         **Description:**
             Calculates beam stresses using user-defined forces, rather than forces from an output set. Include* Beam Calculator properties are ignored when using this method.
@@ -57126,8 +57085,7 @@ class BeamCalculator:
         """
         ...
 
-    def FindMaxMinStress(self, nOutputSetID, enStressComponent, nMaxSetID, enMaxComponent, dMaxLocation, dMaxStress,
-                         nMinSetID, enMinComponent, dMinLocation, dMinStress) -> Any:
+    def FindMaxMinStress(self, nOutputSetID) -> Any:
         """
         **Description:**
             Returns maximum and minimum stress along with the associated stress component for an element across one or more output sets. Max/min stresses are taken from calculations performed at End A, End B and 50% along the length of the element.
@@ -57166,8 +57124,7 @@ class BeamCalculator:
         """
         ...
 
-    def GetElementProperties(self, dArea, dIzz, dIyy, dIyz, dfJ, dShearAreaY, dShearAreaZ, dWarp, dNeutralAxisOffsetY,
-                             dNeutralAxisOffsetZ) -> Any:
+    def GetElementProperties(self, dArea, dIzz, dIyy, dIyz, dfJ, dShearAreaY, dShearAreaZ, dWarp, dNeutralAxisOffsetY, dNeutralAxisOffsetZ) -> Any:
         """
         **Description:**
             Returns beam properties calculated from mesh at the location along the beam specified for the element specified
@@ -57327,7 +57284,7 @@ class AnalysisStudy:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -57356,7 +57313,7 @@ class AnalysisStudy:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -58351,7 +58308,7 @@ class Frequency:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -58380,7 +58337,7 @@ class Frequency:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -59331,7 +59288,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def BitmapCreate(self, iWidth, iHeight, pqBits, piBitmapID) -> Any:
+    def BitmapCreate(self, iWidth, iHeight) -> Any:
         """
         **Description:**
             This function creates a Bitmap that can be used by a Bitmap collector
@@ -59432,8 +59389,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddMeshTriangleLocations(self, iCollectorID, iAppearanceID, nPoints, pdPoints, nTriangles,
-                                          piTriangles) -> Any:
+    def CollectorAddMeshTriangleLocations(self, iCollectorID, iAppearanceID, nPoints, pdPoints, nTriangles, piTriangles) -> Any:
         """
         **Description:**
             This functions adds a mesh of triangles at locations in global space to a Triangle collector.
@@ -59462,8 +59418,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddMeshTriangleNormalLocations(self, iCollectorID, iAppearanceID, nPoints, pdPoints, pdNormals,
-                                                nTriangles, piTriangles) -> Any:
+    def CollectorAddMeshTriangleNormalLocations(self, iCollectorID, iAppearanceID, nPoints, pdPoints, pdNormals, nTriangles, piTriangles) -> Any:
         """
         **Description:**
             This functions adds a mesh of triangles at locations in global space to a Triangle collector. The normal enable the lighting/shading to be smooth over the mesh of triangles.
@@ -59590,8 +59545,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityEdgeAutoLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piEdgeIDs,
-                                                  piOrientOptions) -> Any:
+    def CollectorAddSymbolEntityEdgeAutoLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piEdgeIDs, piOrientOptions) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular edges of existing Femap entities to a Symbol collector. The direction and the orthogonal direction is provided for each location. This currently only applies to FT_ELEM. The direction and the orthogonal directions are specified using an orientation option, piOrientOption
@@ -59620,8 +59574,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityEdgeLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piEdgeIDs,
-                                              pdDirections, pdOrthogonals) -> Any:
+    def CollectorAddSymbolEntityEdgeLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piEdgeIDs, pdDirections, pdOrthogonals) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular edges of existing Femap entities to a Symbol collector. The direction and the orthogonal direction is provided for each location. This currently only applies to FT_ELEM.
@@ -59647,8 +59600,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                              pdDirections, pdOrthogonals) -> Any:
+    def CollectorAddSymbolEntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, pdDirections, pdOrthogonals) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. Direction and orthogonal direction are provided for each location
@@ -59674,8 +59626,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityFaceNormalAutoLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs,
-                                                        piFaceIDs, piOrientOptions, pdOrientAngles) -> Any:
+    def CollectorAddSymbolEntityFaceNormalAutoLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, piOrientOptions, pdOrientAngles) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. The direction is the normal to the particular face of the existing Femap entities. The orthogonal direction is controlled by an orientation option, piOrientOption (and orientation angle for FT_SURFACE)
@@ -59704,8 +59655,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityFaceNormalLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                                    pdOrthogonals) -> Any:
+    def CollectorAddSymbolEntityFaceNormalLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, pdOrthogonals) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. The direction is the normal to the particular face of the existing Femap entities. The orthogonal direction is provided for each location
@@ -59734,8 +59684,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolEntityLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, pdDirections,
-                                          pdOrthogonals) -> Any:
+    def CollectorAddSymbolEntityLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, pdDirections, pdOrthogonals) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by existing Femap entities to a Symbol collector. Direction and orthogonal direction are provided for each location
@@ -59761,8 +59710,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolLocations(self, iCollectorID, iAppearanceID, nSymbols, pdPoints, pfDirections,
-                                    pdOrthogonals) -> Any:
+    def CollectorAddSymbolLocations(self, iCollectorID, iAppearanceID, nSymbols, pdPoints, pfDirections, pdOrthogonals) -> Any:
         """
         **Description:**
             This functions adds symbol locations and orientations in global space to a Symbol collector.
@@ -59788,8 +59736,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityEdgeAutoLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID,
-                                                       eType, nIDs, piIDs, piEdgeIDs, piOrientOptions, pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityEdgeAutoLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, piEdgeIDs, piOrientOptions, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular edges of existing Femap entities to a Symbol collector. The direction and the orthogonal direction is provided for each location. This currently only applies to FT_ELEM. The direction and the orthogonal directions are specified using an orientation option, piOrientOption. A REAL8 value is provided for each symbol location.
@@ -59821,9 +59768,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityEdgeLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType,
-                                                   nIDs, piIDs, piEdgeIDs, pdDirections, pdOrthogonals,
-                                                   pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityEdgeLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, piEdgeIDs, pdDirections, pdOrthogonals, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular edges of existing Femap entities to a Symbol collector. The direction and the orthogonal direction is provided for each location. This currently only applies to FT_ELEM. A REAL8 value is provided for each symbol location.
@@ -59855,9 +59800,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityFaceLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType,
-                                                   nIDs, piIDs, piFaceIDs, pdDirections, pdOrthogonals,
-                                                   pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityFaceLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, piFaceIDs, pdDirections, pdOrthogonals, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. Direction and orthogonal direction are provided for each location. A REAL8 value is provided for each symbol location.
@@ -59889,9 +59832,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityFaceNormalAutoLocations(self, iCollectorID, iSymbolAppearanceID,
-                                                             iLabelAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                                             piOrientOptions, pdOrientAngles, pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityFaceNormalAutoLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, piFaceIDs, piOrientOptions, pdOrientAngles, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. The direction is the normal to the particular face of the existing Femap entities. The orthogonal direction is controlled by an orientation option, piOrientOption (and orientation angle for FT_SURFACE). A REAL8 value is provided for each symbol location.
@@ -59923,8 +59864,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityFaceNormalLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID,
-                                                         eType, nIDs, piIDs, piFaceIDs, pdOrthogonals, pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityFaceNormalLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, piFaceIDs, pdOrthogonals, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by particular faces of existing Femap entities to a Symbol collector. The direction is the normal to the particular face of the existing Femap entities. The orthogonal direction is provided for each location. A REAL8 value is provided for each symbol location.
@@ -59956,8 +59896,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8EntityLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs,
-                                               piIDs, pdDirections, pdOrthogonals, pdValues) -> Any:
+    def CollectorAddSymbolREAL8EntityLocations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, eType, nIDs, piIDs, pdDirections, pdOrthogonals, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations specified by existing Femap entities to a Symbol collector. Direction and orthogonal direction are provided for each location. A REAL8 value is provided for each symbol location.
@@ -59989,8 +59928,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddSymbolREAL8Locations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, nSymbols,
-                                         pdPoints, pfDirections, pdOrthogonals, pdValues) -> Any:
+    def CollectorAddSymbolREAL8Locations(self, iCollectorID, iSymbolAppearanceID, iLabelAppearanceID, nSymbols, pdPoints, pfDirections, pdOrthogonals, pdValues) -> Any:
         """
         **Description:**
             This functions adds symbol locations and orientations in global space to a Symbol collector.
@@ -60022,8 +59960,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddTextEntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                            ppText) -> Any:
+    def CollectorAddTextEntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, ppText) -> Any:
         """
         **Description:**
             This function adds text at locations specified by a particular face of existing Femap entities to a Text collector
@@ -60075,8 +60012,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddTextINT4EntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                                piValues) -> Any:
+    def CollectorAddTextINT4EntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, piValues) -> Any:
         """
         **Description:**
             This function adds text based on an INT4 value at a location specified by a particular face of existing Femap entities to a TextINT4 collector. An INT4 value is supplied for each location.
@@ -60183,8 +60119,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAddTextREAL8EntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs,
-                                                 pdValues) -> Any:
+    def CollectorAddTextREAL8EntityFaceLocations(self, iCollectorID, iAppearanceID, eType, nIDs, piIDs, piFaceIDs, pdValues) -> Any:
         """
         **Description:**
             This function adds text based on a REAL8 value at a location specified by a particular face of existing Femap entities to a TextREAL8 collector. An REAL8 value is supplied for each location.
@@ -60288,8 +60223,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorAppearance(self, iCollectorID, iAppearanceID, dColor1, dColor2, dLineWidth, iLineStyle, iFillPattern,
-                            qLighting, iCullMode, iFont, dPointSize) -> Any:
+    def CollectorAppearance(self, iCollectorID, iAppearanceID, dColor1, dColor2, dLineWidth, iLineStyle, iFillPattern, qLighting, iCullMode, iFont, dPointSize) -> Any:
         """
         **Description:**
             This function adds an appearance to a collector
@@ -60356,7 +60290,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorBitmap(self, pName, nAppearances, iBitmapID, dXOffset, dYOffset, dDepthOffset, piCollectorID) -> Any:
+    def CollectorBitmap(self, pName, nAppearances, dYOffset, dDepthOffset) -> Any:
         """
         **Description:**
             This function creates a Bitmap collector. Bitmap locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM.
@@ -60417,7 +60351,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorLines(self, pName, nAppearances, dDepthOffset, piCollectorID) -> Any:
+    def CollectorLines(self, pName, nAppearances, dDepthOffset) -> Any:
         """
         **Description:**
             This function create a Line collector.
@@ -60455,7 +60389,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorPoints(self, pName, nAppearances, dDepthOffset, piCollectorID) -> Any:
+    def CollectorPoints(self, pName, nAppearances, dDepthOffset) -> Any:
         """
         **Description:**
             This function creates a Point collector. Points can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM.
@@ -60496,8 +60430,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorSymbol(self, pName, nAppearances, iSymbolID, qScreenScale, dScreenScale, dDepthOffset,
-                        piCollectorID) -> Any:
+    def CollectorSymbol(self, pName, nAppearances, iSymbolID, qScreenScale, dScreenScale, dDepthOffset) -> Any:
         """
         **Description:**
             This function creates a Symbol collector. Symbol locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM.
@@ -60530,8 +60463,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorSymbolREAL8(self, pName, nAppearances, iSymbolID, qScreenScale, dMaxScale, dMinScale, dXOffset,
-                             dYOffset, dZOffset, dDepthOffset, pFormat, piCollectorID) -> Any:
+    def CollectorSymbolREAL8(self, pName, nAppearances, iSymbolID, qScreenScale, dMaxScale, dMinScale, dXOffset, dYOffset, dZOffset, dDepthOffset, pFormat) -> Any:
         """
         **Description:**
             This function creates a Symbol collector that has a REAL8 value associated with each symbol entity. Symbol locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM. The associated REAL8 value can be displayed on each instance of the symbol and can also be used to scale the size of the symbol entities.
@@ -60579,7 +60511,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorText(self, pName, nAppearances, dXOffset, dYOffset, dZOffset, piCollectorID) -> Any:
+    def CollectorText(self, pName, nAppearances, dXOffset, dYOffset, dZOffset) -> Any:
         """
         **Description:**
             This function create a Text collector. Text locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM.
@@ -60609,7 +60541,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorTextINT4(self, pName, nAppearances, dXOffset, dYOffset, dZOffset, pFormat, piCollectorID) -> Any:
+    def CollectorTextINT4(self, pName, nAppearances, dXOffset, dYOffset, dZOffset, pFormat) -> Any:
         """
         **Description:**
             This function create a TextINT4 collector. Text locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM. This collector is more efficient memory wise that a Text Collector if all you want to write is an INT4 value or an INT4 value with some text that is the same for all INT4s.
@@ -60642,7 +60574,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorTextREAL8(self, pName, nAppearances, dXOffset, dYOffset, dZOffset, pFormat, piCollectorID) -> Any:
+    def CollectorTextREAL8(self, pName, nAppearances, dXOffset, dYOffset, dZOffset, pFormat) -> Any:
         """
         **Description:**
             This function create a TextREAL8 collector. Text locations (points) can be added based on location in global space or relative to Femap entities such as FT_POINT, FT_CURVE, FT_SURFACE, FT_NODE and FT_ELEM. This collector is more efficient memory wise that a Text Collector if all you want to write is a REAL8 value or a REAL8 value with some text that is the same for all REAL8s.
@@ -60675,7 +60607,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def CollectorTriangles(self, pName, nAppearances, dDepthOffset, piCollectorID) -> Any:
+    def CollectorTriangles(self, pName, nAppearances, dDepthOffset) -> Any:
         """
         **Description:**
             This function create a Triangle collector
@@ -60817,8 +60749,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddFillCone(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers,
-                          nSubDividers, qEndCap) -> Any:
+    def SymbolAddFillCone(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers, nSubDividers, qEndCap) -> Any:
         """
         **Description:**
             This function adds a filled cone to a Symbol
@@ -60856,8 +60787,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddFillCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight,
-                              nDividers, nSubDividers, qEndCap) -> Any:
+    def SymbolAddFillCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers, nSubDividers, qEndCap) -> Any:
         """
         **Description:**
             This function adds a filled cylinder to a Symbol
@@ -60895,8 +60825,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddFillSphere(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnEquator, dDirection, dAngle,
-                            nLongDividers, nLongSubDividers, nLatDividers, nLatSubDividers) -> Any:
+    def SymbolAddFillSphere(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnEquator, dDirection, dAngle, nLongDividers, nLongSubDividers, nLatDividers, nLatSubDividers) -> Any:
         """
         **Description:**
             This function adds a filled sphere to a Symbol
@@ -60980,8 +60909,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddFillTubeCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight,
-                                  dInnerProportion, nDividers, nSubDividers) -> Any:
+    def SymbolAddFillTubeCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, dInnerProportion, nDividers, nSubDividers) -> Any:
         """
         **Description:**
             This function adds a filled cylindrical tube with thickness to a Symbol
@@ -61065,8 +60993,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddLineCone(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers,
-                          nSubDividers) -> Any:
+    def SymbolAddLineCone(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers, nSubDividers) -> Any:
         """
         **Description:**
             This function adds a wireframe cone to a Symbol
@@ -61101,8 +61028,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddLineCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight,
-                              nDividers, nSubDividers) -> Any:
+    def SymbolAddLineCylinder(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnCircle, dDirection, dHeight, nDividers, nSubDividers) -> Any:
         """
         **Description:**
             This function adds a wireframe cylinder to a Symbol
@@ -61160,8 +61086,7 @@ class UserDefinedGraphics:
         """
         ...
 
-    def SymbolAddLineSphere(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnEquator, dDirection, dAngle,
-                            nLongDividers, nLongSubDividers, nLatDividers, nLatSubDividers) -> Any:
+    def SymbolAddLineSphere(self, iSymbolID, iAppearanceOffset, dCenter, dPointOnEquator, dDirection, dAngle, nLongDividers, nLongSubDividers, nLatDividers, nLatSubDividers) -> Any:
         """
         **Description:**
             This function adds a wireframe sphere to a Symbol
@@ -61419,7 +61344,7 @@ class vector:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -61448,7 +61373,7 @@ class vector:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -61865,7 +61790,7 @@ class Plane:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -61894,7 +61819,7 @@ class Plane:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -62319,7 +62244,7 @@ class MeshHardPointDefinition:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -62348,7 +62273,7 @@ class MeshHardPointDefinition:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -62767,7 +62692,7 @@ class MeshHardPoint:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -62796,7 +62721,7 @@ class MeshHardPoint:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -63103,9 +63028,7 @@ class MeshHardPoint:
         """
         ...
 
-    def UpdateMeshPointsOnGeometry(self, nSolidSetID, nSurfaceSetID, nCurveSetID, nPointSetID, nDuplicatesOnSolidID,
-                                   bUpdateUnassignedPoints, bUpdatePointsOnDeletedGeometry, bResizeCurves,
-                                   bEnabledPointsOnly) -> Any:
+    def UpdateMeshPointsOnGeometry(self, nSolidSetID, nSurfaceSetID, nCurveSetID, nPointSetID, nDuplicatesOnSolidID, bUpdateUnassignedPoints, bUpdatePointsOnDeletedGeometry, bResizeCurves, bEnabledPointsOnly) -> Any:
         """
         **Description:**
             This method updates mesh points associated with specific solids, surfaces, curves, and/or points while considering a number of additional options.
@@ -63329,7 +63252,7 @@ class OptRel:
         """
         ...
 
-    def GetShellT(self, nSetID, bClear, pdLower, pdUpper) -> Any:
+    def GetShellT(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Get shell thickness relationship parameters
@@ -63353,7 +63276,7 @@ class OptRel:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -63382,7 +63305,7 @@ class OptRel:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -63408,7 +63331,7 @@ class OptRel:
         """
         ...
 
-    def GetTopology(self, nSetID, bClear, bActive) -> Any:
+    def GetTopology(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Sets up the Optimization Relationship as a topology optimization region in a single call
@@ -63896,7 +63819,7 @@ class OptResp:
         """
         ...
 
-    def GetDisplacement(self, nSetID, bClear, pnDof) -> Any:
+    def GetDisplacement(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Retrieves attributes for displacement response in a single call
@@ -63917,7 +63840,7 @@ class OptResp:
         """
         ...
 
-    def GetESE(self, nSetID, bClear, pbDensity, penDataType) -> Any:
+    def GetESE(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Retrieves attributes for elemental strain energy response in a single call
@@ -63958,7 +63881,7 @@ class OptResp:
         """
         ...
 
-    def GetElemV2(self, nSetID, bClear, pnVecID, penDataType) -> Any:
+    def GetElemV2(self, nSetID, bClear) -> Any:
         """
         **Description:**
             This method replaces GetElem. For more information see, Section 2.4, "Working with Output in FEMAP 2020.1 and above". Retrieves attributes for elemental force / stress / strain response in a single call.
@@ -63982,7 +63905,7 @@ class OptResp:
         """
         ...
 
-    def GetEntities(self, nSetID, bClear, penDataType) -> Any:
+    def GetEntities(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Gets the specified optimization response entities
@@ -64034,7 +63957,7 @@ class OptResp:
         """
         ...
 
-    def GetSPCForce(self, nSetID, bClear, pnDof) -> Any:
+    def GetSPCForce(self, nSetID, bClear) -> Any:
         """
         **Description:**
             Retrieves attributes for SPC response in a single call
@@ -64055,7 +63978,7 @@ class OptResp:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -64084,7 +64007,7 @@ class OptResp:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -64534,8 +64457,7 @@ class DiscreteValueSet:
         """
         ...
 
-    def AutoCreateLevels(self, iVuID, iGroupID, sTitle, eVMDC, nLevels, iRangeOption, iLowestValue, dLowestValue,
-                         ePropType, eMatlType, iLocation) -> Any:
+    def AutoCreateLevels(self, iVuID, iGroupID, sTitle, eVMDC, nLevels, iRangeOption, iLowestValue, dLowestValue, ePropType, eMatlType, iLocation) -> Any:
         """
         **Description:**
             Automatically creates a discrete value set using the specified model data item, which can be created using data from the whole model or a group
@@ -64689,7 +64611,7 @@ class DiscreteValueSet:
         """
         ...
 
-    def GetLevelFloat(self, iLevelID, pdValue1, pdValue2, piColor) -> Any:
+    def GetLevelFloat(self, iLevelID) -> Any:
         """
         **Description:**
             Returns the floating point (real number) value(s) and color ID for a given level in the discrete value set
@@ -64707,7 +64629,7 @@ class DiscreteValueSet:
         """
         ...
 
-    def GetLevelInteger(self, iLevelID, piValue1, piValue2, piColor) -> Any:
+    def GetLevelInteger(self, iLevelID) -> Any:
         """
         **Description:**
             Returns the integer value(s) and color ID for a given level in the discrete value set
@@ -64773,7 +64695,7 @@ class DiscreteValueSet:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -64802,7 +64724,7 @@ class DiscreteValueSet:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -65361,7 +65283,7 @@ class OptMC:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -65390,7 +65312,7 @@ class OptMC:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -66806,7 +66728,7 @@ class MonitorPoint:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -66835,7 +66757,7 @@ class MonitorPoint:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -67265,7 +67187,7 @@ class MatrixInput:
         """
         ...
 
-    def GetCombination(self, nSetID, entID, dScale, MatrixInputID, InputName) -> Any:
+    def GetCombination(self, nSetID, entID) -> Any:
         """
         **Description:**
             This method retrieves information from the matrix combinations in a combined Matrix Input entity
@@ -67340,8 +67262,7 @@ class MatrixInput:
         """
         ...
 
-    def GetMatrixEntry(self, nSetID, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent,
-                       RealMatrixValue, ImagMatrixValue) -> Any:
+    def GetMatrixEntry(self, nSetID, NodeColumnIndex, NodeColumnComponent, NodeRowIndex) -> Any:
         """
         **Description:**
             This method is used to retrieve the real and imaginary matrix entry values from an internalized Matrix Input entity, given its row and column index.
@@ -67371,8 +67292,7 @@ class MatrixInput:
         """
         ...
 
-    def GetMatrixList(self, listcount, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent,
-                      RealMatrixValue, ImagMatrixValue) -> Any:
+    def GetMatrixList(self, listcount, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent, RealMatrixValue, ImagMatrixValue) -> Any:
         """
         **Description:**
             This method retrieves information from the matrix entries in a Matrix Input.
@@ -67398,7 +67318,7 @@ class MatrixInput:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -67427,7 +67347,7 @@ class MatrixInput:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -67665,8 +67585,7 @@ class MatrixInput:
         """
         ...
 
-    def PutMatrixEntry(self, nSetID, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent,
-                       RealMatrixValue, ImagMatrixValue) -> Any:
+    def PutMatrixEntry(self, nSetID, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent, RealMatrixValue, ImagMatrixValue) -> Any:
         """
         **Description:**
             This method is used to store a matrix entry in an internalized Matrix Input entity.
@@ -67695,8 +67614,7 @@ class MatrixInput:
         """
         ...
 
-    def PutMatrixList(self, listcount, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent,
-                      RealMatrixValue, ImagMatrixValue) -> Any:
+    def PutMatrixList(self, listcount, NodeColumnIndex, NodeColumnComponent, NodeRowIndex, NodeRowComponent, RealMatrixValue, ImagMatrixValue) -> Any:
         """
         **Description:**
             This method stores information to the matrix entries in a Matrix Input.
@@ -67931,8 +67849,7 @@ class MergeTool:
         """
         ...
 
-    def GetEntityOptions(self, entityTYPE, nFromSetID, nToSetID, nRenumStrategy, nRenumStartAt,
-                         bRenumberDuplicates) -> Any:
+    def GetEntityOptions(self, entityTYPE, nFromSetID, nToSetID, nRenumStrategy, nRenumStartAt, bRenumberDuplicates) -> Any:
         """
         **Description:**
             Retrieves the status of the renumbering and duplicate options for a particular entity type.
@@ -67942,7 +67859,7 @@ class MergeTool:
         """
         ...
 
-    def GetEntityStatus(self, entityTYPE, bStatus) -> Any:
+    def GetEntityStatus(self, entityTYPE) -> Any:
         """
         **Description:**
             Retrieves the status of a entity type. The status specifies if the entity type will be merged or not into the To Model.
@@ -68077,8 +67994,7 @@ class MergeTool:
         """
         ...
 
-    def SelectEntity(self, bThisEntityOnly, entityTYPE, nFromSetID, bSetInCurrentModel, nRenumStrategy, nRenumStartAt,
-                     bRenumberDuplicates) -> Any:
+    def SelectEntity(self, bThisEntityOnly, entityTYPE, nFromSetID, bSetInCurrentModel, nRenumStrategy, nRenumStartAt, bRenumberDuplicates) -> Any:
         """
         **Description:**
             Selects a Set of entities of a specified type to be merged. Also specifies the renumbering and overwriting options for that entity type.
@@ -68088,8 +68004,7 @@ class MergeTool:
         """
         ...
 
-    def SelectFromGroup(self, bThisGroupOnly, bAllEntityTypes, entityTYPE, nFromGroupID, nRenumStrategy, nRenumStartAt,
-                        bRenumberDuplicates) -> Any:
+    def SelectFromGroup(self, bThisGroupOnly, bAllEntityTypes, entityTYPE, nFromGroupID, nRenumStrategy, nRenumStartAt, bRenumberDuplicates) -> Any:
         """
         **Description:**
             Selects entities of one or more types that are included in a Group in the model to be merged. Also specifies the renumbering and overwriting options for those entity types.
@@ -68184,8 +68099,7 @@ class MergeTool:
         """
         ...
 
-    def SetStatus(self, bGeometry, bModel, bConnection, bAeroElasticity, bAnalysisAndSimulation, bResults,
-                  bOthers) -> Any:
+    def SetStatus(self, bGeometry, bModel, bConnection, bAeroElasticity, bAnalysisAndSimulation, bResults, bOthers) -> Any:
         """
         **Description:**
             For categories of entity types sets the option to merge or ignore the type
@@ -68663,8 +68577,7 @@ class PublishTool:
         """
         ...
 
-    def AddStyle(self, sFontName, nFontSize, nColor, nHighlightColor, bBold, bItalic, bUnderline,
-                 bPreserveFormatting) -> Any:
+    def AddStyle(self, sFontName, nFontSize, nColor, nHighlightColor, bBold, bItalic, bUnderline, bPreserveFormatting) -> Any:
         """
         **Description:**
             Defines a style that can then be applied to text that is added to the Tool
@@ -69094,7 +69007,7 @@ class AnalysisStep:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -69123,7 +69036,7 @@ class AnalysisStep:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -69667,7 +69580,7 @@ class GlobalStep:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -69696,7 +69609,7 @@ class GlobalStep:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -70044,7 +69957,7 @@ class BodyMesher:
         """
         ...
 
-    def CalculateDefaultMeshSize(self, enDataType, nSolidOrElemSet, dSize) -> Any:
+    def CalculateDefaultMeshSize(self, enDataType, nSolidOrElemSet) -> Any:
         """
         **Description:**
             Find the default mesh size that is used to initialize the target mesh size
@@ -70333,7 +70246,7 @@ class DesignEquation:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -70362,7 +70275,7 @@ class DesignEquation:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -70829,7 +70742,7 @@ class Joint:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -70858,7 +70771,7 @@ class Joint:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -71315,7 +71228,7 @@ class FlexibleSlider:
         """
         ...
 
-    def GetTitleIDList(self, bIncludeID, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleIDList(self, bIncludeID, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -71344,7 +71257,7 @@ class FlexibleSlider:
         """
         ...
 
-    def GetTitleList(self, minID, maxID, Count, listID, listTITLE) -> Any:
+    def GetTitleList(self, minID, maxID) -> Any:
         """
         **Description:**
             This method retrieves two arrays which contain the IDs and titles of all entities (in the selected ID range) with the same type as the current object.
@@ -72899,7 +72812,7 @@ class model:
         """
         ...
 
-    def feAddToolbarSubmenu(self, BarName, cmdIndex, menuName, menuID) -> Any:
+    def feAddToolbarSubmenu(self, BarName, cmdIndex, menuName) -> Any:
         """
         **Description:**
             Creates a new submenu in a toolbar
@@ -72943,7 +72856,7 @@ class model:
         """
         ...
 
-    def feAddToolbarSubmenuSubmenu(self, menuID, ctrlIndex, menuName, submenuID) -> Any:
+    def feAddToolbarSubmenuSubmenu(self, menuID, ctrlIndex, menuName) -> Any:
         """
         **Description:**
             Adds a new submenu to a submenu on a toolbar.
@@ -72967,7 +72880,7 @@ class model:
         """
         ...
 
-    def feAddToolbarSubmenuUserCommand(self, menuID, cmdIndex, cmdTitle, cmdBitmap, cmdID) -> Any:
+    def feAddToolbarSubmenuUserCommand(self, menuID, cmdIndex, cmdTitle, cmdBitmap) -> Any:
         """
         **Description:**
             Adds a new button to a submenu and associates it with a user command.
@@ -72994,7 +72907,7 @@ class model:
         """
         ...
 
-    def feAddToolbarUserCommand(self, BarName, cmdIndex, cmdTitle, cmdBitmap, cmdID) -> Any:
+    def feAddToolbarUserCommand(self, BarName, cmdIndex, cmdTitle, cmdBitmap) -> Any:
         """
         **Description:**
             Adds a new button to a toolbar and associates it with a user command.
@@ -73171,7 +73084,7 @@ class model:
         """
         ...
 
-    def feAppColorGetRGB(self, nColor, pnRed, pnGreen, pnBlue) -> Any:
+    def feAppColorGetRGB(self, nColor) -> Any:
         """
         **Description:**
             Returns the red, green and blue components from a FEMAP color ID
@@ -73195,7 +73108,7 @@ class model:
         """
         ...
 
-    def feAppColorPalette(self, nDefault, nColor) -> Any:
+    def feAppColorPalette(self, nDefault) -> Any:
         """
         **Description:**
             Displays the color palette dialog box allowing a user to pick a color.
@@ -73361,7 +73274,7 @@ class model:
         """
         ...
 
-    def feAppGetModelName(self, nModelID, ModelName) -> Any:
+    def feAppGetModelName(self, nModelID) -> Any:
         """
         **Description:**
             Retrieves the name of the selected model
@@ -73379,7 +73292,7 @@ class model:
         """
         ...
 
-    def feAppGetRunningApplication(self, appName, processID, activeWindow, appObject) -> Any:
+    def feAppGetRunningApplication(self, appName, processID, activeWindow) -> Any:
         """
         **Description:**
             Returns the top-level COM Application Object.
@@ -73597,7 +73510,7 @@ class model:
         """
         ...
 
-    def feAppModelContents(self, bReport, emptyBlocks, entityBlocks) -> Any:
+    def feAppModelContents(self, bReport) -> Any:
         """
         **Description:**
             Finds, and alternatively lists, the number of blocks of each entity type that are currently in the model
@@ -73693,8 +73606,7 @@ class model:
         """
         ...
 
-    def feAppRegisterAddInPane(self, regster, windowID, messageID, bPreventClose, bPreventHide, location,
-                               neighborID) -> Any:
+    def feAppRegisterAddInPane(self, regster, windowID, messageID, bPreventClose, bPreventHide, location, neighborID) -> Any:
         """
         **Description:**
             Registers an add-in application with FEMAP.
@@ -73726,8 +73638,7 @@ class model:
         """
         ...
 
-    def feAppRegisterAddInPaneWithFrame(self, regster, windowID, messageID, bPreventClose, bPreventHide, location,
-                                        neighborID) -> Any:
+    def feAppRegisterAddInPaneWithFrame(self, regster, windowID, messageID, bPreventClose, bPreventHide, location, neighborID) -> Any:
         """
         **Description:**
             Registers an add-in application with FEMAP.
@@ -73786,7 +73697,7 @@ class model:
         """
         ...
 
-    def feAppRunningApplicationInfo(self, appName, processIDs, activeWindows, nint) -> Any:
+    def feAppRunningApplicationInfo(self, appName) -> Any:
         """
         **Description:**
             Returns information about running applications to use for API attachment.
@@ -74240,8 +74151,7 @@ class model:
         """
         ...
 
-    def feAutoMeshAssociativity(self, elemSetID, solidSetID, dTolerance, bClearPrevious, bCheckContainment,
-                                bAttachMidside, bGroupExtra, bMessages, nUnattachedGroup) -> Any:
+    def feAutoMeshAssociativity(self, solidSetID, dTolerance, bClearPrevious, bCheckContainment, bMessages) -> Any:
         """
         **Description:**
             Automatically associates both nodes and elements with geometry that is coincident in your model
@@ -74325,7 +74235,7 @@ class model:
         """
         ...
 
-    def feBoundaryFromPoints(self, nCSys, nPoints, pXYZ, nBoundaryID) -> Any:
+    def feBoundaryFromPoints(self, nCSys, nPoints, pXYZ) -> Any:
         """
         **Description:**
             Creates a boundary surface from a group of locations specified in order around the surface
@@ -74491,7 +74401,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentNode(self, keepSET, mergeSET, tolerance, Merge, messages, coinCount, coinNodes) -> Any:
+    def feCheckCoincidentNode(self, keepSET, mergeSET, tolerance, Merge, messages) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident nodes. This method is obsolete and should be replaced by feCheckCoincidentNode3.
@@ -74524,8 +74434,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentNode2(self, mergeSET, tolerance, Merge, nMergeMode, nMergeLoc, bMergeAcrossConnections,
-                               nMessageMode, bSaveGroups) -> Any:
+    def feCheckCoincidentNode2(self, mergeSET, tolerance, Merge, nMergeMode, nMergeLoc, bMergeAcrossConnections, nMessageMode, bSaveGroups) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident nodes. This method is obsolete and should be replaced by feCheckCoincidentNode3.
@@ -74557,8 +74466,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentNode3(self, mergeSET, tolerance, Merge, nMergeMode, nMergeLoc, bMergeAcrossConnections,
-                               nMergeAcrossOutputCSys, nMergeAcrossCSysID, nMessageMode, bSaveGroups) -> Any:
+    def feCheckCoincidentNode3(self, mergeSET, tolerance, Merge, nMergeMode, nMergeLoc, bMergeAcrossConnections, nMergeAcrossOutputCSys, nMergeAcrossCSysID, nMessageMode, bSaveGroups) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident nodes. This method supersedes both feCheckCoincidentNode and feCheckCoincidentNode2
@@ -74593,9 +74501,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentNode4(self, mergeSET, bMergeIntoAll, tolerance, Merge, nMergeMode, nMergeLoc,
-                               bMergeAcrossConnections, nMergeAcrossOutputCSys, nMergeAcrossCSysID, nMessageMode,
-                               bSaveGroups) -> Any:
+    def feCheckCoincidentNode4(self, mergeSET, bMergeIntoAll, tolerance, Merge, nMergeMode, nMergeLoc, bMergeAcrossConnections, nMergeAcrossOutputCSys, nMergeAcrossCSysID, nMessageMode, bSaveGroups) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident nodes. This method supersedes both feCheckCoincidentNode, feCheckCoincidentNode2 and feCheckCoincidentNode3.
@@ -74630,9 +74536,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentNode5(self, mergeSET, bMergeIntoAll, tolerance, max_midside_angle_distortion, Merge,
-                               nMergeMode, nMergeLoc, bMergeAcrossConnections, nMergeAcrossOutputCSys,
-                               nMergeAcrossCSysID, nMessageMode, bSaveGroups) -> Any:
+    def feCheckCoincidentNode5(self, mergeSET, bMergeIntoAll, tolerance, max_midside_angle_distortion, Merge,  nMergeMode, nMergeLoc, bMergeAcrossConnections, nMergeAcrossOutputCSys, nMergeAcrossCSysID, nMessageMode, bSaveGroups) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident nodes. This method supersedes both feCheckCoincidentNode, feCheckCoincidentNode2 and feCheckCoincidentNode3.
@@ -74667,7 +74571,7 @@ class model:
         """
         ...
 
-    def feCheckCoincidentPoint(self, keepSET, mergeSET, tolerance, Merge, messages, coinCount, coinPoints) -> Any:
+    def feCheckCoincidentPoint(self, keepSET, mergeSET, tolerance, Merge, messages) -> Any:
         """
         **Description:**
             This function checks, and optionally merges, coincident points.
@@ -74700,7 +74604,7 @@ class model:
         """
         ...
 
-    def feCheckConstraints(self, doPERM, doLIST, bcSUM, bcSEP) -> Any:
+    def feCheckConstraints(self, doPERM, doLIST) -> Any:
         """
         **Description:**
             This function checks constraints in the active constraint set.
@@ -74724,9 +74628,7 @@ class model:
         """
         ...
 
-    def feCheckElemDistortion(self, elemSET, doLIST, makeGROUP, chkASPECT, chkTAPER, chkANGLE, chkWARP, chkNasWARP,
-                              chkALTTAPER, chkTET, chkJDet, chkComb, maxASPECT, maxTAPER, maxANGLE, maxWARP, maxNasWARP,
-                              maxALTTAPER, maxTET, minJDet, minComb) -> Any:
+    def feCheckElemDistortion(self, elemSET, doLIST, makeGROUP, chkASPECT, chkTAPER, chkANGLE, chkWARP, chkNasWARP, chkALTTAPER, chkTET, chkJDet, chkComb, maxASPECT, maxTAPER, maxANGLE, maxWARP, maxNasWARP, maxALTTAPER, maxTET, minJDet, minComb) -> Any:
         """
         **Description:**
             This function checks a set of elements to see if any of them are distorted.
@@ -74794,9 +74696,7 @@ class model:
         """
         ...
 
-    def feCheckElemDistortion2(self, elemSET, doLIST, makeGROUP, chkASPECT, chkTAPER, chkANGLE, chkWARP, chkNasWARP,
-                               chkALTTAPER, chkTET, chkJDet, chkComb, chkExpTime, maxASPECT, maxTAPER, maxANGLE,
-                               maxWARP, maxNasWARP, maxALTTAPER, maxTET, minJDet, minComb, minExpTime) -> Any:
+    def feCheckElemDistortion2(self, elemSET, doLIST, makeGROUP, chkASPECT, chkTAPER, chkANGLE, chkWARP, chkNasWARP, chkALTTAPER, chkTET, chkJDet, chkComb, chkExpTime, maxASPECT, maxTAPER, maxANGLE, maxWARP, maxNasWARP, maxALTTAPER, maxTET, minJDet, minComb, minExpTime) -> Any:
         """
         **Description:**
             This function checks a set of elements to see if any of them are distorted.
@@ -75017,8 +74917,7 @@ class model:
         """
         ...
 
-    def feCheckSumForces2(self, useBodyLoad, expandGEOM, doLIST, useSETS, nodeSET, elemSET, loaddefSET, basePOINT,
-                          csysID, summedFORCES) -> Any:
+    def feCheckSumForces2(self, useBodyLoad, expandGEOM, doLIST, useSETS, nodeSET, elemSET, loaddefSET, basePOINT, csysID, summedFORCES) -> Any:
         """
         **Description:**
             This function checks loads from the active load set and sums the forces around a specific location.
@@ -75248,7 +75147,7 @@ class model:
         """
         ...
 
-    def feCompute2DInvariants(self, bStress, dTensor, dInvariant) -> Any:
+    def feCompute2DInvariants(self, bStress, dTensor) -> Any:
         """
         **Description:**
             This method is used to compute Stress or Strain Invariant values for a 2D element using 3 Stress or Strain Tensor Values (Plate Top/Bottom X Normal, Plate Top/Bottom Y Normal, Plate Top/Bottom XY Shear).
@@ -75269,7 +75168,7 @@ class model:
         """
         ...
 
-    def feCompute3DInvariants(self, bStress, dTensor, dInvariant) -> Any:
+    def feCompute3DInvariants(self, bStress, dTensor) -> Any:
         """
         **Description:**
             This method is used to compute Stress or Strain Invariant values for a 3D element using 6 Tensor Stress or Strain Values (Solid X Normal, Solid Y Normal, Solid Z Normal, Solid XY Shear, Solid YZ Shear, and Solid ZX Shear)
@@ -75290,8 +75189,7 @@ class model:
         """
         ...
 
-    def feConnectAuto(self, solidSET, linearTolerance, angleTolerance, strategy, bSelfConnect, bCombineAll,
-                      nConnectProp, bGlued) -> Any:
+    def feConnectAuto(self, solidSET, linearTolerance, angleTolerance, strategy, bSelfConnect, bCombineAll, nConnectProp, bGlued) -> Any:
         """
         **Description:**
             This function is obsolete. It is the same as calling feConnectAuto2( ) with connectType = 1. Refer to the documentation for that function for more information.
@@ -75299,8 +75197,7 @@ class model:
         """
         ...
 
-    def feConnectAuto2(self, solidSET, connectTYPE, linearTolerance, angleTolerance, strategy, bSelfConnect,
-                       bCombineAll, nConnectProp, bGlued) -> Any:
+    def feConnectAuto2(self, solidSET, connectTYPE, linearTolerance, angleTolerance, strategy, bSelfConnect, bCombineAll, nConnectProp, bGlued) -> Any:
         """
         **Description:**
             Automatically generates connections between solids
@@ -75335,8 +75232,7 @@ class model:
         """
         ...
 
-    def feConnectLinearParabolic(self, enType, nSetID, bAddMidside, bMerge, bGroupBadMidnodes,
-                                 bGroupUpdatedElements) -> Any:
+    def feConnectLinearParabolic(self, enType, nSetID, bAddMidside, bMerge, bGroupBadMidnodes, bGroupUpdatedElements) -> Any:
         """
         **Description:**
             The method connects linear to parabolic elements.
@@ -75362,7 +75258,7 @@ class model:
         """
         ...
 
-    def feCoordAlongCurve(self, cuID, fromstart, cuLENGTH, xyz) -> Any:
+    def feCoordAlongCurve(self, cuID, fromstart, cuLENGTH) -> Any:
         """
         **Description:**
             This function finds the coordinates that are located at specified distance along a curve.
@@ -75386,7 +75282,7 @@ class model:
         """
         ...
 
-    def feCoordArrayTransform(self, Count, fromCSYS, toCSYS, xyz) -> Any:
+    def feCoordArrayTransform(self, Count, fromCSYS, toCSYS) -> Any:
         """
         **Description:**
             This function transforms an array of coordinates from one coordinate system to another.
@@ -75410,7 +75306,7 @@ class model:
         """
         ...
 
-    def feCoordArrayTransform2(self, Count, fromCSYS, toCSYS, inXYZ, xyz) -> Any:
+    def feCoordArrayTransform2(self, Count, fromCSYS, toCSYS, inXYZ) -> Any:
         """
         **Description:**
             This function transforms an array of coordinates from one coordinate system to another.
@@ -75446,7 +75342,7 @@ class model:
         """
         ...
 
-    def feCoordColinear(self, xyz1, xyz2, xyz3, isColinear) -> Any:
+    def feCoordColinear(self, xyz1, xyz2, xyz3) -> Any:
         """
         **Description:**
             This function checks three sets of coordinates and determines if they are colinear.
@@ -75470,7 +75366,7 @@ class model:
         """
         ...
 
-    def feCoordCurveCenter(self, cuID, xyz) -> Any:
+    def feCoordCurveCenter(self, cuID) -> Any:
         """
         **Description:**
             This function finds the coordinates that are located at the center of an arc, circle, or solid curve that forms an arc or circle.
@@ -75488,7 +75384,7 @@ class model:
         """
         ...
 
-    def feCoordCurveMidpoint(self, cuID, xyz) -> Any:
+    def feCoordCurveMidpoint(self, cuID) -> Any:
         """
         **Description:**
             This function finds the coordinates that are located at the midpoint of a curve.
@@ -75506,7 +75402,7 @@ class model:
         """
         ...
 
-    def feCoordFromWorkplane(self, wpXYZ, xyz) -> Any:
+    def feCoordFromWorkplane(self, wpXYZ) -> Any:
         """
         **Description:**
             This function converts coordinates from workplane coordinates to global rectangular coordinates.
@@ -75524,7 +75420,7 @@ class model:
         """
         ...
 
-    def feCoordInSurface(self, suID, suXY, xyz) -> Any:
+    def feCoordInSurface(self, suID, suXY) -> Any:
         """
         **Description:**
             This function returns coordinates located at the parametric coordinates of a surface.
@@ -75545,7 +75441,7 @@ class model:
         """
         ...
 
-    def feCoordIntersectCurves(self, cuID1, cuID2, nearXYZ, xyz) -> Any:
+    def feCoordIntersectCurves(self, cuID1, cuID2, nearXYZ) -> Any:
         """
         **Description:**
             This function finds the coordinates at the intersection of two curves.
@@ -75569,7 +75465,7 @@ class model:
         """
         ...
 
-    def feCoordIntersectLines(self, infLine, pA1, pA2, pB1, pB2, pIntersect) -> Any:
+    def feCoordIntersectLines(self, infLine, pA1, pA2, pA1, pA1) -> Any:
         """
         **Description:**
             This function finds the coordinates at the intersection of two lines which are specified by their endpoint coordinates.
@@ -75599,7 +75495,7 @@ class model:
         """
         ...
 
-    def feCoordOnNode(self, ndID, xyz) -> Any:
+    def feCoordOnNode(self, ndID) -> Any:
         """
         **Description:**
             This function returns the coordinates of a node.
@@ -75617,7 +75513,7 @@ class model:
         """
         ...
 
-    def feCoordOnPoint(self, ptID, xyz) -> Any:
+    def feCoordOnPoint(self, ptID) -> Any:
         """
         **Description:**
             This function returns the coordinates of a point.
@@ -75635,7 +75531,7 @@ class model:
         """
         ...
 
-    def feCoordOntoCurve(self, cuID, fromxyz, xyz) -> Any:
+    def feCoordOntoCurve(self, cuID, fromxyz) -> Any:
         """
         **Description:**
             This function projects coordinates onto a curve.
@@ -75656,7 +75552,7 @@ class model:
         """
         ...
 
-    def feCoordOntoLine(self, xyz, p1, p2, xyzLine) -> Any:
+    def feCoordOntoLine(self, xyz, p1, p2) -> Any:
         """
         **Description:**
             This function takes a coordinate location and projects it onto a line specified by two endpoint locations.
@@ -75680,7 +75576,7 @@ class model:
         """
         ...
 
-    def feCoordOntoPlane(self, xyz, projDir, planePt, planeNorm, xyzPlane) -> Any:
+    def feCoordOntoPlane(self, xyz, projDir, planePt, planeNorm) -> Any:
         """
         **Description:**
             This function takes a coordinate location and projects it along a vector onto a plane.
@@ -75707,7 +75603,7 @@ class model:
         """
         ...
 
-    def feCoordOntoSurface(self, suID, fromxyz, xyz) -> Any:
+    def feCoordOntoSurface(self, suID, fromxyz) -> Any:
         """
         **Description:**
             This function projects coordinates onto a selected surface.
@@ -75728,7 +75624,7 @@ class model:
         """
         ...
 
-    def feCoordPick(self, dlgTITLE, xyz) -> Any:
+    def feCoordPick(self, dlgTITLE) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to pick or enter coordinates.
@@ -75746,7 +75642,7 @@ class model:
         """
         ...
 
-    def feCoordPickByMethod(self, method, dlgTITLE, xyz) -> Any:
+    def feCoordPickByMethod(self, method, dlgTITLE) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to pick or enter coordinates. Same as feCoordPick, but lets you specify the initial dialog box method
@@ -75767,7 +75663,7 @@ class model:
         """
         ...
 
-    def feCoordPlaneIntersect(self, baseA, normA, baseB, normB, baseC, normC, baseV) -> Any:
+    def feCoordPlaneIntersect(self, baseA, normA, baseB, normB, baseC, normC) -> Any:
         """
         **Description:**
             This function finds the coordinate location at the intersection of three planes.
@@ -75800,7 +75696,7 @@ class model:
         """
         ...
 
-    def feCoordRotate(self, xyz, angle, origin, Axis, xyzROT) -> Any:
+    def feCoordRotate(self, xyz, angle, origin, Axis) -> Any:
         """
         **Description:**
             This function takes a coordinate location and rotates it through a prescribed angle about a vector.
@@ -75827,7 +75723,7 @@ class model:
         """
         ...
 
-    def feCoordSurfaceIntersect(self, cuID, suID, nearXYZ, xyz) -> Any:
+    def feCoordSurfaceIntersect(self, cuID, suID) -> Any:
         """
         **Description:**
             This function returns coordinates located at the intersection of a curve and surface.
@@ -75848,7 +75744,7 @@ class model:
         """
         ...
 
-    def feCoordToDirCos(self, origin, xaxis, xyplane, dircos) -> Any:
+    def feCoordToDirCos(self, origin, xaxis, xyplane) -> Any:
         """
         **Description:**
             This function converts three coordinates into a 3x3 direction cosine matrix.
@@ -75872,7 +75768,7 @@ class model:
         """
         ...
 
-    def feCoordToWorkplane(self, xyz, wpXYZ) -> Any:
+    def feCoordToWorkplane(self, xyz) -> Any:
         """
         **Description:**
             This function converts coordinates from Global Rectangular coordinates to Workplane Coordinates.
@@ -75890,7 +75786,7 @@ class model:
         """
         ...
 
-    def feCoordTransform(self, fromCSYS, fromxyz, toCSYS, xyz) -> Any:
+    def feCoordTransform(self, fromCSYS, fromxyz, toCSYS) -> Any:
         """
         **Description:**
             This function transforms coordinates from one coordinate system to another.
@@ -75914,7 +75810,7 @@ class model:
         """
         ...
 
-    def feCoordVectorPlaneIntersect(self, xyz, projDir, planePt, planeNorm, xyzPlane) -> Any:
+    def feCoordVectorPlaneIntersect(self, xyz, projDir, planePt, planeNorm) -> Any:
         """
         **Description:**
             This function finds the coordinate location at the intersection of a vector and a plane.
@@ -75941,7 +75837,7 @@ class model:
         """
         ...
 
-    def feCreateFunction(self, nNumAvailableTypes, AvailableTypes, nID) -> Any:
+    def feCreateFunction(self, nNumAvailableTypes, AvailableTypes) -> Any:
         """
         **Description:**
             Displays the standard Create Function dialog box and has an option to restrict which function types
@@ -76142,8 +76038,7 @@ class model:
         """
         ...
 
-    def feCurveOffsetCurveWasher2(self, curveSET, faceID, nMode, bAutoSelect, bSaveSplit, bExtend, dOffset,
-                                  nOffsetmode) -> Any:
+    def feCurveOffsetCurveWasher2(self, curveSET, faceID, nMode, bAutoSelect, bSaveSplit, bExtend, dOffset, nOffsetmode) -> Any:
         """
         **Description:**
             Creates curves by offsetting selected curves on a surface
@@ -76178,8 +76073,7 @@ class model:
         """
         ...
 
-    def feCurvePad(self, nCurve, dValue, enPadOffsetType, enPadAlignment, bPadAddWasher, nPadAlignCurve,
-                   bSetupMappedMeshing, alignVEC) -> Any:
+    def feCurvePad(self, nCurve, dValue, enPadOffsetType, enPadAlignment, bPadAddWasher, nPadAlignCurve, bSetupMappedMeshing, alignVEC) -> Any:
         """
         **Description:**
             Creates a rectangular Pad around a circular hole.
@@ -76455,7 +76349,7 @@ class model:
         """
         ...
 
-    def feDeleteAll(self, geometry, Mesh, Output, confirm) -> Any:
+    def feDeleteAll(self, geometry, Mesh) -> Any:
         """
         **Description:**
             This method deletes entire portions of your model - either geometry or the finite element mesh.
@@ -76626,7 +76520,7 @@ class model:
         """
         ...
 
-    def feEdgesOfFreeFaces(self, elemSetID, bParabolicEdges, bPlaneElem, nFreeCount, nFreeData) -> Any:
+    def feEdgesOfFreeFaces(self, elemSetID, bParabolicEdges, bPlaneElem) -> Any:
         """
         **Description:**
             Allows you to find the Edges of Free Faces in a set of elements
@@ -76670,7 +76564,7 @@ class model:
         """
         ...
 
-    def feElementFreeEdge(self, elemSetID, bParabolicEdges, bLineElem, nFreeCount, nFreeData) -> Any:
+    def feElementFreeEdge(self, elemSetID, bParabolicEdges, bLineElem) -> Any:
         """
         **Description:**
             Allows you to find the Free Edges in a set of elements
@@ -76697,7 +76591,7 @@ class model:
         """
         ...
 
-    def feElementFreeFace(self, elemSetID, bParabolicEdges, bPlaneElem, nFreeCount, nFreeData) -> Any:
+    def feElementFreeFace(self, elemSetID, bParabolicEdges, bPlaneElem) -> Any:
         """
         **Description:**
             Allows you to find the Free Faces in a set of elements
@@ -76816,7 +76710,7 @@ class model:
         """
         ...
 
-    def feFileAttachInfo(self, nID, status, ModelName, pOutSets) -> Any:
+    def feFileAttachInfo(self, nID) -> Any:
         """
         **Description:**
             This method retrieves information for the selected Attached Results.
@@ -76987,7 +76881,7 @@ class model:
         """
         ...
 
-    def feFileGetName(self, title, filterName, filterStr, openForRead, fName) -> Any:
+    def feFileGetName(self, title, filterName, filterStr, openForRead) -> Any:
         """
         **Description:**
             Allows you to display a dialog box to retrieve a filename.
@@ -77232,8 +77126,7 @@ class model:
         """
         ...
 
-    def feFilePictureSaveJT(self, useDlg, fName, eJTFileVersion, eJTFileUnits, JTHierarchy, eLoadSetOption, LoadSets,
-                            eBCSetOption, BCSets, LinesAsCylinders, dCylinderFactor) -> Any:
+    def feFilePictureSaveJT(self, useDlg, fName, eJTFileVersion, eJTFileUnits, JTHierarchy, eLoadSetOption, LoadSets, eBCSetOption, BCSets, LinesAsCylinders, dCylinderFactor) -> Any:
         """
         **Description:**
             This function saves a Standard Output JT visualization file using the specified options
@@ -77268,8 +77161,7 @@ class model:
         """
         ...
 
-    def feFilePictureSaveJTMultiResults(self, useDlg, fName, eJTFileVersion, eJTFileUnits, OutputSets, OutputVectors,
-                                        bRaw, bAverage, bTransform, bCorners) -> Any:
+    def feFilePictureSaveJTMultiResults(self, useDlg, fName, eJTFileVersion, eJTFileUnits, OutputSets, OutputVectors, bRaw, bAverage, bTransform, bCorners) -> Any:
         """
         **Description:**
             This function saves a Multi Result Output JT visualization file using the specified options
@@ -77451,9 +77343,7 @@ class model:
         """
         ...
 
-    def feFileReadAcisOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color,
-                          convert_to_splines, convert_format, clean, heal, check, stringent, delete_invalid, faces,
-                          Scale) -> Any:
+    def feFileReadAcisOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color, convert_to_splines, convert_format, clean, heal, check, stringent, delete_invalid, faces, Scale) -> Any:
         """
         **Description:**
             This function loads geometry from an ACIS .SAT file. It works like File, Import, Geometry,when you pick an ACIS file. The file is loaded into the current model.
@@ -77592,8 +77482,7 @@ class model:
         """
         ...
 
-    def feFileReadCatia2(self, useDlg, fName, rdAnalytical, rdTopology, rdCurves, rdNoShow, rdNoPick, rdWorkplanes,
-                         stitch, heal, check) -> Any:
+    def feFileReadCatia2(self, useDlg, fName, rdAnalytical, rdTopology, rdCurves, rdNoShow, rdNoPick, rdWorkplanes, stitch, heal, check) -> Any:
         """
         **Description:**
             This function loads geometry from a CATIA (.model, mdl, .exp) file. It works like File, Import, Geometry, when you pick a CATIA file. The file is loaded into the current model.
@@ -77634,8 +77523,7 @@ class model:
         """
         ...
 
-    def feFileReadCatiaV5(self, useDlg, fName, fPath, rdNoShow, rdInactiveLayers, rdPoints, rdCurves, rdSurfaces,
-                          rdBodies, simplify) -> Any:
+    def feFileReadCatiaV5(self, useDlg, fName, fPath, rdNoShow, rdInactiveLayers, rdPoints, rdCurves, rdSurfaces, rdBodies, simplify) -> Any:
         """
         **Description:**
             This function loads geometry from a CATIA V5 (.CATpart or .CATproduct) file. It works like File, Import, Geometry, when you pick a CATIA V5 file. The file is loaded into the current model.
@@ -77676,8 +77564,7 @@ class model:
         """
         ...
 
-    def feFileReadDxf(self, useDlg, fName, read_TEXT, read_3DFACE, read_BLOCKS, read_POLYELEM, read_TRACE_boundary,
-                      read_TRACE_centerline, read_LAYER, first_layer, merge_points, merge_distance) -> Any:
+    def feFileReadDxf(self, useDlg, fName, read_TEXT, read_3DFACE, read_BLOCKS, read_POLYELEM, read_TRACE_boundary, read_TRACE_centerline, read_LAYER, first_layer, merge_points, merge_distance) -> Any:
         """
         **Description:**
             This function loads geometry (and other entities) from a DXF formatted file. It works like File, Import, Geometry, when you pick a DXF file. The file is loaded into the current model.
@@ -77769,8 +77656,7 @@ class model:
         """
         ...
 
-    def feFileReadIges(self, useDlg, fName, merge_points, read_LAYER, read_geom_only, read_surface_data,
-                       trim_preference, min_resolution) -> Any:
+    def feFileReadIges(self, useDlg, fName, merge_points, read_LAYER, read_geom_only, read_surface_data, trim_preference, min_resolution) -> Any:
         """
         **Description:**
             This function loads geometry from a IGES (.IGS) file. It works like File, Import, Geometry, when you pick an IGES file, and you do not choose the Alternate/Advanced interface. The file is loaded into the current model.
@@ -77805,8 +77691,7 @@ class model:
         """
         ...
 
-    def feFileReadIgesAdv(self, useDlg, fName, read_curves, read_untrimmed_surfaces, read_trimmed_surfaces, read_solids,
-                          flavor, trim_curve_option) -> Any:
+    def feFileReadIgesAdv(self, useDlg, fName, read_curves, read_untrimmed_surfaces, read_trimmed_surfaces, read_solids, flavor, trim_curve_option) -> Any:
         """
         **Description:**
             This function loads geometry from a IGES (.IGS) file. It works like File, Import, Geometry,when you pick an IGES file, and choose the Alternate/Advanced interface. The file is loaded into the current model.
@@ -77928,8 +77813,7 @@ class model:
         """
         ...
 
-    def feFileReadNeutral2(self, brand, fName, read_geometry, read_model, read_output, read_groups, read_views,
-                           status_messages, offsetID) -> Any:
+    def feFileReadNeutral2(self, brand, fName, read_geometry, read_model, read_output, read_groups, read_views, status_messages, offsetID) -> Any:
         """
         **Description:**
             This method is the same as calling feFileReadNeutral3 with renumber_layers and renumber_load_bc set to True, and create_new_output set to False.
@@ -77937,8 +77821,7 @@ class model:
         """
         ...
 
-    def feFileReadNeutral3(self, brand, fName, read_geometry, read_model, read_output, read_groups, read_views,
-                           status_messages, offsetID, renumber_layers, renumber_load_bc, always_new_output_sets) -> Any:
+    def feFileReadNeutral3(self, brand, fName, read_geometry, read_model, read_output, read_groups, read_views, status_messages, offsetID, renumber_layers, renumber_load_bc, always_new_output_sets) -> Any:
         """
         **Description:**
             This function reads a FEMAP Neutral file.
@@ -77999,8 +77882,7 @@ class model:
         """
         ...
 
-    def feFileReadParasolidOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color,
-                               convert_format, clean, heal, check, stringent, delete_invalid, faces, Scale) -> Any:
+    def feFileReadParasolidOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color, convert_format, clean, heal, check, stringent, delete_invalid, faces, Scale) -> Any:
         """
         **Description:**
             This function loads geometry from a Parasolid .X_T file. It works like File, Import, Geometry, when you pick a Parasolid file. The file is loaded into the current model.
@@ -78129,10 +78011,7 @@ class model:
         """
         ...
 
-    def feFileReadStepOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color,
-                          class_VI, class_V, class_IV, class_III, class_II_wf, class_II_curv, class_II_rect,
-                          class_II_2d, smooth_g1, explode, analytics, stitch, closed_orient, pro_e, check_input,
-                          check_output) -> Any:
+    def feFileReadStepOpt(self, useDlg, fName, title, layer, color, increment_layer, increment_color, assign_color, class_VI, class_V, class_IV, class_III, class_II_wf, class_II_curv, class_II_rect, class_II_2d, smooth_g1, explode, analytics, stitch, closed_orient, pro_e, check_input, check_output) -> Any:
         """
         **Description:**
             This method is obsolete and should no longer be used. Use feFileReadStepOpt2 instead.
@@ -78215,8 +78094,7 @@ class model:
         """
         ...
 
-    def feFileReadStepOpt2(self, useDlg, fName, layer, color, increment_layer, increment_color, assign_color, bodies,
-                           faceted, Surfaces, Curves, Points, optimize, simplify) -> Any:
+    def feFileReadStepOpt2(self, useDlg, fName, layer, color, increment_layer, increment_color, assign_color, bodies, faceted, Surfaces, Curves, Points, optimize, simplify) -> Any:
         """
         **Description:**
             This function loads geometry from a STEP (.STP) file. It works like File, Import, Geometry, when you pick a STEP file. The file is loaded into the current model.
@@ -78506,8 +78384,7 @@ class model:
         """
         ...
 
-    def feFileWriteFNO3V2(self, nSetSet, nVectorSet, nOutputOnGroup, nElementConnectivityGroup, nFileVersion,
-                          fName) -> Any:
+    def feFileWriteFNO3V2(self, nSetSet, nVectorSet, nOutputOnGroup, nElementConnectivityGroup, nFileVersion, fName) -> Any:
         """
         **Description:**
             This function writes a FEMAP Neutral Output File (.FNO) with option to also include element connectivity records in the file. The file version must be specified for the map of output vector IDs. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -78550,8 +78427,7 @@ class model:
         """
         ...
 
-    def feFileWriteIdeas(self, fName, PartName, WriteGroups, AbsoluteTempScale, UnitSystem, UserLengthFactor,
-                         UserForceOrMass, UserForceOrMassFactor, UserTempFactor, UserTempOffset) -> Any:
+    def feFileWriteIdeas(self, fName, PartName, WriteGroups, AbsoluteTempScale, UnitSystem, UserLengthFactor, UserForceOrMass, UserForceOrMassFactor, UserTempFactor, UserTempOffset) -> Any:
         """
         **Description:**
             This function writes an I-DEAS universal file.
@@ -78589,8 +78465,7 @@ class model:
         """
         ...
 
-    def feFileWriteIges(self, fName, spline_curves, spline_surfaces, bounded_surfaces, customization, surface_options,
-                        export_as, solidSET) -> Any:
+    def feFileWriteIges(self, fName, spline_curves, spline_surfaces, bounded_surfaces, customization, surface_options, export_as, solidSET) -> Any:
         """
         **Description:**
             This function writes selected solids to an IGES file.
@@ -78660,8 +78535,7 @@ class model:
         """
         ...
 
-    def feFileWriteNeutral(self, brand, fName, write_geometry_model, write_analysis_model, write_output,
-                           write_addl_info, expand_geometric, minimize_size, digits, version, groupID) -> Any:
+    def feFileWriteNeutral(self, brand, fName, write_geometry_model, write_analysis_model, write_output, write_addl_info, expand_geometric, minimize_size, digits, version, groupID) -> Any:
         """
         **Description:**
             This method is the same as calling feFileWriteNeutral2 with write_selector and write_palette equal to True, and write_groups and write_views equal to write_analysis_model. Refer to that method for more information.
@@ -78669,9 +78543,7 @@ class model:
         """
         ...
 
-    def feFileWriteNeutral2(self, brand, fName, write_geometry_model, write_analysis_model, write_output,
-                            write_selector, write_palette, write_groups, write_views, write_addl_info, expand_geometric,
-                            minimize_size, digits, version, groupID) -> Any:
+    def feFileWriteNeutral2(self, brand, fName, write_geometry_model, write_analysis_model, write_output, write_selector, write_palette, write_groups, write_views, write_addl_info, expand_geometric, minimize_size, digits, version, groupID) -> Any:
         """
         **Description:**
             This function writes a FEMAP Neutral file.
@@ -78751,10 +78623,7 @@ class model:
         """
         ...
 
-    def feFileWriteSTAAD(self, fName, AnalysisType, sStructType, sLengthUnits, sForceUnits, sPropUnits, dGravConstant,
-                         bModalCalc, dModalCutOffFreq, nModalCutOffMode, bPrintModel, bPrintDisp, bPrintReactions,
-                         bPrintMemberForces, bPrintMemberStresses, bPrintElemForces, bPrintJointForces, bPostDisp,
-                         bPostSectionDisp, bPostMemberForces, bPostStresses) -> Any:
+    def feFileWriteSTAAD(self, fName, AnalysisType, sStructType, sLengthUnits, sForceUnits, sPropUnits, dGravConstant, bModalCalc, dModalCutOffFreq, nModalCutOffMode, bPrintModel, bPrintDisp, bPrintReactions, bPrintMemberForces, bPrintMemberStresses, bPrintElemForces, bPrintJointForces, bPostDisp, bPostSectionDisp, bPostMemberForces, bPostStresses) -> Any:
         """
         **Description:**
             This function writes a STAAD input file.
@@ -78835,8 +78704,7 @@ class model:
         """
         ...
 
-    def feFileWriteVrml(self, fName, version, write_solid, single_color, write_deformed, write_contour,
-                        write_background, background_color, color, solidSET) -> Any:
+    def feFileWriteVrml(self, fName, version, write_solid, single_color, write_deformed, write_contour, write_background, background_color, color, solidSET) -> Any:
         """
         **Description:**
             This function writes either elements or solids to a VRML file.
@@ -78871,7 +78739,7 @@ class model:
         """
         ...
 
-    def feFormatReal(self, dValue, nWidth, nDecimal, nFormat, strValue) -> Any:
+    def feFormatReal(self, dValue, nWidth, nDecimal, nFormat) -> Any:
         """
         **Description:**
             Formats a real number into a text string using the options used internally by FEMAP
@@ -79078,8 +78946,7 @@ class model:
         """
         ...
 
-    def feGenerateRadialCopy2(self, entityTYPE, entitySET, origXYZ, aroundVEC, Length, bScaleAroundVec, Match,
-                              matchColorLayer) -> Any:
+    def feGenerateRadialCopy2(self, entityTYPE, entitySET, origXYZ, aroundVEC, Length, bScaleAroundVec, Match, matchColorLayer) -> Any:
         """
         **Description:**
             Creates new entities by radially copying existing entities about an origin or about a vector. When both matchColorLayer and bScaleAroundVec arguments are set to False, behaves identical to feGenerateRadialCopy.
@@ -79204,8 +79071,7 @@ class model:
         """
         ...
 
-    def feGenerateRotate2(self, entityTYPE, entitySET, origVEC, axisVEC, rotANGLE, transDIST, Match,
-                          matchColorLayer) -> Any:
+    def feGenerateRotate2(self, entityTYPE, entitySET, origVEC, axisVEC, rotANGLE, transDIST, Match, matchColorLayer) -> Any:
         """
         **Description:**
             Creates new entities by rotating entities about an axis. When matchColorLayer argument is set to False, behaves identical to feGenerateRotate.
@@ -79324,8 +79190,7 @@ class model:
         """
         ...
 
-    def feGetElemDistortion(self, elemID, valASPECT, valTAPER, valANGLE, valWARP, valNasWARP, valALTTAPER, valTET,
-                            valJDet, valComb) -> Any:
+    def feGetElemDistortion(self, elemID) -> Any:
         """
         **Description:**
             This function checks an element and returns the distortion values.
@@ -79367,8 +79232,7 @@ class model:
         """
         ...
 
-    def feGetElemDistortion2(self, elemID, valASPECT, valTAPER, valANGLE, valWARP, valNasWARP, valALTTAPER, valTET,
-                             valJDet, valComb, valExpTime) -> Any:
+    def feGetElemDistortion2(self, elemID) -> Any:
         """
         **Description:**
             This function checks an element and returns the distortion values.
@@ -79413,8 +79277,7 @@ class model:
         """
         ...
 
-    def feGetElementAdjacentFaces(self, nElemID, nFaceID, nFromElemSetID, dTolerance, bMatchNormals, nNumFaces, nElems,
-                                  nFaces) -> Any:
+    def feGetElementAdjacentFaces(self, nElemID, nFaceID, nFromElemSetID, dTolerance, bMatchNormals) -> Any:
         """
         **Description:**
             This function will get all adjacent faces within a specified tolerance from a given element and face ID.
@@ -79450,7 +79313,7 @@ class model:
         """
         ...
 
-    def feGetElementEdges(self, title, orig_nCount, orig_elemID, orig_faceID, nCount, elemID, faceID) -> Any:
+    def feGetElementEdges(self, title, orig_nCount, orig_elemID, orig_faceID) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select element edges.
@@ -79483,7 +79346,7 @@ class model:
         """
         ...
 
-    def feGetElementFaces(self, title, orig_nCount, orig_elemID, orig_faceID, nCount, elemID, faceID) -> Any:
+    def feGetElementFaces(self, title, orig_nCount, orig_elemID, orig_faceID) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select element faces.
@@ -79516,7 +79379,7 @@ class model:
         """
         ...
 
-    def feGetElementFacesFromSet(self, title, nElemSetID, nCount, elemID, faceID) -> Any:
+    def feGetElementFacesFromSet(self, title, nElemSetID) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select element faces with the added option to limit the face selection using a set object loaded with element IDs
@@ -79543,7 +79406,7 @@ class model:
         """
         ...
 
-    def feGetInt(self, title, lowerlimit, upperlimit, value) -> Any:
+    def feGetInt(self, title, lowerlimit, upperlimit) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to enter an integer number.
@@ -79567,7 +79430,7 @@ class model:
         """
         ...
 
-    def feGetMenuCommand(self, menuName1, menuName2, menuName3, cmdID) -> Any:
+    def feGetMenuCommand(self, menuName1, menuName2, menuName3) -> Any:
         """
         **Description:**
             Retrieves the ID of a specified command
@@ -79591,7 +79454,7 @@ class model:
         """
         ...
 
-    def feGetMenuCommands(self, menuName1, menuName2, numCmds, cmdID, cmdTitle) -> Any:
+    def feGetMenuCommands(self, menuName1, menuName2) -> Any:
         """
         **Description:**
             Retrieves information about all commands on a selected menu
@@ -79618,7 +79481,7 @@ class model:
         """
         ...
 
-    def feGetNodalAreaOnSurface(self, nSurface, bAdjustMidside, bUnitArea, pnNumNodes, pvNodes, pvAreas) -> Any:
+    def feGetNodalAreaOnSurface(self, bUnitArea) -> Any:
         """
         **Description:**
             Extracts the area or unit area for the nodes of associated elements of a given surface.
@@ -79642,8 +79505,7 @@ class model:
         """
         ...
 
-    def feGetNodalAreaOrLength(self, nNumElem, nElems, nFaces, bAdjustMidside, bUnitArea, pnNumNodes, pvNodes,
-                               pvAreaOrLength) -> Any:
+    def feGetNodalAreaOrLength(self, nNumElem, nElems, nFaces, bUnitArea) -> Any:
         """
         **Description:**
             Extracts the area, unit area, or length for the nodes of a given set of elements and face ID.
@@ -79673,7 +79535,7 @@ class model:
         """
         ...
 
-    def feGetReal(self, title, lowerlimit, upperlimit, value) -> Any:
+    def feGetReal(self, title, lowerlimit, upperlimit) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to enter a real number.
@@ -79697,7 +79559,7 @@ class model:
         """
         ...
 
-    def feGetRealLength(self, title, value) -> Any:
+    def feGetRealLength(self, title) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to enter a real number or use an icon button to measure a distance using the Tools, Measure Distance functionality.
@@ -79715,7 +79577,7 @@ class model:
         """
         ...
 
-    def feGetToolbarCommand(self, BarName, cmdIndex, cmdID) -> Any:
+    def feGetToolbarCommand(self, BarName, cmdIndex) -> Any:
         """
         **Description:**
             Finds the ID of the command associated with a toolbar button
@@ -79736,7 +79598,7 @@ class model:
         """
         ...
 
-    def feGetToolbarCommands(self, BarName, numCmds, cmdID, cmdVisible, cmdSubmenu, cmdTitle) -> Any:
+    def feGetToolbarCommands(self, BarName) -> Any:
         """
         **Description:**
             Retrieves information about all commands on a selected toolbar
@@ -79760,7 +79622,7 @@ class model:
         """
         ...
 
-    def feGetToolbarSubCommands(self, cmdID, numSubCmds, subcmdID, subcmdVisible, subcmdTitle) -> Any:
+    def feGetToolbarSubCommands(self, cmdID) -> Any:
         """
         **Description:**
             Retrieves information about all commands on a menu that drops-down from a toolbar button.
@@ -79867,8 +79729,7 @@ class model:
         """
         ...
 
-    def feGroupBoolean2(self, GroupsToProcessSetID, GroupToSubtractFromID, opperation, GroupToCreateID,
-                        GroupTitle) -> Any:
+    def feGroupBoolean2(self, GroupsToProcessSetID, GroupToSubtractFromID, opperation, GroupToCreateID, GroupTitle) -> Any:
         """
         **Description:**
             This method takes a set of Groups and creates a new group based on a specified operation.
@@ -79891,7 +79752,7 @@ class model:
         """
         ...
 
-    def feGroupCombine(self, groupSET, groupID) -> Any:
+    def feGroupCombine(self, groupSET) -> Any:
         """
         **Description:**
             This method takes one or more existing groups and combines them to create a new group
@@ -79937,7 +79798,7 @@ class model:
         """
         ...
 
-    def feGroupFromCriteria(self, vuID, bVisibleOnly, nGroupID) -> Any:
+    def feGroupFromCriteria(self, vuID, bVisibleOnly) -> Any:
         """
         **Description:**
             This method automatically makes a group containing only the elements which pass the current criteria when displaying a Criteria plot
@@ -80080,8 +79941,7 @@ class model:
         """
         ...
 
-    def feGroupGenerate2(self, elemSET, planer, brkPropMatl, brkLayer, brkColor, brkAngle, brkMatchNormal,
-                         brkNonManifold, addLayers, nExpandGroup) -> Any:
+    def feGroupGenerate2(self, elemSET, planer, brkPropMatl, brkLayer, brkColor, brkAngle, brkMatchNormal, brkNonManifold, addLayers, nExpandGroup) -> Any:
         """
         **Description:**
             This method automatically makes one or more groups by subdividing the elements you select based on one or more criteria.
@@ -80162,7 +80022,7 @@ class model:
         """
         ...
 
-    def feGroupsContaining(self, enDataType, nEntityID, nGroupSetID) -> Any:
+    def feGroupsContaining(self, enDataType, nEntityID) -> Any:
         """
         **Description:**
             This method does not mimic a command in the group menu, but instead populates an existing set object with the IDs of every group in which the specified entities (or single entity) currently reside
@@ -80200,7 +80060,7 @@ class model:
         """
         ...
 
-    def feLayerGet(self, layID, layColor, layTitle) -> Any:
+    def feLayerGet(self, layID) -> Any:
         """
         **Description:**
             This function retrieves information about a layer.
@@ -80255,7 +80115,7 @@ class model:
         """
         ...
 
-    def feLicenseGetInfo(self, nFeature, bUser, pnLic, pFeatures, pLicAvail, pLicInUse, pUsers) -> Any:
+    def feLicenseGetInfo(self, nFeature, bUser) -> Any:
         """
         **Description:**
             Indicates whether a specific feature is licensed with this copy of FEMAP
@@ -80551,8 +80411,7 @@ class model:
         """
         ...
 
-    def feLoadFromFreebody(self, freebodyID, NodeSetID, outSetID, loadSetID, doSummation, doNodes,
-                           overrideNodeCheck) -> Any:
+    def feLoadFromFreebody(self, freebodyID, NodeSetID, outSetID, loadSetID, doSummation, doNodes, overrideNodeCheck) -> Any:
         """
         **Description:**
             Creates applied loads from freebody loads
@@ -80614,7 +80473,7 @@ class model:
         """
         ...
 
-    def feMeasureAngle(self, center, p1, p2, angle) -> Any:
+    def feMeasureAngle(self, center, p1, p2) -> Any:
         """
         **Description:**
             This function measures the angle between three coordinate locations.
@@ -80638,8 +80497,7 @@ class model:
         """
         ...
 
-    def feMeasureAngleBetweenNodesV2(self, nVertex, nFrom, nTo, nOutSetID, nOutVecID, nCSysID, vecBASE, vecNormal,
-                                     magAngle) -> Any:
+    def feMeasureAngleBetweenNodesV2(self, nVertex, nFrom, nTo, nOutSetID, nOutVecID, nCSysID) -> Any:
         """
         **Description:**
             This function measures the angle between three coordinate locations. This method replaces feMeasureAngleBetweenNodes. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -80678,7 +80536,7 @@ class model:
         """
         ...
 
-    def feMeasureCurve(self, curveSET, totalLength) -> Any:
+    def feMeasureCurve(self, curveSET) -> Any:
         """
         **Description:**
             This function measures the length of one or more curves.
@@ -80696,7 +80554,7 @@ class model:
         """
         ...
 
-    def feMeasureDistance(self, p1, p2, dist) -> Any:
+    def feMeasureDistance(self, p1, p2) -> Any:
         """
         **Description:**
             This function measures the distance between two coordinates.
@@ -80717,8 +80575,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceBetweenGeometry(self, enFromType, nFromSet, enToType, nToSet, bMinimum, nFromID, nToID, vFrom,
-                                         vTo, dDistance) -> Any:
+    def feMeasureDistanceBetweenGeometry(self, enFromType, nFromSet, enToType, nToSet, bMinimum) -> Any:
         """
         **Description:**
             This function measures the distance between two sets of geometric entities or a set of nodes and a set of geometric entities. The maximum or minimum distance is calculated using any combination of sets containing only points, curves, surfaces, or solids.
@@ -80760,7 +80617,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceBetweenLines(self, pA1, pA2, pB1, pB2, dist) -> Any:
+    def feMeasureDistanceBetweenLines(self, pA1, pA2, pB1, pB2) -> Any:
         """
         **Description:**
             This function measures the minimum distance between two line segments in space which are specified by the coordinates of their endpoints.
@@ -80787,8 +80644,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceBetweenNodes2V2(self, nFrom, nTo, nOutSetID, nOutVecID, nCSysID, vecBASE, vecTip, vecDist,
-                                         magDist) -> Any:
+    def feMeasureDistanceBetweenNodes2V2(self, nFrom, nTo, nOutSetID, nOutVecID, nCSysID) -> Any:
         """
         **Description:**
             This function measures the distance between two nodes which are optionally deformed using selected results.This function is supersedes by feMeasureDistanceBetweenNodes. This method replaces feMeasureDistanceBetweenNodes2. For more information, seeSection 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -80827,8 +80683,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceBetweenNodesV2(self, nFrom, nTo, nOutSetID, nOutVecID, nCSysID, vecBASE, vecDist,
-                                        magDist) -> Any:
+    def feMeasureDistanceBetweenNodesV2(self, nFrom, nTo, nOutSetID, nOutVecID, nCSysID) -> Any:
         """
         **Description:**
             This function measures the distance between two nodes which are optionally deformed using selected results. This function is superseded by feMeasureDistanceBetweenNodes2. This method replaces feMeasureDistanceBetweenNodes. For more information, seeSection 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -80864,7 +80719,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceBetweenSolids(self, solidID1, solidID2, dist) -> Any:
+    def feMeasureDistanceBetweenSolids(self, solidID1, solidID2) -> Any:
         """
         **Description:**
             This function measures the minimum distance between two solids in space
@@ -80884,7 +80739,7 @@ class model:
         """
         ...
 
-    def feMeasureDistanceToPlane(self, p1, planePt, planeNorm, dist) -> Any:
+    def feMeasureDistanceToPlane(self, p1, planePt, planeNorm) -> Any:
         """
         **Description:**
             This function measures the distance between a coordinate location and a plane. The distance is the length of the perpendicular projection onto the plane.
@@ -80908,8 +80763,7 @@ class model:
         """
         ...
 
-    def feMeasureMeshMassProp(self, elemSET, csysID, printResults, printDetails, len, Area, volume, structMass,
-                              nonstructMass, totalMass, structCG, nonstructCG, totalCG, Inertia, inertiaCG) -> Any:
+    def feMeasureMeshMassProp(self, elemSET, csysID, printResults, printDetails) -> Any:
         """
         **Description:**
             This function computes the mass properties of a mesh.
@@ -80966,7 +80820,7 @@ class model:
         """
         ...
 
-    def feMeasureMeshSectionProp(self, elemSET, vecBASE, vecDIR, sectProp) -> Any:
+    def feMeasureMeshSectionProp(self, elemSET, vecBASE, vecDIR) -> Any:
         """
         **Description:**
             This function computes the section properties for a selected set of elements.
@@ -80990,7 +80844,7 @@ class model:
         """
         ...
 
-    def feMeasureSolidMassProp(self, solidID, Area, volume, cg, Inertia) -> Any:
+    def feMeasureSolidMassProp(self, solidID) -> Any:
         """
         **Description:**
             This function computes the mass properties of a solid.
@@ -81017,7 +80871,7 @@ class model:
         """
         ...
 
-    def feMeasureSurfSectionProp(self, surfID, vecBASE, vecDIR, sectProp) -> Any:
+    def feMeasureSurfSectionProp(self, surfID, vecBASE, vecDIR) -> Any:
         """
         **Description:**
             This function computes the section properties for a planar surface.
@@ -81041,7 +80895,7 @@ class model:
         """
         ...
 
-    def feMeasureSurfaceArea(self, surfaceSET, totalArea) -> Any:
+    def feMeasureSurfaceArea(self, surfaceSET) -> Any:
         """
         **Description:**
             This function measures the area of one or more surfaces.
@@ -81122,8 +80976,7 @@ class model:
         """
         ...
 
-    def feMeshAttrCurve(self, curveSET, propID, orient, offset1, offset2, orient_type, offset_type, release1,
-                        release2) -> Any:
+    def feMeshAttrCurve(self, curveSET, propID, orient, offset1, offset2, orient_type, offset_type, release1, release2) -> Any:
         """
         **Description:**
             Sets mesh attributes on a selected set of curves.
@@ -81215,8 +81068,7 @@ class model:
         """
         ...
 
-    def feMeshBetween(self, propID, genMode, shape, rightSplit, alternate, allQuad, logSpacing, numCorners, numNodes,
-                      bias, nodeINC, cornerXYZ) -> Any:
+    def feMeshBetween(self, propID, genMode, shape, rightSplit, alternate, allQuad, logSpacing, numCorners, numNodes, bias, nodeINC, cornerXYZ) -> Any:
         """
         **Description:**
             Meshes between selected coordinate locations. No geometry is required.
@@ -81349,9 +81201,7 @@ class model:
         """
         ...
 
-    def feMeshConnectRigid(self, nSourceNodeSetID, nTargetNodeSetID, bIsRbe3, bbSourceDoF, bbTargetDoF, bMaxDistance,
-                           dMaxDistance, bMultiMap, nMinTargetNum, nMaxTargetNum, nBadSourceSet, nBadTargetSet,
-                           pnCreated) -> Any:
+    def feMeshConnectRigid(self, nSourceNodeSetID, nTargetNodeSetID, bIsRbe3, bbSourceDoF, bbTargetDoF, bMaxDistance, dMaxDistance, bMultiMap, nMinTargetNum, nMaxTargetNum, nBadSourceSet, nBadTargetSet, pnCreated) -> Any:
         """
         **Description:**
             This method can be used to automatically create RBE2 or RBE3 elements using a set of Source Nodes as the Independent (RBE2) or Dependent (RBE3) node for each element, which then connect to any number of Target Nodes in the model, based on the specified parameters. This method provides programmatic access to the functionality of the Mesh, Connect, Rigid command.
@@ -81649,8 +81499,7 @@ class model:
         """
         ...
 
-    def feMeshExtrudeElem2(self, elemSET, axisLEN, axisOrig, axisVEC, propID, numElem, method, radialspherical,
-                           ontoSurfSetID, matchCurrent, deleteOrig) -> Any:
+    def feMeshExtrudeElem2(self, elemSET, axisLEN, axisOrig, axisVEC, propID, numElem, method, radialspherical, ontoSurfSetID, matchCurrent, deleteOrig) -> Any:
         """
         **Description:**
             Extrudes existing elements into new elements allowing use of all 5 methods in the Mesh, Extrude, Elements command (Vector, Normals, Normals with Thickness Correction, Radial, and Along Vector to Surfaces)
@@ -81691,8 +81540,7 @@ class model:
         """
         ...
 
-    def feMeshHexSolid(self, solidSET, propID, surfaceMeshOnly, makeMidside, checkSurfElem, deleteSurfElem, midsideGeom,
-                       midsideAngle) -> Any:
+    def feMeshHexSolid(self, solidSET, propID, surfaceMeshOnly, makeMidside, checkSurfElem, deleteSurfElem, midsideGeom, midsideAngle) -> Any:
         """
         **Description:**
             Meshes a selected set of solids with hexahedral elements.
@@ -81727,8 +81575,7 @@ class model:
         """
         ...
 
-    def feMeshHexSolidFromElement(self, baseSET, topSET, propID, numLayer, match1, match2, makeMidside, checkSurfElem,
-                                  deleteSurfElem) -> Any:
+    def feMeshHexSolidFromElement(self, baseSET, topSET, propID, numLayer, match1, match2, makeMidside, checkSurfElem, deleteSurfElem) -> Any:
         """
         **Description:**
             Meshes selected sets of surface elements with hexahedral elements.
@@ -81809,8 +81656,7 @@ class model:
         """
         ...
 
-    def feMeshRemesh(self, elemSET, nodeSET, remeshMode, refineRatio, breakAngle, deleteOrig, propID, minBetween,
-                     maxASPECT, maxQuickNodes, meshApproach, quadAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
+    def feMeshRemesh(self, elemSET, nodeSET, remeshMode, refineRatio, breakAngle, deleteOrig, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
         """
         **Description:**
             Remeshes a portion of an existing mesh.
@@ -81863,8 +81709,7 @@ class model:
         """
         ...
 
-    def feMeshRemeshRegions(self, MeshSize, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle,
-                            smoothLaplacian, smoothIter, smoothTol) -> Any:
+    def feMeshRemeshRegions(self, MeshSize, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
         """
         **Description:**
             Moves an element from one remeshing region to an adjacent region.
@@ -81937,8 +81782,7 @@ class model:
         """
         ...
 
-    def feMeshRevolveElem(self, elemSET, rotANGLE, rotThrust, axisOrig, axisVEC, propID, numElem, matchCurrent,
-                          deleteOrig) -> Any:
+    def feMeshRevolveElem(self, elemSET, rotANGLE, rotThrust, axisOrig, axisVEC, propID, numElem, matchCurrent, deleteOrig) -> Any:
         """
         **Description:**
             Revolves existing elements into new elements.
@@ -81976,8 +81820,7 @@ class model:
         """
         ...
 
-    def feMeshSizeCurve(self, curveSET, numElem, MeshSize, minLine, minClosed, minOther, spacing, biasMethod, bias,
-                        biasLoc, CustomSize) -> Any:
+    def feMeshSizeCurve(self, curveSET, numElem, MeshSize, minLine, minClosed, minOther, spacing, biasMethod, bias, biasLoc, CustomSize) -> Any:
         """
         **Description:**
             Sets mesh sizes on a selected set of curves.
@@ -82018,8 +81861,7 @@ class model:
         """
         ...
 
-    def feMeshSizeCurve2(self, curveSET, numElem, MeshSize, minLine, minClosed, minOther, spacing, biasMethod, bias,
-                         biasLoc, CustomSize, bPropagateMeshSize) -> Any:
+    def feMeshSizeCurve2(self, curveSET, numElem, MeshSize, minLine, minClosed, minOther, spacing, biasMethod, bias, biasLoc, CustomSize, bPropagateMeshSize) -> Any:
         """
         **Description:**
             Sets mesh sizes on a selected set of curves.
@@ -82124,9 +81966,7 @@ class model:
         """
         ...
 
-    def feMeshSizeSolid(self, surfSET, replaceAll, MeshSize, minEdge, maxANGLE, maxOnSmall, smallSize, vertexAspect,
-                        mappedRefinement, GrowthFactor, refineRatio, refineSurf, matchAdjacent, hexMesh, adjustColor,
-                        removeSlaving) -> Any:
+    def feMeshSizeSolid(self, surfSET, replaceAll, MeshSize, minEdge, maxANGLE, maxOnSmall, smallSize, vertexAspect, mappedRefinement, GrowthFactor, refineRatio, refineSurf, matchAdjacent, hexMesh, adjustColor, removeSlaving) -> Any:
         """
         **Description:**
             Sets mesh sizes on a selected set of solids.
@@ -82176,8 +82016,7 @@ class model:
         """
         ...
 
-    def feMeshSizeSurface(self, surfSET, replaceAll, MeshSize, minEdge, maxANGLE, maxOnSmall, smallSize, vertexAspect,
-                          mappedRefinement, grxfprintfowthFactor, refineRatio, refineSurf) -> Any:
+    def feMeshSizeSurface(self, surfSET, replaceAll, MeshSize, minEdge, maxANGLE, maxOnSmall, smallSize, vertexAspect, mappedRefinement, grxfprintfowthFactor, refineRatio, refineSurf) -> Any:
         """
         **Description:**
             Sets mesh sizes on a selected set of surfaces.
@@ -82267,8 +82106,7 @@ class model:
         """
         ...
 
-    def feMeshSurface(self, surfaceSET, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle,
-                      midsideGeom, midsideAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
+    def feMeshSurface(self, surfaceSET, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle, midsideGeom, midsideAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
         """
         **Description:**
             Meshes a selected set of surfaces.
@@ -82378,8 +82216,7 @@ class model:
         """
         ...
 
-    def feMeshSweepElem(self, elemSET, numPath, curvePath, numAlign, curveAlign, alignLoc, propID, matchCurrent,
-                        deleteOrig) -> Any:
+    def feMeshSweepElem(self, elemSET, numPath, curvePath, numAlign, curveAlign, alignLoc, propID, matchCurrent, deleteOrig) -> Any:
         """
         **Description:**
             Sweeps existing elements along one or more curves into new elements.
@@ -82408,8 +82245,7 @@ class model:
         """
         ...
 
-    def feMeshTetSolid(self, entityTYPE, entitySET, propID, surfaceMeshOnly, makeMidside, tetGrowth, checkSurfElem,
-                       deleteSurfElem, midsideGeom, midsideAngle, allocateElem) -> Any:
+    def feMeshTetSolid(self, entityTYPE, entitySET, propID, surfaceMeshOnly, makeMidside, tetGrowth, checkSurfElem, deleteSurfElem, midsideGeom, midsideAngle, allocateElem) -> Any:
         """
         **Description:**
             Meshes a selected set of solids (or surfaces or planar elements) with tetrahedral elements. This method has been superseded by feMeshTetSolid2 and feMeshTetSolid3.
@@ -82450,9 +82286,7 @@ class model:
         """
         ...
 
-    def feMeshTetSolid2(self, entityTYPE, entitySET, propID, surfaceMeshOnly, makeMidside, tetGrowth, checkSurfElem,
-                        deleteSurfElem, midsideGeom, midsideAngle, multiThruThickness, sliverRemoval,
-                        tetOptimization) -> Any:
+    def feMeshTetSolid2(self, entityTYPE, entitySET, propID, surfaceMeshOnly, makeMidside, tetGrowth, checkSurfElem, deleteSurfElem, midsideGeom, midsideAngle, multiThruThickness, sliverRemoval, tetOptimization) -> Any:
         """
         **Description:**
             Meshes a selected set of solids (or surfaces or planar elements) with tetrahedral elements. This method supersedes feMeshTetSolid, but has also been superseded by feMeshTetSolid3.
@@ -82496,9 +82330,7 @@ class model:
         """
         ...
 
-    def feMeshTetSolid3(self, entityTYPE, entitySET, propID, meshingApproach, makeMidside, tetGrowth, checkSurfElem,
-                        deleteSurfElem, midsideGeom, midsideAngle, multiThruThickness, sliverRemoval, tetOptimization,
-                        pyramidSurfaceSET, pyramidMatchAdjacentParabolic) -> Any:
+    def feMeshTetSolid3(self, entityTYPE, entitySET, propID, meshingApproach, makeMidside, tetGrowth, checkSurfElem, deleteSurfElem, midsideGeom, midsideAngle, multiThruThickness, sliverRemoval, tetOptimization, pyramidSurfaceSET, pyramidMatchAdjacentParabolic) -> Any:
         """
         **Description:**
             Meshes a selected set of solids (or surfaces or planar elements) with tetrahedral and, optionally, pyramid elements. This method supersedes feMeshTetSolid2 and feMeshTetSolid.
@@ -82545,8 +82377,7 @@ class model:
         """
         ...
 
-    def feMeshTransition(self, useNodes, entCOUNT, entID, edgeNUM, edgeBIAS, edgeSIZE, propID, minBetween, maxASPECT,
-                         maxQuickNodes, meshApproach, quadAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
+    def feMeshTransition(self, useNodes, entCOUNT, entID, edgeNUM, edgeBIAS, edgeSIZE, propID, minBetween, maxASPECT, maxQuickNodes, meshApproach, quadAngle, smoothLaplacian, smoothIter, smoothTol) -> Any:
         """
         **Description:**
             Meshes between nodes or line elements that form a closed boundary.
@@ -83168,8 +82999,7 @@ class model:
         """
         ...
 
-    def feModifyPlateThickOffsetBetweenNodes(self, nSetID, enUpdating, nFromNode, dFromValue, nToNode, dToValue,
-                                             bAverageForElement, dTolerance, dMinValue, dMaxValue) -> Any:
+    def feModifyPlateThickOffsetBetweenNodes(self, nSetID, enUpdating, nFromNode, dFromValue, nToNode, dToValue, bAverageForElement, dTolerance, dMinValue, dMaxValue) -> Any:
         """
         **Description:**
             Modifies the Element Thickness, Property Thickness, or Element Offset of the specified elements by varying the thickness or offset from the value specified at one node (From Node) to the value specified at another node (To Node). This method provides programmatic access to functionality of the Modify, Update Elements, Adjust Plate Thickness/Offsetcommand when Methodis set to Vary Between Nodes.
@@ -83179,8 +83009,7 @@ class model:
         """
         ...
 
-    def feModifyPlateThickOffsetEquation(self, nSetID, enUpdating, enMethod, sNodeElemVariable, sEquation,
-                                         bAverageForElement, dTolerance, dMinValue, dMaxValue) -> Any:
+    def feModifyPlateThickOffsetEquation(self, nSetID, enUpdating, enMethod, sNodeElemVariable, sEquation, bAverageForElement, dTolerance, dMinValue, dMaxValue) -> Any:
         """
         **Description:**
             Modifies the Element Thickness, Property Thickness, or Element Offset of the specified elements by varying the thickness or offset using a specified method. This method provides programmatic access to functionality of the Modify, Update Elements, Adjust Plate Thickness/Offsetcommand when Methodis set to Equation or Constant, but is specifically designed to work with equations. To use the Equation capabilities, see Section 3.10.8.19, "feModifyPlateThickOffsetValue".
@@ -83238,8 +83067,7 @@ class model:
         """
         ...
 
-    def feModifyPlateThickOffsetValue(self, nSetID, enUpdating, enMethod, dValue, bAverageForElement, dTolerance,
-                                      dMinValue, dMaxValue) -> Any:
+    def feModifyPlateThickOffsetValue(self, nSetID, enUpdating, enMethod, dValue, bAverageForElement, dTolerance, dMinValue, dMaxValue) -> Any:
         """
         **Description:**
             Modifies the Element Thickness, Property Thickness, or Element Offset of the specified elements by varying the thickness or offset using a specified method. This method provides programmatic access to functionality of the Modify, Update Elements, Adjust Plate Thickness/Offsetcommand when Methodis set to Equation or Constant, but is specifically designed to work with constants. To use the Equation capabilities, see Section 3.10.8.20, "feModifyPlateThickOffsetEquation"
@@ -83531,7 +83359,7 @@ class model:
         """
         ...
 
-    def feNodesBetweenNodes(self, ndID1, ndID2, elSetID, nNodes, nNodeList) -> Any:
+    def feNodesBetweenNodes(self, ndID1, ndID2, elSetID) -> Any:
         """
         **Description:**
             Returns a list of nodes, in order, between two specified nodes (i.e., a node path). Also, the path from Node 1 to Node 2 can be limited to only consider the edges of a subset of elements specified by the user.
@@ -83555,7 +83383,7 @@ class model:
         """
         ...
 
-    def feNotesGet(self, noteSET, notes) -> Any:
+    def feNotesGet(self, noteSET) -> Any:
         """
         **Description:**
             This function retrieves the currently defined model notes.
@@ -83699,8 +83527,7 @@ class model:
         """
         ...
 
-    def feOutputForceBalance(self, outSETS, boundarynodeSET, boundaryelemSET, csysID, aroundXYZ, numSETS,
-                             resultant) -> Any:
+    def feOutputForceBalance(self, outSETS, boundarynodeSET, boundaryelemSET, csysID, aroundXYZ) -> Any:
         """
         **Description:**
             This method is obsolete. For new applications, use freebody objects and the CalculateSummation2 method.
@@ -83848,8 +83675,7 @@ class model:
         """
         ...
 
-    def feOutputProcessEnvelopeFromSetsV2(self, bFullSet, ntype, nApproach, bEnvelopeInSets, bEnvelopeAcrossSets,
-                                          bSetInfo, nSetSet, nVectorSet, to_setID) -> Any:
+    def feOutputProcessEnvelopeFromSetsV2(self, bFullSet, ntype, nApproach, bEnvelopeInSets, bEnvelopeAcrossSets, bSetInfo, nSetSet, nVectorSet, to_setID) -> Any:
         """
         **Description:**
             Envelopes results in one or more Output Sets or Vectors to find worst-case scenarios specified via a set of Output Sets and optionally a set of Output Vectors. This method replaces feOutputProcessEnvelopeFromSets. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -83887,8 +83713,7 @@ class model:
         """
         ...
 
-    def feOutputProcessEnvelopeV2(self, bFullSet, ntype, nApproach, bEnvelopeInSets, bEnvelopeAcrossSets, bSetInfo,
-                                  nCount, from_setID, from_vectorID, to_setID) -> Any:
+    def feOutputProcessEnvelopeV2(self, bFullSet, ntype, nApproach, bEnvelopeInSets, bEnvelopeAcrossSets, bSetInfo, nCount, from_setID, from_vectorID, to_setID) -> Any:
         """
         **Description:**
             Envelopes results in one or more Output Sets or Vectors to find worst-case scenarios. This method replaces feOutputProcessEnvelope. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -83946,8 +83771,7 @@ class model:
         """
         ...
 
-    def feOutputProcessLinearCombinationV2(self, bFullSet, nApproach, nCount, dScaleFactor, from_setID, from_vectorID,
-                                           to_setID) -> Any:
+    def feOutputProcessLinearCombinationV2(self, bFullSet, nApproach, nCount, dScaleFactor, from_setID, from_vectorID, to_setID) -> Any:
         """
         **Description:**
             Performs a linear combination, with a scale factor, of Output Sets or Vectors. This method replaces feOutputProcessLinearCombination. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -83999,8 +83823,7 @@ class model:
         """
         ...
 
-    def feOutputProcessRSSCombinationV2(self, bFullSet, nApproach, nCount, dScaleFactor, from_setID, from_vectorID,
-                                        to_setID) -> Any:
+    def feOutputProcessRSSCombinationV2(self, bFullSet, nApproach, nCount, dScaleFactor, from_setID, from_vectorID, to_setID) -> Any:
         """
         **Description:**
             Performs an RSS (root sum squared) combination, with a scale factor, of Output Sets or Vectors. This method replaces feOutputProcessRSSCombination. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -84026,8 +83849,7 @@ class model:
         """
         ...
 
-    def feOutputProcessV2(self, Count, full_set, processing_method, approach, from_setID, from_vectorID, to_setID,
-                          to_vectorID, groupID, factor, overwrite, ply_summary, set_info) -> Any:
+    def feOutputProcessV2(self, Count, full_set, processing_method, approach, from_setID, from_vectorID, to_setID, to_vectorID, groupID, factor, overwrite, ply_summary, set_info) -> Any:
         """
         **Description:**
             Provides the functionality that is available through the Model, Output, Process command to copy, combine, envelope, or convert output. This method replaces feOutputProcess. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -84074,9 +83896,7 @@ class model:
         """
         ...
 
-    def feOutputTransform2V2(self, setSET, vecSET, nodeSET, elemSET, nodalMode, nodalCSysID, nodalGlobalComp, plateMode,
-                             plateCSysID, plateDOF, plateVEC, plateAngle, solidMode, solidCSysID,
-                             engrShearStrain) -> Any:
+    def feOutputTransform2V2(self, setSET, vecSET, nodeSET, elemSET, nodalMode, nodalCSysID, nodalGlobalComp, plateMode, plateCSysID, plateDOF, plateVEC, plateAngle, solidMode, solidCSysID, engrShearStrain) -> Any:
         """
         **Description:**
             Transforms existing output to another orientation. This function replaces feOutputTransform, which is obsolete and should no longer be used. This method replaces feOutputTransform. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -84129,7 +83949,7 @@ class model:
         """
         ...
 
-    def feOutputValueGetRGB(self, nViewID, dValue, pdRed, pdGreen, pdBlue) -> Any:
+    def feOutputValueGetRGB(self, nViewID, dValue) -> Any:
         """
         **Description:**
             Returns the red, green and blue components from a FEMAP color ID of specific output value on a contour legend.
@@ -84210,7 +84030,7 @@ class model:
         """
         ...
 
-    def fePlaneLocation(self, p1, p2, p3, planeBase, planeNormal, planeX) -> Any:
+    def fePlaneLocation(self, p1, p2, p3) -> Any:
         """
         **Description:**
             Defines a plane by specifying the coordinates of three points on the plane.
@@ -84233,7 +84053,7 @@ class model:
         """
         ...
 
-    def fePlaneNodes(self, n1, n2, n3, planeBase, planeNormal, planeX) -> Any:
+    def fePlaneNodes(self, n1, n2, n3) -> Any:
         """
         **Description:**
             Defines a plane by specifying the IDs of three nodes on the plane.
@@ -84276,7 +84096,7 @@ class model:
         """
         ...
 
-    def fePlanePickByMethod(self, method, dlgTITLE, plBase, plNormal, plAxis) -> Any:
+    def fePlanePickByMethod(self, method) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to define a plane. Same as fePlanePick except you can specify the initial dialog box method.
@@ -84300,7 +84120,7 @@ class model:
         """
         ...
 
-    def fePlanePoints(self, p1, p2, p3, planeBase, planeNormal, planeX) -> Any:
+    def fePlanePoints(self, p1, p2, p3) -> Any:
         """
         **Description:**
             Defines a plane by specifying the IDs of three points on the plane.
@@ -84333,8 +84153,7 @@ class model:
         """
         ...
 
-    def fePlaneSurfaceNormal(self, surfID, ptID1, ptID2, reversed, align, offset, planeBase, planeNormal,
-                             planeX) -> Any:
+    def fePlaneSurfaceNormal(self, surfID, ptID1, ptID2, reversed, align, offset, planeBase, planeNormal, planeX) -> Any:
         """
         **Description:**
             Defines a plane that is normal to a surface.
@@ -84403,8 +84222,7 @@ class model:
         """
         ...
 
-    def feProjectOnto(self, entityTYPE, entitySET, projOnto, projAlong, ontoSET, vOntoLocation, vOntoVector,
-                      vAlongVector, bExtendCurves, bVectorBothDirections) -> Any:
+    def feProjectOnto(self, entityTYPE, entitySET, projOnto, projAlong, ontoSET, vOntoLocation, vOntoVector, vAlongVector, bExtendCurves, bVectorBothDirections) -> Any:
         """
         **Description:**
             Projects nodes or points onto a curve, surface, vector, or plane using either a closest/normal direction or along a specified vector. Additional options to Extend Curves and Project Both Directions are also available when using certain combinations of the available options.
@@ -84568,8 +84386,7 @@ class model:
         """
         ...
 
-    def feRenumberOpt(self, entityTYPE, entitySET, startID, renumMethod, renumCSys, renumAbs, renumDescend,
-                      renumConstOff) -> Any:
+    def feRenumberOpt(self, entityTYPE, entitySET, startID, renumMethod, renumCSys, renumAbs, renumDescend, renumConstOff) -> Any:
         """
         **Description:**
             Renumbers the IDs of selected entities. This method has been superseded by feRenumberOpt2.
@@ -84601,8 +84418,7 @@ class model:
         """
         ...
 
-    def feRenumberOpt2(self, entityTYPE, entitySET, startID, renumMethod, renumCSys, renumAbs, renumDescend,
-                       renumConstOff, xyzSortOrder) -> Any:
+    def feRenumberOpt2(self, entityTYPE, entitySET, startID, renumMethod, renumCSys, renumAbs, renumDescend, renumConstOff, xyzSortOrder) -> Any:
         """
         **Description:**
             Renumbers the IDs of selected entities. Supersedes feRenumberOpt
@@ -84651,8 +84467,7 @@ class model:
         """
         ...
 
-    def feResultsRankingToDataTableV2(self, bOverrideLock, nRankByEntity, nMethod, nApproach, ntype, nNumberToRank,
-                                      nEntitySetID, nResultsSetSetID, nResultsVectorSetID) -> Any:
+    def feResultsRankingToDataTableV2(self, bOverrideLock, nRankByEntity, nMethod, nApproach, ntype, nNumberToRank, nEntitySetID, nResultsSetSetID, nResultsVectorSetID) -> Any:
         """
         **Description:**
             This function is used to send a list of entities (nodes, elements, elements referencing selected materials, or elements referencing selected properties) to the Data Table, ranked using selected output values in selected output sets. This method replaces feResultsRankingToDataTable. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -84687,9 +84502,7 @@ class model:
         """
         ...
 
-    def feResultsToDataTable2V2(self, bOverrideLock, nViewForTransform, bSetInColumns, bVecInColumns, bEntInColumns,
-                                bAltColumnOrder, bSummaryTable, nResultsSetSetID, nResultsVectorSetID,
-                                nEntitySetID) -> Any:
+    def feResultsToDataTable2V2(self, bOverrideLock, nViewForTransform, bSetInColumns, bVecInColumns, bEntInColumns, bAltColumnOrder, bSummaryTable, nResultsSetSetID, nResultsVectorSetID, nEntitySetID) -> Any:
         """
         **Description:**
             This function is used to list output on selected nodes or elements, from a selected view, for selected Output Vectors, in selected Output Sets to the Data Table. This method replaces feResultsToDataTable2. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above"
@@ -84730,8 +84543,7 @@ class model:
         """
         ...
 
-    def feResultsToDataTableV2(self, bOverrideLock, nCSysID, bSetInColumns, bVecInColumns, bEntInColumns,
-                               bAltColumnOrder, nResultsSetSetID, nResultsVectorSetID, nEntitySetID) -> Any:
+    def feResultsToDataTableV2(self, bOverrideLock, nCSysID, bSetInColumns, bVecInColumns, bEntInColumns, bAltColumnOrder, nResultsSetSetID, nResultsVectorSetID, nEntitySetID) -> Any:
         """
         **Description:**
             This function is used to list output on selected nodes or elements, for selected Output Vectors, in selected Output Sets to the Data Table. This method is obsolete and should no longer be used. It has been replaced with feResultsToDataTable2. This method replaces feResultsToDataTable. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -84824,7 +84636,7 @@ class model:
         """
         ...
 
-    def feRotationFromDirCos(self, dircos, rot) -> Any:
+    def feRotationFromDirCos(self, dircos) -> Any:
         """
         **Description:**
             This function converts a 3x3 direction cosine matrix into an equivalent triple-rotation, about X, then Y, then Z.
@@ -84842,7 +84654,7 @@ class model:
         """
         ...
 
-    def feRotationToDirCos(self, rot, dircos) -> Any:
+    def feRotationToDirCos(self, rot) -> Any:
         """
         **Description:**
             This function converts a triple-rotation, about X, then Y, then Z, into a 3x3 direction cosine matrix.
@@ -84860,7 +84672,7 @@ class model:
         """
         ...
 
-    def feRotationTransform(self, fromCSYS, fromROT, toCSYS, rot) -> Any:
+    def feRotationTransform(self, fromCSYS, fromROT, toCSYS) -> Any:
         """
         **Description:**
             This function transforms a triple rotation from one coordinate system to another.
@@ -84901,7 +84713,7 @@ class model:
         """
         ...
 
-    def feRunIOTest(self, sPath, nMethod) -> Any:
+    def feRunIOTest(self, sPath) -> Any:
         """
         **Description:**
             This function runs the Read/Write Test found in the Database tab of the File, Preferences command.
@@ -84990,8 +84802,7 @@ class model:
         """
         ...
 
-    def feSelectOutput2V2(self, title, nBaseOutputSetID, nPreCheckedSetSetID, nPreChecedVectorSetID, limitOutputType,
-                          limitComplex, limitToEntity, includeCorner, pOutputSets, pOutputVecs) -> Any:
+    def feSelectOutput2V2(self, nBaseOutputSetID, nPreCheckedSetSetID, nPreChecedVectorSetID, limitComplex, limitToEntity, includeCorner) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select Output Sets and Vectors along with already selected Output Sets and/or Vectors. This method replaces feSelectOutput2. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -85024,7 +84835,7 @@ class model:
         """
         ...
 
-    def feSelectOutputSets(self, title, pOutputSets) -> Any:
+    def feSelectOutputSets(self, title) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select Output Sets. This method is obsolete and should no longer be used. It has been replaced by feSelectOutputSets2.
@@ -85042,7 +84853,7 @@ class model:
         """
         ...
 
-    def feSelectOutputSets2(self, title, nPreCheckedSetSetID, pOutputSets) -> Any:
+    def feSelectOutputSets2(self, title, nPreCheckedSetSetID) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select Output Sets with prechecked Output Sets.
@@ -85063,8 +84874,7 @@ class model:
         """
         ...
 
-    def feSelectOutputV2(self, title, nBaseOutputSetID, limitOutputType, limitComplex, limitToEntity, includeCorner,
-                         pOutputSets, pOutputVecs) -> Any:
+    def feSelectOutputV2(self, title, nBaseOutputSetID, limitOutputType, limitComplex, limitToEntity) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to select Output Sets and Vectors. This method is obsolete and should no longer be used. It has been replaced by feSelectOutput2. This method replaces feSelectOutput. For more information, see Section 2.4, "Working with Output in FEMAP 2020.1 and above".
@@ -85094,8 +84904,7 @@ class model:
         """
         ...
 
-    def feSelectOutputVectorV2(self, title, outputSetID, limitOutputType, limitComplex, limitToEntity, allowCorner,
-                               selID) -> Any:
+    def feSelectOutputVectorV2(self, title, outputSetID, limitOutputType, limitComplex, limitToEntity, allowCorner, selID) -> Any:
         """
         :type title: Any
         :type outputSetID: Any
@@ -85326,12 +85135,7 @@ class model:
         """
         ...
 
-    def feSolidCleanupAdvanced(self, solidSET, RepairEdges, RepairEdgesVal, CleanSmoothDiscont, CleanSmoothDiscontVal,
-                               RemoveSelfInt, AllowSurfMod, RemoveSpikes, RemoveSpikesVal, RemoveSmallEdges,
-                               RemoveSmallEdgesVal, RemoveSmallFaces, RemoveSmallFacesVal, RemoveSliverFaces,
-                               RemoveSliverFacesVal, ConvertToAnalytic, ConvertToAnalyticVal, RecalcEdges,
-                               RecalcEdgesVal, MergeEdges, HealSurfaces, HealSurfacesVal, HealSmoothDiscont,
-                               HealSmoothDiscontVal, ReplaceMissing) -> Any:
+    def feSolidCleanupAdvanced(self, solidSET, RepairEdges, RepairEdgesVal, CleanSmoothDiscont, CleanSmoothDiscontVal, RemoveSelfInt, AllowSurfMod, RemoveSpikes, RemoveSpikesVal, RemoveSmallEdges, RemoveSmallEdgesVal, RemoveSmallFaces, RemoveSmallFacesVal, RemoveSliverFaces, RemoveSliverFacesVal, ConvertToAnalytic, ConvertToAnalyticVal, RecalcEdges, RecalcEdgesVal, MergeEdges, HealSurfaces, HealSurfacesVal, HealSmoothDiscont, HealSmoothDiscontVal, ReplaceMissing) -> Any:
         """
         **Description:**
             Performs more advanced cleanup and checking on selected solids.
@@ -85644,7 +85448,7 @@ class model:
         """
         ...
 
-    def feSolidInsideMulti(self, soSetID, nNumPts, vPtLocs, nInside) -> Any:
+    def feSolidInsideMulti(self, soSetID, vPtLocs) -> Any:
         """
         **Description:**
             The method determines if a location is inside, outside, or on a point, curve, or surface of all the selected solids considered as a single combined solid. To determine if a location is inside, outside, or on a point, curve, or surface of a particular solid, then only the ID of that single solid should be included in the Set object.
@@ -85748,7 +85552,7 @@ class model:
         """
         ...
 
-    def feSolidRayFire(self, soSetID, nNumRay, vRayLoc, vRayDir, nHitSurface, vHitLoc) -> Any:
+    def feSolidRayFire(self, soSetID, nNumRay, vRayLoc, vRayDir) -> Any:
         """
         **Description:**
             This method finds the locations on solids hit by rays specified by the user
@@ -85941,8 +85745,7 @@ class model:
         """
         ...
 
-    def feSolidSlice2(self, solidSET, planeBase, planeNormal, bSliceOrSection, bMatchAcrossSlice, nNumberOfPlanes,
-                      dMultiPlaneOffset, nSliceColor, Redraw) -> Any:
+    def feSolidSlice2(self, solidSET, planeBase, planeNormal, bSliceOrSection, bMatchAcrossSlice, nNumberOfPlanes, dMultiPlaneOffset, nSliceColor, Redraw) -> Any:
         """
         **Description:**
             Slices one or more solids with a single plane or any number of planes which are parallel to, and offset from, the specified plane. Also, offers an option to use each slice plane to create a surface representing the cross-section of each solid at the slice location, instead of slicing each solid into multiple solids.
@@ -86040,9 +85843,7 @@ class model:
         """
         ...
 
-    def feSolidSliceWithCurve2(self, solidSET, curveSET, bSliceOrSection, bMatchAcrossSlice, nSliceColor,
-                               bAlongCurveNormal, bVectorDirectionOnly, vectorBase, vectorDirection, deleteTool,
-                               Redraw) -> Any:
+    def feSolidSliceWithCurve2(self, solidSET, curveSET, bSliceOrSection, bMatchAcrossSlice, nSliceColor, bAlongCurveNormal, bVectorDirectionOnly, vectorBase, vectorDirection, deleteTool, Redraw) -> Any:
         """
         **Description:**
             Slices one or more solids with any number of curves, which has been extruded along a vector normal to the curve normal or along a vector specified by the user. Also, offers an option to use the extruded curve to create a surface representing the cross-section of each solid at the slice location, instead of slicing each solid into multiple solids.
@@ -86086,8 +85887,7 @@ class model:
         """
         ...
 
-    def feSolidSliceWithSheet2(self, solidSET, sheetSET, bSliceOrSection, bMatchAcrossSlice, nSliceColor, deleteTool,
-                               Redraw) -> Any:
+    def feSolidSliceWithSheet2(self, solidSET, sheetSET, bSliceOrSection, bMatchAcrossSlice, nSliceColor, deleteTool, Redraw) -> Any:
         """
         **Description:**
             Slices one or more solids with any number of sheet solids (i.e., any number of surfaces stitched together into a single body or a single surface). Also, offers an option to use each sheet solid to create a surface representing the cross-section of each solid at the slice location, instead of slicing each solid into multiple solids.
@@ -86193,8 +85993,7 @@ class model:
         """
         ...
 
-    def feSolidThicken(self, nSurfaceSet, dThickIn, dThickOut, nBooleanMode, bClean, bIndividual,
-                       bDeleteOriginalSurface) -> Any:
+    def feSolidThicken(self, nSurfaceSet, dThickIn, dThickOut, nBooleanMode, bClean, bIndividual, bDeleteOriginalSurface) -> Any:
         """
         **Description:**
             The method attempts to thicken a surface of a solid.
@@ -86584,8 +86383,7 @@ class model:
         """
         ...
 
-    def feSurfaceFromMesh2(self, elemSetID, bDeleteMesh, bWireframeOnly, tolerance, bLengthCutoff, len_cut_val,
-                           ang_tol) -> Any:
+    def feSurfaceFromMesh2(self, elemSetID, bDeleteMesh, bWireframeOnly, tolerance, bLengthCutoff, len_cut_val, ang_tol) -> Any:
         """
         **Description:**
             Create a surface that approximates a shell element mesh. This method supersedes feSurfaceFromMesh.
@@ -86674,8 +86472,7 @@ class model:
         """
         ...
 
-    def feSurfaceMidAuto2(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd,
-                          bReversePairs) -> Any:
+    def feSurfaceMidAuto2(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd, bReversePairs) -> Any:
         """
         **Description:**
             Creates midsurfaces between a set of selected surfaces using Parasolid face pairing algorithm. This method is obsolete ans should no longer be used. It has been replaced by feSurfaceMidAuto3.
@@ -86701,8 +86498,7 @@ class model:
         """
         ...
 
-    def feSurfaceMidAuto3(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd, bReversePairs,
-                          bVariableThick) -> Any:
+    def feSurfaceMidAuto3(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd, bReversePairs, bVariableThick) -> Any:
         """
         **Description:**
             Creates midsurfaces between a set of selected surfaces using Parasolid face pairing algorithm
@@ -86731,8 +86527,7 @@ class model:
         """
         ...
 
-    def feSurfaceMidAuto4(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd, bReversePairs,
-                          bVariableThick, bOverlapRepair) -> Any:
+    def feSurfaceMidAuto4(self, suSetID, dTargetThickness, bCombineTangent, dAngleTolerance, bAutoAdd, bReversePairs, bVariableThick, bOverlapRepair) -> Any:
         """
         **Description:**
             Creates midsurfaces between a set of selected surfaces using Parasolid face pairing algorithm
@@ -86846,7 +86641,7 @@ class model:
         """
         ...
 
-    def feSurfaceNormalDeviation(self, surfaceSetID, dAvgNormal, dMaxAngle) -> Any:
+    def feSurfaceNormalDeviation(self, surfaceSetID) -> Any:
         """
         **Description:**
             Finds the average normal of a set of surfaces and the maximum deviation of the normal from that average
@@ -86901,8 +86696,7 @@ class model:
         """
         ...
 
-    def feSurfaceOffsetTangent(self, nSeedSurface, dTolerance, bAutoOffset, dOffset, bDeleteOriginal,
-                               bCreateGroup) -> Any:
+    def feSurfaceOffsetTangent(self, nSeedSurface, dTolerance, bAutoOffset, dOffset, bDeleteOriginal, bCreateGroup) -> Any:
         """
         **Description:**
             Creates midsurfaces by offsetting a set of surfaces tangent to specified seed surface
@@ -86931,7 +86725,7 @@ class model:
         """
         ...
 
-    def feSurfaceRayFire(self, suSetID, nNumRay, vRayLoc, vRayDir, nHitSurface, vHitLoc) -> Any:
+    def feSurfaceRayFire(self, nNumRay, vRayLoc, vRayDir) -> Any:
         """
         **Description:**
             This method finds the locations on surfaces hit by rays specified by the user
@@ -87077,8 +86871,7 @@ class model:
         """
         ...
 
-    def feTextGet(self, textID, DrawPointer, DrawBorder, modelPos, horzJust, vertJust, visView, layer, fontID,
-                  BackColor, bordColor, textColor, textLoc, pointerLoc, text) -> Any:
+    def feTextGet(self, textID) -> Any:
         """
         **Description:**
             This function retrieves a text entity.
@@ -87135,8 +86928,7 @@ class model:
         """
         ...
 
-    def feTextMultiPut(self, DrawPointer, DrawBorder, modelPos, horzJust, vertJust, visView, layer, fontID, BackColor,
-                       bordColor, textColor, nCount, textLoc, pointerLoc, tText) -> Any:
+    def feTextMultiPut(self, DrawPointer, DrawBorder, modelPos, horzJust, vertJust, visView, layer, fontID, BackColor, bordColor, textColor, nCount, textLoc, pointerLoc, tText) -> Any:
         """
         **Description:**
             This function creates multiple text annotations.
@@ -87186,8 +86978,7 @@ class model:
         """
         ...
 
-    def feTextPut(self, textID, DrawPointer, DrawBorder, modelPos, horzJust, vertJust, visView, layer, fontID,
-                  BackColor, bordColor, textColor, textLoc, pointerLoc, tText) -> Any:
+    def feTextPut(self, textID, DrawPointer, DrawBorder, modelPos, horzJust, vertJust, visView, layer, fontID, BackColor, bordColor, textColor, textLoc, pointerLoc, tText) -> Any:
         """
         **Description:**
             This function creates or updates a text annotation.
@@ -87266,7 +87057,7 @@ class model:
         """
         ...
 
-    def feToolUnitConvertFactors(self, baseMult, baseAdd, factorMult, factorAdd) -> Any:
+    def feToolUnitConvertFactors(self, baseMult, baseAdd) -> Any:
         """
         **Description:**
             This function computes the computed factors to use in a unit conversion of the current model.
@@ -87290,7 +87081,7 @@ class model:
         """
         ...
 
-    def feTruncateReal(self, dValue, nWidth, nDecimal, nFormat, truncValue) -> Any:
+    def feTruncateReal(self, dValue, nWidth, nDecimal, nFormat) -> Any:
         """
         **Description:**
             Truncates a real number to the precision of a formatted text string.
@@ -87334,7 +87125,7 @@ class model:
         """
         ...
 
-    def feVarEval(self, vareqn, varvalue) -> Any:
+    def feVarEval(self, vareqn) -> Any:
         """
         **Description:**
             This function evaluates an equation.
@@ -87352,7 +87143,7 @@ class model:
         """
         ...
 
-    def feVarGet(self, varname, varvalue, vareqn) -> Any:
+    def feVarGet(self, varname) -> Any:
         """
         **Description:**
             This function retrieves a variable including its current value and defining equation.
@@ -87399,10 +87190,10 @@ class model:
         """
         ...
 
-    def feVectorAngle(self, VecA, VecB, angle) -> Any:
+    def feVectorAngle(self, VecA, VecB) -> Any:
         """
         **Description:**
-            This function computes the angle between two vectors. 
+            This function computes the angle between two vectors.
         **Remarks/Usage:**
             The angle is always between 0 and 180 degrees. There is no indication or consideration of the direction of the included angle between the vectors.
         **Input:**
@@ -87420,10 +87211,10 @@ class model:
         """
         ...
 
-    def feVectorAngleAxis(self, VecA, VecB, vecAXIS, angle) -> Any:
+    def feVectorAngleAxis(self, VecA, VecB, vecAXIS) -> Any:
         """
         **Description:**
-            This function computes the angle between two vectors rotating around an axis. 
+            This function computes the angle between two vectors rotating around an axis.
         **Remarks/Usage:**
             The angle is always between -180 and 180 degrees. If the angle subtended when going from vecA to vecB is in a positive direction (right-hand rule sense) around the axis of rotation, then the returned angle is positive; otherwise a negative angle is returned.
         **Input:**
@@ -87444,7 +87235,7 @@ class model:
         """
         ...
 
-    def feVectorArrayTransform(self, Count, fromCSYS, toCSYS, baseXYZ, fromxyz, xyz) -> Any:
+    def feVectorArrayTransform(self, Count, fromCSYS, baseXYZ, fromxyz) -> Any:
         """
         **Description:**
             This function transforms an array of vectors from one coordinate system to another.
@@ -87471,7 +87262,7 @@ class model:
         """
         ...
 
-    def feVectorAxis(self, csysID, Axis, positive, vecDIR) -> Any:
+    def feVectorAxis(self, csysID, Axis, positive) -> Any:
         """
         **Description:**
             This function creates a unit vector in the direction of one of the axes of a coordinate system.
@@ -87495,7 +87286,7 @@ class model:
         """
         ...
 
-    def feVectorAxisOfSurface(self, suID, baseXYZ, vecDIR) -> Any:
+    def feVectorAxisOfSurface(self, suID) -> Any:
         """
         **Description:**
             This function returns the axis of revolution for a surface.
@@ -87516,7 +87307,7 @@ class model:
         """
         ...
 
-    def feVectorCrossProduct(self, VecA, VecB, vecAxB) -> Any:
+    def feVectorCrossProduct(self, VecA, VecB) -> Any:
         """
         **Description:**
             This function computes the cross product of two vectors.
@@ -87537,7 +87328,7 @@ class model:
         """
         ...
 
-    def feVectorDotProduct(self, VecA, VecB, dot) -> Any:
+    def feVectorDotProduct(self, VecA, VecB) -> Any:
         """
         **Description:**
             This function computes the dot (scalar) product of two vectors.
@@ -87558,7 +87349,7 @@ class model:
         """
         ...
 
-    def feVectorFromBeam(self, elemID, bmXYZ, xyz) -> Any:
+    def feVectorFromBeam(self, elemID, bmXYZ) -> Any:
         """
         **Description:**
             This function transforms a vector from beam/bar elemental coordinates to global rectangular.
@@ -87579,7 +87370,7 @@ class model:
         """
         ...
 
-    def feVectorLength(self, xyz, vecLength) -> Any:
+    def feVectorLength(self, xyz) -> Any:
         """
         **Description:**
             This function computes the length of a vector.
@@ -87597,7 +87388,7 @@ class model:
         """
         ...
 
-    def feVectorNormalToSurface(self, suID, baseXYZ, vecDIR) -> Any:
+    def feVectorNormalToSurface(self, suID, baseXYZ) -> Any:
         """
         **Description:**
             This function returns a unit vector that is the normal to a surface at a specified location.
@@ -87632,7 +87423,7 @@ class model:
         """
         ...
 
-    def feVectorNormalizedDotProduct(self, VecA, VecB, dot) -> Any:
+    def feVectorNormalizedDotProduct(self, VecA, VecB) -> Any:
         """
         **Description:**
             This function normalizes the supplied vectors and computes their dot (scalar) product.
@@ -87653,7 +87444,7 @@ class model:
         """
         ...
 
-    def feVectorPerpendicular(self, vecIN, vecPERP) -> Any:
+    def feVectorPerpendicular(self, vecIN) -> Any:
         """
         **Description:**
             This function computes an arbitrary vector that is perpendicular to the specified vector.
@@ -87671,7 +87462,7 @@ class model:
         """
         ...
 
-    def feVectorPick(self, dlgTITLE, unitVector, vecLength, vecBASE, vecDIR) -> Any:
+    def feVectorPick(self, dlgTITLE, unitVector) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to pick or enter vectors.
@@ -87698,7 +87489,7 @@ class model:
         """
         ...
 
-    def feVectorPickByMethod(self, method, dlgTITLE, unitVector, vecLength, vecBASE, vecDIR) -> Any:
+    def feVectorPickByMethod(self, method, dlgTITLE, unitVector) -> Any:
         """
         **Description:**
             This function displays a dialog box to allow a user to pick or enter vectors. Same as feVectorPick except that you can specify the initial dialog box method.
@@ -87728,7 +87519,7 @@ class model:
         """
         ...
 
-    def feVectorPlaneIntersect(self, baseA, normA, baseB, normB, ptV, dirV) -> Any:
+    def feVectorPlaneIntersect(self, baseA, normA, baseB, normB) -> Any:
         """
         **Description:**
             This function computes the vector at the intersection of two planes.
@@ -87758,7 +87549,7 @@ class model:
         """
         ...
 
-    def feVectorRotate(self, baseXYZ, vecXYZ, angle, origin, Axis, baseROT, vecROT) -> Any:
+    def feVectorRotate(self, baseXYZ, vecXYZ, angle, origin, Axis) -> Any:
         """
         **Description:**
             This function returns a vector computed from rotating the original vector around a given axis using the specified angle, in degrees
@@ -87791,7 +87582,7 @@ class model:
         """
         ...
 
-    def feVectorTangentToCurve(self, cuID, baseXYZ, vecDIR) -> Any:
+    def feVectorTangentToCurve(self, cuID, baseXYZ) -> Any:
         """
         **Description:**
             This function returns a unit vector that is the tangent to a curve at a specified location.
@@ -87812,7 +87603,7 @@ class model:
         """
         ...
 
-    def feVectorToBeam(self, elemID, xyz, bmXYZ) -> Any:
+    def feVectorToBeam(self, elemID, xyz) -> Any:
         """
         **Description:**
             This function transforms a vector from global rectangular coordinates into beam/bar elemental coordinates.
@@ -87833,7 +87624,7 @@ class model:
         """
         ...
 
-    def feVectorTransform(self, fromCSYS, baseXYZ, fromxyz, toCSYS, xyz) -> Any:
+    def feVectorTransform(self, fromCSYS, baseXYZ, fromxyz, toCSYS) -> Any:
         """
         **Description:**
             This function transforms vectors from one coordinate system to another.
@@ -87860,7 +87651,7 @@ class model:
         """
         ...
 
-    def feVectorUnit(self, vecIN, vecOUT) -> Any:
+    def feVectorUnit(self, vecIN) -> Any:
         """
         **Description:**
             This function normalizes a vector to make it into an equivalent unit vector.
